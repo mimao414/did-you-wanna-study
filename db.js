@@ -1,0 +1,5425 @@
+// Auto-generated Database for 資處科一仁 鍾百越
+window.STUDENT_META = {
+  "student_name": "鍾百越",
+  "student_class": "資處科一仁",
+  "subject": "數位科技概論（上）",
+  "publisher": "旗立資訊",
+  "total_questions": 135,
+  "quiz_count": 63,
+  "exercise_choice_count": 40,
+  "exercise_nonchoice_count": 32,
+  "chapters": [
+    {
+      "num": 3,
+      "title": "系統平台的組成架構－硬體"
+    },
+    {
+      "num": 4,
+      "title": "系統平台的組成架構－軟體與網路"
+    },
+    {
+      "num": 5,
+      "title": "系統平台的運作與未來發展"
+    },
+    {
+      "num": 6,
+      "title": "辦公室軟體與影像／影音軟體"
+    }
+  ]
+};
+window.CHAPTER_SUMMARY = {
+  "ch3": {
+    "title": "第 3 章 系統平台的組成架構－硬體",
+    "highlights": [
+      {
+        "title": "電腦五大單元",
+        "desc": "IU（輸入）、CU（控制）、ALU（算術邏輯）、MU（記憶）、OU（輸出）。CPU = CU + ALU。"
+      },
+      {
+        "title": "CPU 機器週期四步驟",
+        "desc": "擷取（Fetch） -> 解碼（Decode） -> 執行（Execute） -> 儲存（Store）。"
+      },
+      {
+        "title": "記憶體金字塔存取速度排行",
+        "desc": "暫存器（Register） > 快取（Cache, SRAM） > 主記憶體（RAM, DRAM） > 唯讀記憶體（ROM） > 固態硬碟（SSD） > 機械硬碟（HDD） > 藍光/光碟。"
+      },
+      {
+        "title": "SRAM vs DRAM 決勝表",
+        "desc": "SRAM：雙極正反器、速度極快、免充電更新、成本高，作快取；DRAM：電容儲存、速度慢、需週期充電更新（Refresh）、成本低，作主記憶體。"
+      },
+      {
+        "title": "固態硬碟（SSD）考點",
+        "desc": "快閃記憶體（Flash）製成、抗震輕薄、速度快、壽命有寫入次數限制，【切勿進行磁碟重組】。"
+      },
+      {
+        "title": "印表機雙指標",
+        "desc": "列印速度看 ppm（頁/分）；列印品質看 dpi（點/吋）。撞擊式點陣式用色帶印複寫紙；非撞擊式雷射用碳粉、噴墨用CMYK墨水。"
+      }
+    ]
+  },
+  "ch4": {
+    "title": "第 4 章 系統平台的組成架構－軟體與網路",
+    "highlights": [
+      {
+        "title": "軟體兩大類體系",
+        "desc": "系統軟體（作業系統、公用程式如磁碟重組/清理/防毒、語言翻譯程式如編譯器/直譯器）；應用軟體（套裝軟體如Office、專案開發軟體如藏壽司/大台北公車/銀行系統）。"
+      },
+      {
+        "title": "作業系統三大人工作業分類",
+        "desc": "單人單工（MS-DOS）；單人多工（Windows 11家用版、macOS、Android、iOS）；多人多工（Linux、UNIX、Windows Server）。"
+      },
+      {
+        "title": "開源 vs 閉源生態",
+        "desc": "開源作業系統：Linux、Android；閉源專有作業系統：Windows、macOS、iOS。"
+      },
+      {
+        "title": "雲端三大服務架構（IaaS / PaaS / SaaS）",
+        "desc": "IaaS（租硬體與雲端儲存空間，如AWS EC2/S3）；PaaS（租開發平台與資料庫環境，如Google App Engine）；SaaS（直接在線上使用應用軟體，如Gmail、YouTube、LINE、Office 365）。"
+      },
+      {
+        "title": "網路規模範圍排行（大到小）",
+        "desc": "網際網路（Internet） > 廣域網路（WAN，跨國/跨洲） > 都會網路（MAN，城市） > 區域網路（LAN，同一棟大樓/校園） > 個人網路（PAN，藍牙/10m內）。"
+      }
+    ]
+  },
+  "ch5": {
+    "title": "第 5 章 系統平台的運作與未來發展",
+    "highlights": [
+      {
+        "title": "系統平台運作三步驟",
+        "desc": "輸入（Input） -> 處理（Process） -> 輸出（Output）。現代系統具分散式與雲端架構，可跨多平台協同完成。"
+      },
+      {
+        "title": "行程五大狀態轉移模型",
+        "desc": "建立（New） -> 就緒（Ready） <-> 執行（Running） -> 結束（Terminated）；執行遇 I/O 等待 -> 等待（Waiting） -> I/O 完成回到【就緒】重新排隊！"
+      },
+      {
+        "title": "CPU 工作排程三大演算法",
+        "desc": "先來先服務（FCFS，無搶佔）；最短工作優先（SJF，平均等待時間最短）；優先權排程（Priority Scheduling，低優先程序易產生【飢餓 Starvation】，解法為【老化 Aging】）。"
+      },
+      {
+        "title": "平行處理（Parallel Processing）",
+        "desc": "使用多核心 CPU 同時處理分割後的運算子任務，加速總體時間。"
+      },
+      {
+        "title": "Windows 工具實用技巧",
+        "desc": "工作管理員（Ctrl+Alt+Del 或 Ctrl+Shift+Esc，看CPU/RAM使用率，查不到瀏覽器造訪紀錄）；檔案總管檢視隱藏檔（檢視 -> 勾選隱藏的項目）；唯讀（不可修改刪除）。"
+      },
+      {
+        "title": "AI 涵蓋關係與實作常理",
+        "desc": "人工智慧（AI） > 機器學習（ML） > 深度學習（DL）。Teachable Machine 實作：樣本越充足越廣、訓練週期（Epochs）越大，模型辨識越精準。"
+      }
+    ]
+  },
+  "ch6": {
+    "title": "第 6 章 辦公室軟體與影像／影音軟體",
+    "highlights": [
+      {
+        "title": "五大辦公室套件對照",
+        "desc": "文書：Word = Writer = Pages = Google文件；試算表：Excel = Calc = Numbers = Google試算表；簡報：PowerPoint = Impress = Keynote = Google簡報；資料庫：Access = Base。"
+      },
+      {
+        "title": "影像處理工具",
+        "desc": "點陣圖修圖合成：Photoshop、PhotoImpact、GIMP；向量繪圖：Illustrator、CorelDRAW。"
+      },
+      {
+        "title": "3D 建模與動畫製作",
+        "desc": "3D 動畫電影（玩具總動員/冰雪奇緣）：3ds Max、Maya、Blender；3D 列印空間設計：SketchUp。"
+      },
+      {
+        "title": "影音與音訊後製",
+        "desc": "影片剪輯：會聲會影、威力導演、Premiere；音訊剪輯/手機鈴聲/人聲特效後製：Audacity；影音播放（非編輯）：Windows Media Player、PotPlayer。"
+      }
+    ]
+  }
+};
+window.ALL_QUESTIONS = [
+  {
+    "id": "quiz_r3_q1",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 1,
+    "is_advanced": true,
+    "answer": "A",
+    "question": "隨機存取記憶體（RAM）區分為動態隨機存取記憶體（DRAM）及靜態隨機存取記憶體 （SRAM）兩種，請問下列哪一項是SRAM優於DRAM的特點？",
+    "options": {
+      "A": "單位資料的存取速度較快",
+      "B": "單位面積所能儲存資料量較小",
+      "C": "需要持續充電更新（refresh），才能確保資料完整",
+      "D": "每單位資料的儲存成本較低。"
+    },
+    "official_explanation": "SRAM單位面積所能儲存資料量較大；SRAM不需保持週期性充電更新，即可保存儲存於其內的資料； DRAM每單位資料的儲存成本較低。",
+    "page": 1,
+    "page_img": "assets/pages/quiz/page_1.png",
+    "key_concept": "SRAM vs DRAM 特性比較（靜態與動態隨機存取記憶體）",
+    "step_by_step": "1. 隨機存取記憶體（RAM）主要分為 SRAM 與 DRAM 兩大家族。\n2. SRAM（Static RAM）使用雙極性正反器儲存資料，速度極快，且只要通電就不需要週期性充電更新（Refresh），因此常用作快取記憶體（Cache）。\n3. DRAM（Dynamic RAM）使用電容儲存電荷，由於電荷會逐漸洩漏，因此必須持續不斷充電更新（Refresh）；DRAM 的構造簡單、集成度高、每單位成本低，所以常用作電腦的主記憶體。\n4. 題幹問「SRAM 優於 DRAM 的特點」，因此正確答案是存取速度較快。",
+    "option_analysis": {
+      "A": "【正確】SRAM 存取速度通常在幾奈秒（ns）內，遠快於 DRAM 的幾十奈秒，因此是其最大優勢。",
+      "B": "【錯誤】SRAM 的每個位元需要4~6個電晶體，因此單位面積所能儲存的資料量較小（積體密度低），這是 SRAM 的缺點而非優於 DRAM 的特點。",
+      "C": "【錯誤】需要持續充電更新（refresh）的是 DRAM，SRAM 不需要 refresh 即可保存資料。",
+      "D": "【錯誤】每單位資料儲存成本較低的是 DRAM，SRAM 製造成本相當昂貴。"
+    },
+    "exam_tip": "記憶口訣：「SRAM 速度快、免充電、當快取；DRAM 成本低、要充電、當主記憶體」。",
+    "tags": [
+      "記憶體",
+      "SRAM",
+      "DRAM",
+      "硬體核心",
+      "統測高頻"
+    ]
+  },
+  {
+    "id": "quiz_r3_q2",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 2,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "傑克將iPhone手機拍攝的照片轉存到電腦中，並列印出來與朋友分享。請問列印設備在電腦 的五大單元中，是歸屬為下列哪一種單元？",
+    "options": {
+      "A": "控制單元",
+      "B": "輸入單元",
+      "C": "輸出單元",
+      "D": "記憶單元。"
+    },
+    "official_explanation": "",
+    "page": 1,
+    "page_img": "assets/pages/quiz/page_1.png",
+    "key_concept": "電腦五大單元之分類（IU、CU、ALU、MU、OU）",
+    "step_by_step": "1. 馮紐曼架構中電腦由五大單元組成：輸入單元（IU）、控制單元（CU）、算術邏輯單元（ALU）、記憶單元（MU）、輸出單元（OU）。\n2. 印表機的功能是將電腦內部運算處理後的資料或圖片，實體列印成紙本給使用者查看。\n3. 因此印表機屬於將資料向外傳遞的管道，歸屬於「輸出單元（Output Unit）」。",
+    "option_analysis": {
+      "A": "【錯誤】控制單元（CU）負責指揮協調電腦各單元運作，如解碼指令。",
+      "B": "【錯誤】輸入單元（IU）負責將外界資料送入電腦，例如鍵盤、滑鼠、掃描器。",
+      "C": "【正確】輸出單元（OU）負責將處理結果呈現出來，例如螢幕、印表機、喇叭。",
+      "D": "【錯誤】記憶單元（MU）負責儲存程式與資料，例如 RAM、ROM。"
+    },
+    "exam_tip": "常見輸出設備：螢幕（顯示器）、印表機、繪圖機、喇叭、投影機。",
+    "tags": [
+      "五大單元",
+      "輸出單元",
+      "印表機",
+      "基礎架構"
+    ]
+  },
+  {
+    "id": "quiz_r3_q3",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 3,
+    "is_advanced": true,
+    "answer": "D",
+    "question": "下列對於電腦硬體五大單元的敘述何者有誤？",
+    "options": {
+      "A": "輸入單元：待處理的資料須經由此單元 進入電腦",
+      "B": "輸出單元：處理完成之資料由此單元送出",
+      "C": "算術邏輯單元：所有的算術運 算均在此單元完成",
+      "D": "記憶單元：僅儲存輸入待處理之資料。"
+    },
+    "official_explanation": "記憶單元：電腦存放程式與資料的地方。",
+    "page": 1,
+    "page_img": "assets/pages/quiz/page_1.png",
+    "key_concept": "電腦五大單元功能職責定義與防呆",
+    "step_by_step": "1. 檢視題目各選項對五大單元的描述。\n2. 輸入單元（IU）負責外部資料進入；輸出單元（OU）負責處理結果送出；ALU負責所有算術（加減乘除）與邏輯運算（比較AND/OR/NOT）。\n3. 記憶單元（MU）的功能是存放「程式」以及「待處理資料」、「處理中的暫存資料」與「處理後的結果資料」，絕非『僅』儲存輸入待處理之資料，敘述太狹隘且錯誤。",
+    "option_analysis": {
+      "A": "【正確無誤】輸入單元確實是外界資料進入電腦的門戶。",
+      "B": "【正確無誤】輸出單元確實是電腦將處理後資料送出的管道。",
+      "C": "【正確無誤】算術與邏輯運算皆在 ALU（Arithmetic Logic Unit）內進行。",
+      "D": "【有誤，選此項】記憶單元除了待處理資料外，更存放執行的程式指令、處理中與處理完的資料。「僅」字敘述錯誤。"
+    },
+    "exam_tip": "考試關鍵字防陷阱：看到「僅」、「只能」、「絕對」等字眼要特別提高警覺。",
+    "tags": [
+      "五大單元",
+      "記憶單元",
+      "觀念辨析"
+    ]
+  },
+  {
+    "id": "quiz_r3_q4",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 4,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "電腦基本架構中有數個主要的組成單元（或部門），其中負責存放電腦程式與資料的單元 是：",
+    "options": {
+      "A": "算術與邏輯單元",
+      "B": "輸入單元",
+      "C": "記憶單元",
+      "D": "控制單元。"
+    },
+    "official_explanation": "",
+    "page": 1,
+    "page_img": "assets/pages/quiz/page_1.png",
+    "key_concept": "內儲程式概念與記憶單元職責",
+    "step_by_step": "1. 現代電腦採用「內儲程式（Stored Program）」概念，程式與資料在執行前均需先載入到內部存放空間。\n2. 負責存放電腦運作時所需程式與資料的部門即為「記憶單元（Memory Unit, MU）」。",
+    "option_analysis": {
+      "A": "【錯誤】ALU 負責運算與邏輯判斷，不負責永久或主要存放程式資料。",
+      "B": "【錯誤】輸入單元僅為資料進入管道，不作儲存使用。",
+      "C": "【正確】記憶單元（包含主記憶體與快取）專門存放執行中的程式與資料。",
+      "D": "【錯誤】控制單元（CU）負責指揮協調與調度，不存放主要程式本體。"
+    },
+    "exam_tip": "程式要執行，必須先載入「主記憶體（RAM）」；記憶單元就是存放程式與資料的場所。",
+    "tags": [
+      "五大單元",
+      "記憶單元",
+      "內儲程式"
+    ]
+  },
+  {
+    "id": "quiz_r3_q5",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 5,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "在電腦的組成單元中，下列哪兩個單元合稱為中央處理單元？",
+    "options": {
+      "A": "輸入單元及控制單元",
+      "B": "控制單元及算術∕邏輯單元",
+      "C": "輸入單元及輸出單元",
+      "D": "算術∕邏輯單元及記憶單元。"
+    },
+    "official_explanation": "",
+    "page": 1,
+    "page_img": "assets/pages/quiz/page_1.png",
+    "key_concept": "中央處理單元（CPU）的內部核心架構",
+    "step_by_step": "1. 中央處理單元（Central Processing Unit, CPU）是整部電腦的心臟與大腦。\n2. 在傳統電腦架構分類中，CPU 是由「控制單元（CU）」與「算術／邏輯單元（ALU）」兩大單元合稱而成（內部另有暫存器與內部匯流排）。",
+    "option_analysis": {
+      "A": "【錯誤】輸入單元是週邊設備，不屬於 CPU。",
+      "B": "【正確】CU + ALU = CPU，是計算機概論中最標準經典的考題。",
+      "C": "【錯誤】輸入單元與輸出單元合稱為「週邊設備（Peripherals）或 I/O 設備」。",
+      "D": "【錯誤】記憶單元（MU）獨立於 CPU 之外（雖然 CPU 內有快取與暫存器，但廣義 MU 指主記憶體）。"
+    },
+    "exam_tip": "公式記住：CPU = CU（指揮官） + ALU（運算兵）。",
+    "tags": [
+      "CPU",
+      "CU",
+      "ALU",
+      "核心考點"
+    ]
+  },
+  {
+    "id": "quiz_r3_q6",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 6,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "請問所謂的I/O指的是",
+    "options": {
+      "A": "1跟0",
+      "B": "物聯網（IoT）",
+      "C": "輸入與輸出",
+      "D": "整合式辦公室系統（integrated office system）。"
+    },
+    "official_explanation": "",
+    "page": 1,
+    "page_img": "assets/pages/quiz/page_1.png",
+    "key_concept": "計算機常見縮寫名詞 I/O 定義",
+    "step_by_step": "1. I/O 是電腦領域最常見的簡寫。\n2. I 代表 Input（輸入），O 代表 Output（輸出）。\n3. 合稱為「輸入與輸出（Input/Output）」。",
+    "option_analysis": {
+      "A": "【錯誤】1跟0是二進位制（Binary）。",
+      "B": "【錯誤】物聯網英文縮寫是 IoT（Internet of Things）。",
+      "C": "【正確】I/O 即 Input / Output（輸入與輸出）。",
+      "D": "【錯誤】整合式辦公系統簡稱與此無關。"
+    },
+    "exam_tip": "I/O 埠、I/O 裝置指的就是連接鍵盤滑鼠螢幕等輸入輸出的通道。",
+    "tags": [
+      "英文縮寫",
+      "I/O",
+      "基礎名詞"
+    ]
+  },
+  {
+    "id": "quiz_r3_q7",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 7,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "關於 \"熱插拔\" 的敘述，何者為真？",
+    "options": {
+      "A": "只能在開機的情況下插拔",
+      "B": "只能在關機的情況下插拔",
+      "C": "在關機及開機的情況下皆可插拔",
+      "D": "只有當主機溫度高於一定溫度時才可插拔。"
+    },
+    "official_explanation": "",
+    "page": 1,
+    "page_img": "assets/pages/quiz/page_1.png",
+    "key_concept": "熱插拔（Hot Swapping / Hot Plugging）機制定義",
+    "step_by_step": "1. 「熱插拔」是指系統在運作（開機通電）狀態下，允許使用者直接插入或移除週邊設備（例如 USB 隨身碟、外接硬碟），系統能自動偵測識別並正常運作，而無須重新關機開機。\n2. 當然，在關機狀態下設備一樣可以隨意插拔。\n3. 因此熱插拔代表「在開機及關機的情況下皆可插拔」。",
+    "option_analysis": {
+      "A": "【錯誤】關機時當然可以插拔硬體。",
+      "B": "【錯誤】只能在關機插拔的稱為「冷插拔（Cold Swapping）」，如更換 CPU 或主機板電池。",
+      "C": "【正確】開關機狀態下皆能安全插拔，即為熱插拔的便利之處。",
+      "D": "【錯誤】「熱」插拔的熱是指「通電中」，而非溫度高。"
+    },
+    "exam_tip": "支援熱插拔的介面：USB、Thunderbolt、IEEE 1394、SATA（需開啟AHCI模式）。不支援熱插拔：PS/2 插孔（開機插拔易燒毀主機板）。",
+    "tags": [
+      "熱插拔",
+      "USB",
+      "連接埠"
+    ]
+  },
+  {
+    "id": "quiz_r3_q8",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 8,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "阿布想要為自己的筆記型電腦擴充2G的RAM，請問他應該將RAM安插在下列哪一種插槽？",
+    "options": {
+      "A": "記憶體插槽",
+      "B": "PCI-E插槽",
+      "C": "CPU插槽",
+      "D": "M.2插槽。"
+    },
+    "official_explanation": "",
+    "page": 1,
+    "page_img": "assets/pages/quiz/page_1.png",
+    "key_concept": "主機板擴充插槽類型與用途",
+    "step_by_step": "1. 題目情境：阿布要為筆記型電腦擴充「2G 的 RAM（隨機存取記憶體）」。\n2. RAM 是記憶體模組（筆電通常為 SO-DIMM 插槽），因此必須安插在「記憶體插槽」上。\n3. 檢視其餘選項：PCI-E 插槽用於獨立顯卡或介面卡；CPU插槽安裝處理器；M.2插槽主要用於 M.2 SSD 固態硬碟或 Wi-Fi 網卡。",
+    "option_analysis": {
+      "A": "【正確】RAM 就是主記憶體，當然安裝在記憶體插槽（DIMM / SO-DIMM）。",
+      "B": "【錯誤】PCI-E 插槽主要插獨立顯示卡、音效卡或高速擴充卡。",
+      "C": "【錯誤】CPU 插槽（Socket）專為安裝中央處理器設計。",
+      "D": "【錯誤】M.2 插槽是用於安裝高速固態硬碟（NVMe SSD）或無線網卡。"
+    },
+    "exam_tip": "桌上型記憶體插槽稱為 DIMM；筆記型電腦較短小的記憶體插槽稱為 SO-DIMM。",
+    "tags": [
+      "主機板",
+      "RAM",
+      "擴充插槽"
+    ]
+  },
+  {
+    "id": "quiz_r3_q9",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 9,
+    "is_advanced": true,
+    "answer": "C",
+    "question": "微軟公司在台灣成立了亞洲第一座「雲端運算」中心，以整合電腦的運算資源，來提供給國 內各項創新研究計畫使用。一般而言，研究計畫都需要大量的運算，包括計算、比對、配對 等不同的處理，請問電腦中負責這些運算工作的是下列哪一個單元？",
+    "options": {
+      "A": "CU",
+      "B": "MU",
+      "C": "ALU",
+      "D": "OU。"
+    },
+    "official_explanation": "算術∕邏輯單元（ALU）：負責資料的運算與邏輯判斷。",
+    "page": 1,
+    "page_img": "assets/pages/quiz/page_1.png",
+    "key_concept": "雲端運算中心大規模運算所依賴的硬體單元（ALU）",
+    "step_by_step": "1. 題目描述：雲端運算中心需進行「大量運算，包括計算、比對、配對等處理」。\n2. 計算（加減乘除）屬於「算術運算」，比對與配對（大於、小於、等於判斷）屬於「邏輯運算」。\n3. 電腦內部負責進行算術與邏輯運算的單元即為 ALU（Arithmetic Logic Unit）。",
+    "option_analysis": {
+      "A": "【錯誤】CU（Control Unit，控制單元）負責解碼、指揮排程，不直接算數值。",
+      "B": "【錯誤】MU（Memory Unit，記憶單元）負責存資料，不進行運算。",
+      "C": "【正確】ALU（Arithmetic Logic Unit，算術邏輯單元）負責數值計算與邏輯判斷比對。",
+      "D": "【錯誤】OU（Output Unit，輸出單元）負責把結果送出。"
+    },
+    "exam_tip": "關鍵詞配對：算術/計算/比對/判斷 -> 找 ALU！",
+    "tags": [
+      "五大單元",
+      "ALU",
+      "雲端運算"
+    ]
+  },
+  {
+    "id": "quiz_r3_q10",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 10,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "MIPS為一種衡量電腦CPU之測量指標，其中I代表：",
+    "options": {
+      "A": "資訊（Information）",
+      "B": "指令（Instruction）",
+      "C": "輸入（Input）",
+      "D": "內部（Internal）。"
+    },
+    "official_explanation": "",
+    "page": 1,
+    "page_img": "assets/pages/quiz/page_1.png",
+    "key_concept": "CPU 效能衡量指標 MIPS 之英文全名拆解",
+    "step_by_step": "1. MIPS 是衡量 CPU 處理速率的傳統指標。\n2. MIPS = Million Instructions Per Second。\n3. 拆解意義：Million（百萬）、Instructions（指令）、Per（每）、Second（秒）。\n4. 因此單字「I」代表「指令（Instruction）」。",
+    "option_analysis": {
+      "A": "【錯誤】Information 是資訊。",
+      "B": "【正確】Instruction 是指令，MIPS 意思就是每秒鐘能執行多少百萬個指令。",
+      "C": "【錯誤】Input 是輸入。",
+      "D": "【錯誤】Internal 是內部。"
+    },
+    "exam_tip": "相關指標補充：FLOPS = Floating-point Operations Per Second（每秒浮點數運算次數，常用於顯卡與超級電腦）。",
+    "tags": [
+      "CPU效能",
+      "MIPS",
+      "英文縮寫"
+    ]
+  },
+  {
+    "id": "quiz_r3_q11",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 11,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "在「星際迷航記」影集中，船長寇克領導眾船員一同探索宇宙，當遇上危機時，船長便會指 派船員完成各自的工作，並引導船員們脫離險境。請問若以船長扮演的角色來看，可比喻成 電腦的哪一個單元最恰當？",
+    "options": {
+      "A": "輸入單元",
+      "B": "記憶單元",
+      "C": "輸出單元",
+      "D": "控制單元。"
+    },
+    "official_explanation": "",
+    "page": 1,
+    "page_img": "assets/pages/quiz/page_1.png",
+    "key_concept": "以比喻法理解電腦單元：控制單元（CU）的角色",
+    "step_by_step": "1. 題目敘述：船長寇克「指派船員完成各自的工作，引導船員脫離險境」，扮演領導、發號施令、協調各部門的角色。\n2. 電腦中扮演指揮官、分派任務給 ALU/IU/OU/MU 的單元正是「控制單元（Control Unit, CU）」。",
+    "option_analysis": {
+      "A": "【錯誤】輸入單元如同情報官或偵測器，接收外部情報。",
+      "B": "【錯誤】記憶單元如同檔案庫或倉庫，記錄資訊。",
+      "C": "【錯誤】輸出單元如同雷射砲發射口或通訊發射器，將結果送出。",
+      "D": "【正確】控制單元（CU）就是整部電腦的總司令官（艦長）。"
+    },
+    "exam_tip": "常見比喻：交警指揮交通、樂團指揮家、總經理、艦長 -> 皆為 控制單元（CU）。",
+    "tags": [
+      "五大單元",
+      "控制單元",
+      "情境比喻"
+    ]
+  },
+  {
+    "id": "quiz_r3_q12",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 12,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "志華購買了一台安插8GB記憶體的64位元電腦，下列有關該台電腦的敘述何者正確？",
+    "options": {
+      "A": "8GB指的是快取記憶體的容量",
+      "B": "一般用途暫存器的位元數為8GB",
+      "C": "CPU時脈頻率為64位元",
+      "D": "64位元指的是一般用途暫存器的位元數。"
+    },
+    "official_explanation": "",
+    "page": 1,
+    "page_img": "assets/pages/quiz/page_1.png",
+    "key_concept": "電腦位元數（64位元）與記憶體規格的真正意涵",
+    "step_by_step": "1. 題目指出規格「安插 8GB 記憶體的 64 位元電腦」。\n2. 「8GB」指的是安裝的「主記憶體（RAM）」容量（快取記憶體容量通常僅有幾MB到幾十MB）。\n3. 「64位元（64-bit）」在電腦硬體術語中，代表 CPU 內部的「一般用途暫存器（General Purpose Registers, GPR）」位元數為 64 位元，同時代表 CPU 一次能處理的資料長度（Word Size）。\n4. 時脈頻率的單位是 Hz（例如 2.8GHz），而非位元（bit）。",
+    "option_analysis": {
+      "A": "【錯誤】8GB 是主記憶體（DRAM），快取記憶體（Cache）非常昂貴，容量通常只有幾MB（如 16MB）。",
+      "B": "【錯誤】暫存器位元數是 64 位元（bit），不是 8GB。",
+      "C": "【錯誤】時脈頻率單位是 GHz，位元（bit）是長度單位。",
+      "D": "【正確】64位元電腦代表其暫存器與內部運算通道寬度為 64 位元。"
+    },
+    "exam_tip": "32位元電腦 vs 64位元電腦：指的就是暫存器位元數！32位元最多支援 4GB RAM，64位元可支援超過 4GB 的記憶體定址空間。",
+    "tags": [
+      "64位元",
+      "暫存器",
+      "主記憶體",
+      "規格辨識"
+    ]
+  },
+  {
+    "id": "quiz_r3_q13",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 13,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "高雄六龜區為了成立社區數位機會中心（digital opportunity center），打算將原社區教室的 電腦全數移轉至該中心。如果你是數位機會中心的電腦管理員，為了要提升這些電腦的執行 效能，下列何者最不可能是你優先考慮要更換的設備或元件？",
+    "options": {
+      "A": "CPU",
+      "B": "主記憶體",
+      "C": "顯示卡"
+    },
+    "official_explanation": "",
+    "page": 1,
+    "page_img": "assets/pages/quiz/page_1.png",
+    "key_concept": "影響電腦執行效能的關鍵硬體 vs 輸入週邊",
+    "step_by_step": "1. 題目情境：為了「提升電腦的執行效能（運算速度、流暢度）」，考慮更換元件。\n2. 檢視各選項：\n   - CPU：中央運算處理器，升級能直接大幅提升運算能力。\n   - 主記憶體（RAM）：容量不足會導致頻繁硬碟分頁置換，擴充容量能顯著提升多工流暢度。\n   - 顯示卡：升級顯卡能提升圖形運算、影像渲染及 3D 顯示效能。\n   - 鍵盤：只是輸入使用者文字指令的外部週邊，更換鍵盤完全無法提升電腦運算與執行速度。\n3. 因此最不可能是優先考慮更換的元件是鍵盤。",
+    "option_analysis": {
+      "A": "【可能】更換更快的多核心 CPU 能實質提升運算力。",
+      "B": "【可能】增加主記憶體能避免記憶體不足導致的 lag 延遲。",
+      "C": "【可能】更換顯示卡能提升繪圖與多螢幕效能。",
+      "D": "【最不可能，選此項】鍵盤不會改變電腦內部的任何運算效能。"
+    },
+    "exam_tip": "影響電腦效能三本柱：CPU、RAM、儲存設備（SSD）/顯卡。",
+    "tags": [
+      "硬體效能",
+      "週邊設備",
+      "升級選購"
+    ]
+  },
+  {
+    "id": "quiz_r3_q14",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 14,
+    "is_advanced": true,
+    "answer": "D",
+    "question": "電腦的基本架構可分為五大單元，其中輸出單元（output unit）的功用為？",
+    "options": {
+      "A": "接收使用者所輸入的資料",
+      "B": "執行程式和處理資料",
+      "C": "進行算術運算與邏輯運算",
+      "D": "將資料輸出到顯示器或儲存媒體。"
+    },
+    "official_explanation": "輸出單元：電腦輸出運算結果的管道。",
+    "page": 2,
+    "page_img": "assets/pages/quiz/page_2.png",
+    "key_concept": "輸出單元（Output Unit）的核心功能與定義",
+    "step_by_step": "1. 檢視輸出單元定義：負責將電腦內部處理或儲存的數位資料，轉換為人類可理解的形式（如畫面、聲音、列印文字）或傳送到外部儲存媒體。\n2. 選項 (A) 是輸入單元的功能；選項 (B) 是 CPU 的功能；選項 (C) 是 ALU 的功能；選項 (D) 清楚描述「將資料輸出到顯示器或儲存媒體」，故為正確答案。",
+    "option_analysis": {
+      "A": "【錯誤】這是輸入單元（IU）的任務。",
+      "B": "【錯誤】這是 CPU/控制單元與運算單元的任務。",
+      "C": "【錯誤】這是算術邏輯單元（ALU）的任務。",
+      "D": "【正確】輸出單元（OU）將資料輸出給外部呈現或保存。"
+    },
+    "exam_tip": "輸入 = 外部到內部；輸出 = 內部到外部。",
+    "tags": [
+      "五大單元",
+      "輸出單元",
+      "定義題"
+    ]
+  },
+  {
+    "id": "quiz_r3_q15",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 15,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "聯想推出搭載Intel Core i7-1165G7 2.80GHz CPU的「變形筆電」，這種筆電的螢幕可以360度 翻轉，變身為平板電腦。請根據以上敘述判斷下列何者正確？",
+    "options": {
+      "A": "Intel為CPU的產品型號",
+      "B": "Core i7-1165G7為CPU的製造廠商",
+      "C": "CPU的時脈頻率為2.80GHz",
+      "D": "石英振盪器每秒振盪2.80億次。"
+    },
+    "official_explanation": "",
+    "page": 2,
+    "page_img": "assets/pages/quiz/page_2.png",
+    "key_concept": "CPU 規格標籤判讀（廠牌、型號、時脈頻率換算）",
+    "step_by_step": "1. 規格分析：「Intel Core i7-1165G7 2.80GHz」：\n   - 「Intel」：製造廠商（Intel 英特爾公司）。\n   - 「Core i7-1165G7」：產品系列（酷睿 i7）與型號（1165G7）。\n   - 「2.80GHz」：CPU 的基礎時脈頻率（Clock Rate）。\n2. 頻率單位換算：$1\\text{ GHz} = 10^9\\text{ Hz}$（每秒十億次振盪）。因此 2.80GHz 代表每秒振盪 $2.8 \\times 10^9 = 28$ 億次，選項 (D) 寫「2.80億次」少了一個0，錯誤。\n3. 因此選項 (C)「CPU的時脈頻率為2.80GHz」完全正確。",
+    "option_analysis": {
+      "A": "【錯誤】Intel 是「製造廠商」，不是產品型號。",
+      "B": "【錯誤】Core i7-1165G7 是「產品型號」，製造商是 Intel。",
+      "C": "【正確】2.80GHz 確為 CPU 時脈頻率。",
+      "D": "【錯誤】G（Giga）代表十億（$10^9$），2.80GHz 是每秒振盪「28億次」，不是2.8億次。"
+    },
+    "exam_tip": "國際單位字首常考：K=千（$10^3$）、M=百萬（$10^6$）、G=十億（$10^9$）、T=兆（$10^{12}$）。",
+    "tags": [
+      "CPU規格",
+      "時脈頻率",
+      "單位換算",
+      "常見陷阱"
+    ]
+  },
+  {
+    "id": "quiz_r3_q16",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 16,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "有關固態硬碟（solid state disk, SSD）與傳統機械硬碟（hard disk, HDD）的敘述，下列何者 正確？",
+    "options": {
+      "A": "HDD中的儲存元件是採用快閃記憶體",
+      "B": "SSD採用低噪音馬達驅動讀寫頭並具抗震特點",
+      "C": "HDD沒有旋轉及搜尋資料時間，僅須考量資料傳輸時間",
+      "D": "SSD在經過長時間及多次使用致使內部儲存資料零散，仍可不須進行磁碟重組。"
+    },
+    "official_explanation": "",
+    "page": 2,
+    "page_img": "assets/pages/quiz/page_2.png",
+    "key_concept": "固態硬碟（SSD）vs 傳統機械硬碟（HDD）的運作與維護差異",
+    "step_by_step": "1. 固態硬碟（SSD）內部使用快閃記憶體（NAND Flash）晶片儲存，沒有任何旋轉馬達或機械讀寫臂，抗震耐摔、存取速度快。\n2. 機械硬碟（HDD）依靠馬達旋轉磁碟片與讀寫頭尋道，因此碎片化時需要進行「磁碟重組（Defrag）」，使檔案連續以減少磁頭移動。\n3. SSD 由於電子電路存取各區塊的時間完全相同（隨機存取），資料零散不會影響讀取效能；相反地，磁碟重組會引發大量不必要的寫入操作，反而消耗快閃記憶體的有限寫入壽命！因此 SSD 絕不需要進行傳統的磁碟重組。\n4. 選項 (D) 敘述完全正確。",
+    "option_analysis": {
+      "A": "【錯誤】HDD 是採用磁性磁碟片，SSD 才是採用快閃記憶體。",
+      "B": "【錯誤】SSD 根本沒有馬達與讀寫頭，完全靜音抗震。",
+      "C": "【錯誤】HDD 正是因為有「旋轉磁碟時間」與「磁頭搜尋資料時間（尋道時間）」，才會成為電腦效能瓶頸。",
+      "D": "【正確】SSD 資料零散不影響存取時間，不需要且不建議進行磁碟重組。"
+    },
+    "exam_tip": "統測經典考點：SSD「不可進行磁碟重組」，因為隨機存取速度均等，且重組會耗損快閃記憶體晶片寫入壽命。",
+    "tags": [
+      "SSD",
+      "HDD",
+      "磁碟重組",
+      "快閃記憶體"
+    ]
+  },
+  {
+    "id": "quiz_r3_q17",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 17,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "為了減少對主記憶體的存取次數，以提昇電腦整體執行速度，個人電腦的快取記憶體 （cache memory）通常以下列何者為材質？",
+    "options": {
+      "A": "DRAM",
+      "B": "EPROM",
+      "C": "ROM",
+      "D": "SRAM。"
+    },
+    "official_explanation": "",
+    "page": 2,
+    "page_img": "assets/pages/quiz/page_2.png",
+    "key_concept": "快取記憶體（Cache Memory）的組成材質",
+    "step_by_step": "1. 快取記憶體（Cache Memory）位於 CPU 與主記憶體之間，目的是解決高速 CPU 與較慢主記憶體之間的速度差距。\n2. 為了達到與 CPU 接近的極高存取速度，快取記憶體採用「靜態隨機存取記憶體（SRAM）」製作。\n3. DRAM 用於一般主記憶體，ROM 用於存放 BIOS 韌體。",
+    "option_analysis": {
+      "A": "【錯誤】DRAM 速度不夠快，需要 refresh，是用來做主記憶體。",
+      "B": "【錯誤】EPROM 是可紫外線抹除的唯讀記憶體，速度極慢且不能動態高速讀寫。",
+      "C": "【錯誤】ROM 唯讀記憶體只能讀取，不可作為快速暫存。",
+      "D": "【正確】Cache 記憶體就是使用速度最快的 SRAM（Static RAM）所製造。"
+    },
+    "exam_tip": "口訣速記：快取（Cache） = 快 = SRAM；主記憶體（RAM） = 動態 = DRAM。",
+    "tags": [
+      "快取記憶體",
+      "SRAM",
+      "記憶體架構"
+    ]
+  },
+  {
+    "id": "quiz_r3_q18",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 18,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "加、減、乘、除是程式中常需進行的算術運算，請問在電腦中負責這些運算處理的是哪一個 單元？",
+    "options": {
+      "A": "算術邏輯單元",
+      "B": "控制單元",
+      "C": "輸出單元",
+      "D": "輸入單元。"
+    },
+    "official_explanation": "",
+    "page": 2,
+    "page_img": "assets/pages/quiz/page_2.png",
+    "key_concept": "程式運算處理所對應的硬體五大單元",
+    "step_by_step": "1. 加、減、乘、除（+、-、*、/）是基礎的四則運算，屬於「算術運算（Arithmetic Operations）」。\n2. 在電腦五大單元中，專門負責執行算術運算與邏輯判斷（>、<、=、AND、OR）的單元就是「算術邏輯單元（ALU）」。",
+    "option_analysis": {
+      "A": "【正確】算術邏輯單元（ALU）負責所有加減乘除與邏輯判斷處理。",
+      "B": "【錯誤】控制單元（CU）只指揮調度，不親自算數。",
+      "C": "【錯誤】輸出單元（OU）負責把結果印出來或顯示在螢幕。",
+      "D": "【錯誤】輸入單元（IU）負責接收鍵盤按鍵等輸入。"
+    },
+    "exam_tip": "關鍵字直覺反射：加減乘除、大於小於、邏輯判斷 -> 唯一選 ALU。",
+    "tags": [
+      "五大單元",
+      "ALU",
+      "算術運算"
+    ]
+  },
+  {
+    "id": "quiz_r3_q19",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 19,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "民眾只要持悠遊卡在台鐵剪票口刷卡，就可以進入月台搭車，且可隨時在全家超商等處利用 儲值設備進行悠遊卡的加值。請問悠遊卡最可能是利用下列哪一種元件來儲存資料？",
+    "options": {
+      "A": "DRAM",
+      "B": "EEPROM",
+      "C": "PROM",
+      "D": "HDD。"
+    },
+    "official_explanation": "",
+    "page": 2,
+    "page_img": "assets/pages/quiz/page_2.png",
+    "key_concept": "悠遊卡、RFID 與晶片卡儲存晶片特性（EEPROM）",
+    "step_by_step": "1. 悠遊卡儲存搭乘記錄與金額餘額，斷電後資料絕對不能消失（必須為非揮發性 Non-volatile）。\n2. 悠遊卡在超商加值或搭車扣款時，需要能快速重複讀取與「電子寫入修改」。\n3. EEPROM（Electrically Erasable Programmable Read-Only Memory，電子抹除式可複寫唯讀記憶體）可在電壓訊號下重複擦寫，且斷電資料不遺失，是智慧卡、RFID 與隨身碟/韌體的基礎儲存元件。\n4. DRAM 斷電資料即消失，PROM 只能燒錄一次不可修改，HDD 體積過大無法塞入卡片。",
+    "option_analysis": {
+      "A": "【錯誤】DRAM 是揮發性記憶體，卡片一離開讀卡機斷電資料就全部消失，不可能用來存錢。",
+      "B": "【正確】EEPROM 斷電資料不消失，且能以電子訊號反覆讀寫加值扣款，是悠遊卡儲存晶片的最佳選擇。",
+      "C": "【錯誤】PROM 只能寫入一次（燒錄後永久固定），無法進行重複儲值扣款。",
+      "D": "【錯誤】HDD 是機械硬碟，有磁盤和馬達，不可能塞入薄薄的悠遊卡中。"
+    },
+    "exam_tip": "卡片/隨身碟儲存：非揮發性 + 可重複電氣抹寫 -> 核心技術都是 EEPROM 或其衍生技術（Flash 快閃記憶體）。",
+    "tags": [
+      "EEPROM",
+      "悠遊卡",
+      "非揮發性記憶體"
+    ]
+  },
+  {
+    "id": "quiz_r3_q20",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 20,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "大雄在光華數位新天地買了一部桌上型電腦，此機配備了如選項中的四種記憶或儲存裝置， 請問它們中何者之存取速度最快？",
+    "options": {
+      "A": "快取記憶體（cache）",
+      "B": "輔助記憶體－固態硬碟 （SSD）",
+      "C": "主記憶體（DRAM）",
+      "D": "輔助記憶體－硬碟（HDD）。"
+    },
+    "official_explanation": "",
+    "page": 2,
+    "page_img": "assets/pages/quiz/page_2.png",
+    "key_concept": "記憶體層級結構（Memory Hierarchy）存取速度排行",
+    "step_by_step": "1. 記憶體金字塔階層由快到慢排序為：\n   CPU暫存器（Register） > 快取記憶體（Cache, SRAM） > 主記憶體（RAM, DRAM） > 固態硬碟（SSD） > 機械硬碟（HDD） > 光碟（Optical Disc）。\n2. 檢視題目選項中的四種元件：\n   (A) 快取記憶體（cache）\n   (B) 固態硬碟（SSD）\n   (C) 主記憶體（DRAM）\n   (D) 硬碟（HDD）\n3. 快取記憶體最靠近 CPU，採用 SRAM，存取速度最快。",
+    "option_analysis": {
+      "A": "【正確】快取記憶體（Cache）速度最快（奈秒級），位於金字塔頂端。",
+      "B": "【錯誤】SSD 雖然比傳統硬碟快，但仍遠慢於主記憶體與快取。",
+      "C": "【錯誤】主記憶體（DRAM）速度次於快取記憶體（SRAM）。",
+      "D": "【錯誤】機械硬碟有機械尋道延遲，速度最慢。"
+    },
+    "exam_tip": "速度大排行背誦金句：暫存器 > 快取 > 主記憶體 > 輔助記憶體（SSD > HDD）。",
+    "tags": [
+      "記憶體層級",
+      "存取速度",
+      "快取記憶體",
+      "統測必背"
+    ]
+  },
+  {
+    "id": "quiz_r3_q21",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 21,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "MacBook Air採用固態硬碟大幅降低機身的厚度，機身最薄處僅0.3公分，請問該筆電採用的 固態硬碟與傳統硬碟，差異為何？",
+    "options": {
+      "A": "固態硬碟的體積較大",
+      "B": "傳統硬碟的耐震度較佳",
+      "C": "固態硬碟是使用快閃記憶體來作為儲存元件",
+      "D": "傳統硬碟的儲存容量通常較小。"
+    },
+    "official_explanation": "",
+    "page": 2,
+    "page_img": "assets/pages/quiz/page_2.png",
+    "key_concept": "固態硬碟（SSD）vs 傳統硬碟（HDD）之內部結構與物理差異",
+    "step_by_step": "1. MacBook Air 等超薄筆電能夠將厚度降至極薄（0.3公分），正是因為淘汰了笨重又厚的傳統機械硬碟（HDD）。\n2. 固態硬碟（SSD）捨棄了馬達、磁盤與機械讀寫頭，全面採用「快閃記憶體（Flash Memory）」晶片來儲存資料。\n3. 快閃記憶體晶片體積小、重量輕、無機械部件、耐震度高且讀寫速度極快。\n4. 選項 (C)「固態硬碟是使用快閃記憶體來作為儲存元件」描述完全正確。",
+    "option_analysis": {
+      "A": "【錯誤】固態硬碟體積遠小於傳統硬碟（例如 M.2 SSD 只有口香糖大小）。",
+      "B": "【錯誤】傳統硬碟有旋轉碟片與浮動磁頭，撞擊容易造成磁頭刮傷碟片（壞軌），耐震度極差；SSD 抗震度才佳。",
+      "C": "【正確】SSD 使用快閃記憶體（NAND Flash）晶片作為儲存媒介。",
+      "D": "【錯誤】傳統硬碟每單位容量成本低，常見為幾TB大容量，容量通常大於同價位的 SSD。"
+    },
+    "exam_tip": "SSD 優點：體積小、重量輕、省電、無噪音、耐震度高、速度快；缺點：單位容量價格較貴、寫入次數有壽命限制。",
+    "tags": [
+      "SSD",
+      "HDD",
+      "快閃記憶體",
+      "筆電硬體"
+    ]
+  },
+  {
+    "id": "quiz_r3_q22",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 22,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "三星公司推出的某款Android智慧型手機，宣稱採用AMOLED技術，可使螢幕色彩更加鮮 豔，請問此款手機的螢幕最可能是採用下列哪一種材質所製成的？",
+    "options": {
+      "A": "陰極射線管",
+      "B": "液晶",
+      "C": "有機發光二極體",
+      "D": "電漿。"
+    },
+    "official_explanation": "",
+    "page": 2,
+    "page_img": "assets/pages/quiz/page_2.png",
+    "key_concept": "顯示器面板技術 AMOLED 材料特性",
+    "step_by_step": "1. AMOLED 英文全稱：Active Matrix Organic Light Emitting Diode。\n2. 中文翻譯即為「主動式矩陣【有機發光二極體】」。\n3. 其發光元件使用具發光特性的「有機材料」，通電後自發光，無需背光模組，因此具備純黑對比極高、色彩鮮豔飽和、可視角大且可彎曲的特點。",
+    "option_analysis": {
+      "A": "【錯誤】陰極射線管（CRT）是傳統笨重的大頭螢幕。",
+      "B": "【錯誤】液晶（LCD）本身不發光，需靠背光模組（如 LED 燈條）照射。",
+      "C": "【正確】AMOLED 核心就是有機發光二極體（OLED）。",
+      "D": "【錯誤】電漿（PDP）是早期大尺寸電視技術，已停產退出市場。"
+    },
+    "exam_tip": "OLED / AMOLED 關鍵字：自發光、有機發光二極體、純黑無光暈、可做摺疊螢幕。",
+    "tags": [
+      "AMOLED",
+      "螢幕面板",
+      "顯示技術"
+    ]
+  },
+  {
+    "id": "quiz_r3_q23",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 23,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "玫芳想要自己挑選一台印表機，如果她對列印品質的要求特別高，請問當她在購買時，應特 別考量下列哪一項印表機的規格？",
+    "options": {
+      "A": "解析度",
+      "B": "外殼顏色",
+      "C": "尺寸大小",
+      "D": "重量。"
+    },
+    "official_explanation": "",
+    "page": 2,
+    "page_img": "assets/pages/quiz/page_2.png",
+    "key_concept": "印表機採購規格指標：列印品質關鍵參數（解析度 dpi）",
+    "step_by_step": "1. 題目要求：對「列印品質（精細度、清晰度）」有特別高的要求。\n2. 列印品質的核心度量指標為「解析度（Resolution）」，單位是 dpi（dots per inch，每英吋點數）。dpi 數值愈高，每英吋內噴射或壓印的墨點愈多愈密集，列印出的文字與圖像就愈細膩逼真。\n3. 外殼顏色、尺寸大小、重量均為外觀與體積參數，與列印出來的品質無關。",
+    "option_analysis": {
+      "A": "【正確】解析度（dpi）直接決定輸出圖片與文字的清晰度與細緻程度。",
+      "B": "【錯誤】外殼顏色純屬個人美觀偏好。",
+      "C": "【錯誤】尺寸大小只影響放置空間。",
+      "D": "【錯誤】重量僅影響搬運便利性。"
+    },
+    "exam_tip": "印表機兩大必考指標：列印品質看「解析度（dpi）」；列印速度看「每分鐘頁數（ppm）」。",
+    "tags": [
+      "印表機",
+      "解析度",
+      "dpi",
+      "選購指南"
+    ]
+  },
+  {
+    "id": "quiz_r3_q24",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 24,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "裕書的筆記型電腦內建有Type C、HDMI、line out等連接埠，下列為他使用些連接埠的操 作，請問何者不正確？",
+    "options": {
+      "A": "利用line out連接埠來上網",
+      "B": "利用Type C連接埠來為手機充電",
+      "C": "利用Type C連接埠將手機中的資料傳送至電腦",
+      "D": "利用HDMI連接埠將手機畫面傳送至電視播放。"
+    },
+    "official_explanation": "",
+    "page": 2,
+    "page_img": "assets/pages/quiz/page_2.png",
+    "key_concept": "筆記型電腦常見連接埠（Port）用途辨析與防呆",
+    "step_by_step": "1. 逐一檢視筆電連接埠功能：\n   - Type C（USB-C）：多功能連接埠，支援雙向資料傳輸、高功率充電（PD快充）、視訊輸出（DisplayPort Alt Mode）。\n   - HDMI：高畫質影音介面，可傳輸高解析度影音至電視或外接螢幕。\n   - line out：音源輸出插孔（3.5mm綠色耳機孔），專門用來輸出聲音訊號給耳機或外部喇叭。\n2. 選項 (A) 提到「利用 line out 連接埠來上網」，完全荒謬！上網必須透過 RJ-45 網路孔或 Wi-Fi/行動網路，音源孔根本不可能傳輸網路數據，故 (A) 不正確。",
+    "option_analysis": {
+      "A": "【錯誤操作，選此項】line out 是聲音輸出孔，無法連接網路。上網應使用 RJ-45 或無線網卡。",
+      "B": "【正確操作】Type C 支援供電規範，可插傳輸線為智慧型手機充電。",
+      "C": "【正確操作】Type C 具備高速資料傳輸能力，可將手機相片傳送至電腦。",
+      "D": "【正確操作】HDMI 就是用來將筆電/手機畫面鏡像或延伸至電視螢幕。"
+    },
+    "exam_tip": "常考音源孔辨析：Line-out（綠色，聲音輸出接耳機/喇叭）；Line-in（藍色，音源輸入）；Mic-in（粉紅色，麥克風輸入）。",
+    "tags": [
+      "連接埠",
+      "Type-C",
+      "HDMI",
+      "Line-out",
+      "生活常識"
+    ]
+  },
+  {
+    "id": "quiz_r3_q25",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 3,
+    "round_name": "第3回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 25,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "史記：「秦始皇三十四年，丞相李斯上言儒生是古非今，反對批評朝政、法令，因此建議除 了秦記、醫藥、卜筮、種樹等書外，一律燒毀」。請問，如果在秦朝即擁有現代的資訊科 技，則可利用下列哪一種設備，將書籍內容數位化，以便備份起來？",
+    "options": {
+      "A": "印表機",
+      "B": "QLED液晶螢幕",
+      "C": "滑鼠",
+      "D": "掃描器。"
+    },
+    "official_explanation": "",
+    "page": 2,
+    "page_img": "assets/pages/quiz/page_2.png",
+    "key_concept": "資訊設備功能：紙本文件圖書數位化工具（掃描器）",
+    "step_by_step": "1. 題目情境：秦始皇焚書坑儒，若想要將紙本書籍內容「數位化（轉成電腦檔案）」以便備份保存。\n2. 檢視設備選項：\n   - 印表機：輸出設備，將數位檔案印成紙本（剛好相反）。\n   - QLED 液晶螢幕：輸出設備，顯示畫面。\n   - 滑鼠：輸入設備，控制指標點選。\n   - 掃描器（Scanner）：輸入設備，利用光學感應元件（CCD/CIS）將紙本書籍文字圖片掃描讀取，轉化為電腦中的數位影像或電子書。\n3. 因此應使用「掃描器」。",
+    "option_analysis": {
+      "A": "【錯誤】印表機是把數位資料印到紙上（實體化），無法把紙本書讀入電腦。",
+      "B": "【錯誤】螢幕只能看，不能擷取實體書本內容。",
+      "C": "【錯誤】滑鼠只能游標操作。",
+      "D": "【正確】掃描器（Scanner）專門用於將平面紙本文件光學掃描數位化存檔。"
+    },
+    "exam_tip": "輸入設備家族：鍵盤、滑鼠、掃描器、數位相機、條碼機、麥克風、視訊鏡頭。",
+    "tags": [
+      "掃描器",
+      "輸入設備",
+      "數位化",
+      "歷史情境題"
+    ]
+  },
+  {
+    "id": "quiz_r4_q1",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 1,
+    "is_advanced": true,
+    "answer": "D",
+    "question": "下列關於雲端資源的組成架構之敘述，何者正確？",
+    "options": {
+      "A": "單一公司通常難以同時提供IaaS、PaaS、SaaS等多項服務",
+      "B": "Amazon、YouTube、Oracle Cloud皆屬於雲端資源組成架構中的SaaS",
+      "C": "即使網路斷線也不會影響使用SaaS提供商所提供的應用軟體",
+      "D": "若需要大量的儲存空間，可不必自行購置設備，向IaaS提供商租用雲端空間即可。"
+    },
+    "official_explanation": "大型的網路公司常會同時提供IaaS、PaaS、SaaS等服務，例如Google公司在全球設有機房（IaaS）、 架設開發平台（PaaS）、提供許多應用軟體（SaaS）； Amazon屬於IaaS、YouTube屬於SaaS、Oracle Cloud屬於PaaS； 需要在連網狀態下才能使用SaaS提供商所提供的應用軟體。",
+    "page": 3,
+    "page_img": "assets/pages/quiz/page_3.png",
+    "key_concept": "雲端運算三大服務模式：IaaS、PaaS、SaaS 之架構分工",
+    "step_by_step": "1. 雲端運算架構由底層至頂層分為三層：\n   - IaaS（基礎架構即服務）：租用硬體、運算力、虛擬機器與「雲端儲存空間」（如 AWS S3/EC2、GCP Compute Engine）。使用者若需要大容量儲存，直接向 IaaS 業者租用空間即可，省去自行購置維護伺服器硬體的成本。\n   - PaaS（平台即服務）：提供程式開發與執行環境平台（如 Google App Engine、Oracle Cloud PaaS）。\n   - SaaS（軟體即服務）：直接提供終端應用軟體，透過瀏覽器連網使用（如 Gmail、YouTube、Google Docs）。\n2. 檢視各選項：大型巨頭（如 Google, AWS, Microsoft）多能同時提供三者服務；Amazon提供IaaS/PaaS，YouTube是SaaS；SaaS必須在連線狀態下方能使用。\n3. 因此選項 (D) 敘述完全正確。",
+    "option_analysis": {
+      "A": "【錯誤】大型網路巨擘（如 Google、微軟、亞馬遜）具備雄厚資金與技術，普遍同時提供 IaaS、PaaS、SaaS 完整解決方案。",
+      "B": "【錯誤】Amazon AWS 主力是 IaaS/PaaS，YouTube 屬於 SaaS，Oracle Cloud 主力提供 PaaS/IaaS，分類不純為 SaaS。",
+      "C": "【錯誤】SaaS 軟體運行在遠端伺服器上，若網路斷線便無法正常讀取或使用其雲端功能。",
+      "D": "【正確】租用雲端儲存空間（如雲端硬碟、物件儲存槽）即為 IaaS 典型服務，不必自行採購維護實體硬碟機櫃。"
+    },
+    "exam_tip": "雲端三兄弟口訣：IaaS 租硬體與空間；PaaS 租開發環境平台；SaaS 租直接能用的現成軟體。",
+    "tags": [
+      "雲端架構",
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "統測核心"
+    ]
+  },
+  {
+    "id": "quiz_r4_q2",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 2,
+    "is_advanced": true,
+    "answer": "C",
+    "question": "下列何者不屬於應用軟體？",
+    "options": {
+      "A": "Firefox瀏覽器",
+      "B": "PhotoImpact影像處理軟體",
+      "C": "macOS作業系統",
+      "D": "Word文書處理軟體。"
+    },
+    "official_explanation": "macOS作業系統屬於系統軟體中的作業系統。",
+    "page": 3,
+    "page_img": "assets/pages/quiz/page_3.png",
+    "key_concept": "電腦軟體兩大分類：系統軟體 vs 應用軟體",
+    "step_by_step": "1. 電腦軟體主要分為兩大類：\n   - 系統軟體（System Software）：維持電腦基本運作與硬體管理的軟體，包含「作業系統（OS）」、「公用程式」與「語言翻譯程式」。\n   - 應用軟體（Application Software）：為了解決使用者特定工作或娛樂需求而設計的軟體（如文書、瀏覽器、修圖、遊戲）。\n2. 檢視選項：macOS 是蘋果電腦的「作業系統」，屬於「系統軟體」，因此不屬於應用軟體。",
+    "option_analysis": {
+      "A": "【屬於應用軟體】Firefox 是用來上網瀏覽網頁的應用軟體（網路工具）。",
+      "B": "【屬於應用軟體】PhotoImpact 是用來編輯圖片的影像處理應用軟體。",
+      "C": "【不屬於應用軟體，選此項】macOS 是管理電腦軟硬體資源的「作業系統」，屬於「系統軟體」。",
+      "D": "【屬於應用軟體】Word 是進行文書編輯排版的應用軟體。"
+    },
+    "exam_tip": "高職資處科必背心智圖：軟體分為「系統軟體」與「應用軟體」；作業系統是系統軟體的心臟！",
+    "tags": [
+      "軟體分類",
+      "作業系統",
+      "系統軟體",
+      "應用軟體"
+    ]
+  },
+  {
+    "id": "quiz_r4_q3",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 3,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "「大臺北公車」是專為台北市民所開發的系統，用來線上查詢公車的行進狀況。請問這套系 統是屬於",
+    "options": {
+      "A": "作業系統",
+      "B": "專案開發軟體",
+      "C": "套裝軟體",
+      "D": "公用程式。"
+    },
+    "official_explanation": "",
+    "page": 3,
+    "page_img": "assets/pages/quiz/page_3.png",
+    "key_concept": "應用軟體之細分：套裝軟體 vs 專案開發軟體（客製化軟體）",
+    "step_by_step": "1. 應用軟體依使用對象與開發目的分為：\n   - 套裝軟體（Off-the-shelf）：為滿足大眾通用需求而量產發行，任何人皆可購買安裝（如 Office、Photoshop）。\n   - 專案開發軟體（Customized / Bespoke）：針對「特定單位或特定專案需求」委託專門團隊量身訂做的軟體。\n2. 「大臺北公車」系統是臺北市政府委託專門廠商，專為查詢臺北市公車動態所量身打造的專案系統，屬於典型的「專案開發軟體」。",
+    "option_analysis": {
+      "A": "【錯誤】作業系統（如 Windows）是管理底層硬體的系統軟體。",
+      "B": "【正確】針對特定市民與交通管理需求客製化開發，故為「專案開發軟體」。",
+      "C": "【錯誤】套裝軟體是大眾市售通用軟體，不會只針對單一城市的公車線路量身做成軟體販售。",
+      "D": "【錯誤】公用程式是附屬於作業系統協助維護系統的工具（如磁碟清理、防毒）。"
+    },
+    "exam_tip": "專案開發軟體特徵：特定對象、量身打造、成本較高、市面上買不到通用版（例如：高鐵訂位、公車動態、銀行帳務系統）。",
+    "tags": [
+      "專案開發軟體",
+      "套裝軟體",
+      "客製化"
+    ]
+  },
+  {
+    "id": "quiz_r4_q4",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 4,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "磁碟清理的主要功能是下列何者？",
+    "options": {
+      "A": "將磁碟還原至原廠設定",
+      "B": "將電腦還原到先前運作正常的狀態",
+      "C": "檢查磁碟中的磁區是否損毀",
+      "D": "清除不需長期保存的檔案。"
+    },
+    "official_explanation": "",
+    "page": 3,
+    "page_img": "assets/pages/quiz/page_3.png",
+    "key_concept": "作業系統內建公用程式：「磁碟清理（Disk Cleanup）」的核心功能",
+    "step_by_step": "1. 電腦在使用過程中會產生大量暫存檔（Temporary Files）、資源回收筒垃圾、系統快取紀錄及舊版更新備份。\n2. 「磁碟清理」工具的專屬職責就是掃描並「清除不需長期保存的檔案」，從而釋放出寶貴的硬碟儲存空間。\n3. 選項 (A) 是格式化或原廠復原；選項 (B) 是系統還原（System Restore）；選項 (C) 是磁碟檢查（CHKDSK）。",
+    "option_analysis": {
+      "A": "【錯誤】將磁碟還原至原廠設定是系統重置（Reset）。",
+      "B": "【錯誤】還原到先前運作正常狀態是「系統還原點」。",
+      "C": "【錯誤】檢查磁區是否損毀是「檢查錯誤 / CHKDSK」工具。",
+      "D": "【正確】磁碟清理專責刪除無用暫存垃圾檔以釋放空間。"
+    },
+    "exam_tip": "公用程式功能大比拼：磁碟清理（刪垃圾騰空間）；磁碟重組（排整齊加速讀寫）；磁碟檢查（抓壞軌修復錯誤）。",
+    "tags": [
+      "公用程式",
+      "磁碟清理",
+      "Windows工具"
+    ]
+  },
+  {
+    "id": "quiz_r4_q5",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 5,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "下列關於電腦軟體的說明，何者錯誤？",
+    "options": {
+      "A": "校務行政、銀行存提款等系統應歸屬為系統軟體",
+      "B": "扮演使用者與電腦硬體間的溝通橋樑，是作業系統的功能之一",
+      "C": "專案開發軟體是為特定對象的需求所設計的軟體",
+      "D": "重組並最佳化磁碟機屬於公用程式，可提升電腦讀寫資料的效能。"
+    },
+    "official_explanation": "",
+    "page": 3,
+    "page_img": "assets/pages/quiz/page_3.png",
+    "key_concept": "常見業務系統與系統軟體的分類邊界",
+    "step_by_step": "1. 題目問「下列關於電腦軟體的說明，何者錯誤？」。\n2. 檢視選項 (A)：校務行政系統、銀行存提款系統是為處理特定行政、金融業務而開發的，屬於「應用軟體」中的「專案開發軟體」，絕非系統軟體。故 (A) 敘述錯誤，為本題答案。\n3. 其餘選項：作業系統確實扮演人機溝通橋樑；專案開發軟體確實為特定對象量身設計；磁碟最佳化重組確實能提升傳統磁碟讀寫效能。",
+    "option_analysis": {
+      "A": "【錯誤敘述，選此項】校務行政與銀行存提款系統是為解決特定業務問題的「應用軟體」，不是系統軟體。",
+      "B": "【正確敘述】作業系統提供 GUI/CLI 介面，協調硬體與軟體溝通。",
+      "C": "【正確敘述】專案開發軟體就是為特定客戶與流程訂製。",
+      "D": "【正確敘述】重組傳統機械磁碟可使檔案碎片連續存放，縮短磁頭尋道時間。"
+    },
+    "exam_tip": "判斷口訣：軟體是在「管電腦自己」（系統軟體）還是在「幫人做事情」（應用軟體）！辦公、算錢、選課都在幫人做事，所以都是應用軟體。",
+    "tags": [
+      "系統軟體",
+      "應用軟體",
+      "分類邏輯"
+    ]
+  },
+  {
+    "id": "quiz_r4_q6",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 6,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "下列哪些軟體是屬於系統軟體？ a.Office文書處理軟體 b.重組並最佳化磁碟機 c.作業系統 d.網路訂票系統",
+    "options": {
+      "A": "abc",
+      "B": "bc",
+      "C": "bcd",
+      "D": "ad。"
+    },
+    "official_explanation": "",
+    "page": 3,
+    "page_img": "assets/pages/quiz/page_3.png",
+    "key_concept": "複合項目歸類：哪些項目屬於「系統軟體」",
+    "step_by_step": "1. 分析題目所列項目：\n   a. Office 文書處理軟體：供人編輯文件，屬於「應用軟體（套裝軟體）」。\n   b. 重組並最佳化磁碟機：協助硬體與檔案系統維持最佳讀寫效能，屬於「系統軟體（公用程式）」。\n   c. 作業系統：管理整部電腦軟硬體的核心，屬於「系統軟體」。\n   d. 網路訂票系統：處理票務交易，屬於「應用軟體（專案開發軟體）」。\n2. 屬於系統軟體的為 b 與 c。\n3. 因此選擇 (B) bc。",
+    "option_analysis": {
+      "A": "【錯誤】a 是應用軟體，包含 a 者皆錯。",
+      "B": "【正確】b 與 c 皆為標準的系統軟體範疇。",
+      "C": "【錯誤】d 是應用軟體，包含 d 者皆錯。",
+      "D": "【錯誤】a 與 d 皆非系統軟體。"
+    },
+    "exam_tip": "系統軟體三劍客：作業系統（OS）、公用程式（Utility）、語言翻譯程式（Translator）。",
+    "tags": [
+      "系統軟體",
+      "多選辨析",
+      "公用程式",
+      "作業系統"
+    ]
+  },
+  {
+    "id": "quiz_r4_q7",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 7,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "OpenOffice、Microsoft Office、PhotoImpact等軟體，歸屬於下列哪一類軟體最恰當？",
+    "options": {
+      "A": "作業系統",
+      "B": "公用程式",
+      "C": "專案開發軟體",
+      "D": "套裝軟體。"
+    },
+    "official_explanation": "",
+    "page": 3,
+    "page_img": "assets/pages/quiz/page_3.png",
+    "key_concept": "套裝軟體（Commercial Software Package）之實例歸納",
+    "step_by_step": "1. 題目列舉：OpenOffice、Microsoft Office、PhotoImpact。\n2. 這些軟體都是針對廣大一般使用者通用的辦公、修圖需求所大量設計與包裝銷售/提供的應用軟體。\n3. 這類軟體在軟體工程與分類學上稱為「套裝軟體（Software Package）」。",
+    "option_analysis": {
+      "A": "【錯誤】作業系統是 Windows、Linux 等。",
+      "B": "【錯誤】公用程式是防毒、壓縮軟體、磁碟清理等。",
+      "C": "【錯誤】專案開發軟體是針對特定企業個別簽約客製打造的軟體。",
+      "D": "【正確】市面上包裝銷售或公開供大眾普遍下載的軟體統稱套裝軟體。"
+    },
+    "exam_tip": "只要能在超商、3C賣場買到盒裝或在官網直接下載通用的，都是「套裝軟體」。",
+    "tags": [
+      "套裝軟體",
+      "辦公室軟體",
+      "應用軟體"
+    ]
+  },
+  {
+    "id": "quiz_r4_q8",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 8,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "下列何者屬於應用軟體？",
+    "options": {
+      "A": "作業系統（Operating System）",
+      "B": "語言編譯程式（Programming Language Translators）",
+      "C": "公用服務程式（System Utilities）",
+      "D": "文書處理軟體。"
+    },
+    "official_explanation": "",
+    "page": 3,
+    "page_img": "assets/pages/quiz/page_3.png",
+    "key_concept": "系統軟體 vs 應用軟體的經典辨析",
+    "step_by_step": "1. 檢視題目選項：\n   (A) 作業系統（OS）-> 系統軟體\n   (B) 語言編譯程式（Compiler）-> 系統軟體\n   (C) 公用服務程式（System Utilities）-> 系統軟體\n   (D) 文書處理軟體（Word Processing）-> 應用軟體\n2. 題目詢問「何者屬於應用軟體」，因此選 (D)。",
+    "option_analysis": {
+      "A": "【系統軟體】統籌硬體與程式排程的底層中樞。",
+      "B": "【系統軟體】將原始碼轉換為機器碼的翻譯工具，歸類為系統軟體。",
+      "C": "【系統軟體】協助維持系統穩定與效能的公用工具。",
+      "D": "【應用軟體，選此項】直接滿足使用者寫文章、打報告需求的應用工具。"
+    },
+    "exam_tip": "很多同學常誤以為編譯程式（Compiler）是應用軟體，務必牢記：語言翻譯程式是【系統軟體】！",
+    "tags": [
+      "應用軟體",
+      "系統軟體",
+      "編譯器",
+      "常考陷阱"
+    ]
+  },
+  {
+    "id": "quiz_r4_q9",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 9,
+    "is_advanced": true,
+    "answer": "A",
+    "question": "下列有關軟體的敘述，何者錯誤？",
+    "options": {
+      "A": "平板電腦iPad使用的iOS作業系統，屬於應用軟體",
+      "B": "財政部提供的報稅軟體，屬於應用軟體",
+      "C": "驅動程式是為了使作業系統能辨識及管理硬體設備，屬於系統軟體",
+      "D": "Office 2019內含Word、PowerPoint及Excel軟體，屬於套裝軟體。"
+    },
+    "official_explanation": "平板電腦iPad使用的iOS作業系統，屬於系統軟體。",
+    "page": 3,
+    "page_img": "assets/pages/quiz/page_3.png",
+    "key_concept": "作業系統與週邊驅動程式的軟體屬性辨析",
+    "step_by_step": "1. 檢視選項 (A)：iPad 所搭載的「iOS」是控制整個平板硬體與執行 App 的「作業系統」，屬於「系統軟體」，而非應用軟體！故 (A) 敘述錯誤，即為答案。\n2. 檢視其餘選項：\n   (B) 報稅軟體專門提供個人申報綜所稅，屬應用軟體，正確。\n   (C) 驅動程式（Driver）讓作業系統能驅動硬體，屬系統軟體，正確。\n   (D) Office 2019 為商業套裝軟體，正確。",
+    "option_analysis": {
+      "A": "【錯誤敘述，選此項】iOS 是行動作業系統，屬於系統軟體。",
+      "B": "【正確敘述】報稅軟體是特定功能的應用軟體。",
+      "C": "【正確敘述】驅動程式是介於 OS 與硬體之間的系統層軟體。",
+      "D": "【正確敘述】包含 Word、Excel 等整合性應用軟體組合包稱為套裝軟體。"
+    },
+    "exam_tip": "只要名稱是 Windows、macOS、iOS、Android、Linux，百分之百都是【系統軟體】！",
+    "tags": [
+      "iOS",
+      "作業系統",
+      "驅動程式",
+      "觀念除錯"
+    ]
+  },
+  {
+    "id": "quiz_r4_q10",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 10,
+    "is_advanced": true,
+    "answer": "A",
+    "question": "下列有關軟體的敘述，何者錯誤？",
+    "options": {
+      "A": "重組並最佳化磁碟機可提昇磁碟的運作效率，屬於專案開發軟體",
+      "B": "Google文件可用來編輯文件、試算處理等，屬於應用軟體",
+      "C": "Windows 11可作為使用者與電腦硬體間的溝通橋樑，屬於系統軟體",
+      "D": "修復磁碟機屬於系統軟體。"
+    },
+    "official_explanation": "磁碟重組工具可提昇磁碟的運作效率，屬於公用程式。",
+    "page": 3,
+    "page_img": "assets/pages/quiz/page_3.png",
+    "key_concept": "磁碟重組工具的正確軟體歸類（公用程式）",
+    "step_by_step": "1. 檢視選項 (A)：「重組並最佳化磁碟機」是 Windows 內建用來重整磁碟檔案碎片的工具，屬於系統軟體中的「公用程式（Utility）」，並不是專為某一特定企業委託客製的「專案開發軟體」！因此 (A) 敘述錯誤。\n2. 其餘選項皆正確：Google文件為應用軟體；Windows 11 為系統軟體；修復磁碟機為公用程式（系統軟體）。",
+    "option_analysis": {
+      "A": "【錯誤敘述，選此項】磁碟最佳化重組是通用的公用程式，不是專案開發軟體。",
+      "B": "【正確敘述】Google文件提供線上文書與試算處理，是 SaaS 應用軟體。",
+      "C": "【正確敘述】Windows 11 作業系統扮演人機與軟硬體溝通橋樑。",
+      "D": "【正確敘述】修復磁碟機工具為系統軟體範疇。"
+    },
+    "exam_tip": "作業系統內建的附件與管理工具（磁碟重組、磁碟清理、格式化工具）通通都是「公用程式」。",
+    "tags": [
+      "公用程式",
+      "專案開發軟體",
+      "磁碟重組"
+    ]
+  },
+  {
+    "id": "quiz_r4_q11",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 11,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "Linux作業系統屬於下列哪一類軟體？",
+    "options": {
+      "A": "系統軟體",
+      "B": "應用軟體",
+      "C": "文書處理軟體"
+    },
+    "official_explanation": "",
+    "page": 3,
+    "page_img": "assets/pages/quiz/page_3.png",
+    "key_concept": "Linux 核心與作業系統之根本屬性",
+    "step_by_step": "1. Linux 是由林納斯·托瓦茲（Linus Torvalds）於 1991 年發布的開源作業系統核心。\n2. 作業系統（Operating System）統整掌控電腦所有的硬體、記憶體、CPU 與週邊資源。\n3. 在軟體分類學中，作業系統歸屬於「系統軟體（System Software）」。",
+    "option_analysis": {
+      "A": "【正確】Linux 是一套多使用者、多工作業系統，屬於系統軟體。",
+      "B": "【錯誤】應用軟體是在作業系統上運行的各類功能程式。",
+      "C": "【錯誤】文書處理軟體如 Word、Writer 等只是單一應用程式。",
+      "D": "【錯誤】資料庫軟體如 MySQL、Oracle 是管理資料庫的軟體。"
+    },
+    "exam_tip": "考題看到 Linux、Unix、Windows，秒選【系統軟體】！",
+    "tags": [
+      "Linux",
+      "系統軟體",
+      "基本常識"
+    ]
+  },
+  {
+    "id": "quiz_r4_q12",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 12,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "Windows 11家用版允許單一使用者在同一時間內，處理多項操作，請問該作業系統屬於下列 何種類型？",
+    "options": {
+      "A": "單人單工",
+      "B": "多人多工",
+      "C": "單人多工",
+      "D": "多人單工。"
+    },
+    "official_explanation": "",
+    "page": 4,
+    "page_img": "assets/pages/quiz/page_4.png",
+    "key_concept": "作業系統按「使用人數」與「工作數量」之分類：單人多工",
+    "step_by_step": "1. 題目情境分析：「Windows 11 家用版允許『單一使用者』在『同一時間內處理多項操作（例如邊聽音樂、邊打Word、邊下載檔案）』」。\n2. 允許一人使用 -> 「單人（Single-user）」。\n3. 同一時間並行處理多項任務/程式 -> 「多工（Multi-tasking）」。\n4. 合併即為「單人多工（Single-user Multi-tasking）作業系統」。",
+    "option_analysis": {
+      "A": "【錯誤】單人單工是指同一時間一人只能跑一個程式（如早期 MS-DOS）。",
+      "B": "【錯誤】多人多工允許多個用戶同時連線並各自執行多項任務（如 Linux 伺服器版）。",
+      "C": "【正確】單一使用者同時間處理多項操作，即為單人多工。",
+      "D": "【錯誤】多人單工在實務上極少見且不符題意。"
+    },
+    "exam_tip": "個人電腦作業系統（Windows 10/11 家用版、macOS、Android、iOS）全都是【單人多工】！",
+    "tags": [
+      "作業系統分類",
+      "單人多工",
+      "Windows11"
+    ]
+  },
+  {
+    "id": "quiz_r4_q13",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 13,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "網際網路上的網站伺服器，通常必須在同一時間內執行多項工作，以便處理多位瀏覽者瀏覽 網頁的需求。請問網站伺服器適合使用下列哪一種類型的作業系統？",
+    "options": {
+      "A": "單人單工作業系 統",
+      "B": "多人多工作業系統",
+      "C": "單人多工作業系統",
+      "D": "多人單工作業系統。"
+    },
+    "official_explanation": "",
+    "page": 4,
+    "page_img": "assets/pages/quiz/page_4.png",
+    "key_concept": "伺服器作業系統（Server OS）之多人多工特性",
+    "step_by_step": "1. 題目描述：網站伺服器（Web Server）需要「同一時間處理『多位瀏覽者』的需求」，並且伺服器本身要「同時執行網頁服務、資料庫查詢、安全監控等多項工作」。\n2. 面對多個連線終端使用者 -> 「多人（Multi-user）」。\n3. 同時並發執行多個處理緒與程式 -> 「多工（Multi-tasking）」。\n4. 因此網站伺服器必須採用「多人多工作業系統（如 Linux, UNIX, Windows Server）」。",
+    "option_analysis": {
+      "A": "【錯誤】單人單工只能給一人跑一個任務，網站直接癱瘓。",
+      "B": "【正確】多人多工作業系統能分配運算時間與記憶體給眾多遠端連線請求。",
+      "C": "【錯誤】單人多工無法同時支援大量外部不同帳號與使用者的獨立工作階段。",
+      "D": "【錯誤】多人單工無法滿足伺服器高併發多任務需求。"
+    },
+    "exam_tip": "伺服器（Server）關鍵字：多用戶連線 + 跑多個程式 -> 必選【多人多工】！",
+    "tags": [
+      "伺服器",
+      "多人多工",
+      "Linux",
+      "Web Server"
+    ]
+  },
+  {
+    "id": "quiz_r4_q14",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 14,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "「開放格式」是公開文件檔案的格式及版權，以結合眾人的力量來維護與推廣這種格式。請 問下列何者的概念最接近開放格式？",
+    "options": {
+      "A": "開放原始碼",
+      "B": "智慧財產權",
+      "C": "綠色軟體",
+      "D": "創用CC。"
+    },
+    "official_explanation": "",
+    "page": 4,
+    "page_img": "assets/pages/quiz/page_4.png",
+    "key_concept": "開放格式（Open Format）與開放原始碼（Open Source）的精神核心",
+    "step_by_step": "1. 「開放格式」是指公開文件規格與版權，不被單一商業公司私有壟斷（如 ODF、PDF），號召全球大眾與社群共同維護推廣。\n2. 「開放原始碼（Open Source）」同樣是公開軟體的原始原始碼，允許任何人自由檢視、修改、散布與改良。\n3. 兩者的核心哲學皆為「公開、共享、結合群眾力量協同發展」，因此在精神概念上最為接近開放原始碼。",
+    "option_analysis": {
+      "A": "【概念最接近，選此項】開放原始碼與開放格式皆強調公開透明與社群協同，不受單一企業專有壟斷限制。",
+      "B": "【錯誤】智慧財產權是法律保護專利與著作權的總稱，許多商用格式正是用智慧財產權進行封閉專有保護。",
+      "C": "【錯誤】綠色軟體（Portable App）是指免安裝、不寫入系統登錄檔的隨插即用軟體。",
+      "D": "【錯誤】創用CC（Creative Commons）是一種著作權授權條款，範圍比單純的格式更廣。"
+    },
+    "exam_tip": "開放格式常見標準：ODF（.odt、.ods、.odp），我國政府機關已全面推廣支援。",
+    "tags": [
+      "開放格式",
+      "開放原始碼",
+      "ODF",
+      "軟體授權"
+    ]
+  },
+  {
+    "id": "quiz_r4_q15",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 15,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "下列3種電腦網路，請依據其規模（涵蓋的範圍）由大到小排列順序 a.區域網路 b.網際網路 c.廣域網路",
+    "options": {
+      "A": "abc",
+      "B": "bca",
+      "C": "acb",
+      "D": "cab。"
+    },
+    "official_explanation": "",
+    "page": 4,
+    "page_img": "assets/pages/quiz/page_4.png",
+    "key_concept": "電腦網路涵蓋範圍（規模）大到小排序",
+    "step_by_step": "1. 題目列出三種網路：\n   a. 區域網路（LAN）：通常涵蓋一間教室、一棟辦公大樓或單一校園（約幾十公尺到幾公里）。\n   b. 網際網路（Internet）：全球數十億設備互相連接的最大網路，涵蓋全球。\n   c. 廣域網路（WAN）：跨越城市、國家甚至大洲的長距離網路（包含各大電信骨幹網）。\n2. 規模由大到小排序：\n   網際網路（b） > 廣域網路（c） > 區域網路（a）。\n3. 順序為：bca，對應選項 (B)。",
+    "option_analysis": {
+      "A": "【錯誤】abc 是由小到大排序，題目要求「由大到小」。",
+      "B": "【正確】網際網路(b) > 廣域網路(c) > 區域網路(a)。",
+      "C": "【錯誤】acb 順序混亂。",
+      "D": "【錯誤】cab 誤將廣域網路排在網際網路之前。"
+    },
+    "exam_tip": "網路規模口訣（由大到小）：Internet（全球網際） > WAN（廣域） > MAN（都會） > LAN（區域） > PAN（個人）。",
+    "tags": [
+      "網路規模",
+      "LAN",
+      "WAN",
+      "Internet",
+      "排序題"
+    ]
+  },
+  {
+    "id": "quiz_r4_q16",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 16,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "小明受命規劃公司內部的網路連線，假設公司的範圍涵蓋同一棟大樓，請問此種網路是屬於 下列哪一種？",
+    "options": {
+      "A": "區域網路",
+      "B": "廣域網路",
+      "C": "網際網路",
+      "D": "衛星網路。"
+    },
+    "official_explanation": "",
+    "page": 4,
+    "page_img": "assets/pages/quiz/page_4.png",
+    "key_concept": "建築物內部網路連線之分類（LAN）",
+    "step_by_step": "1. 題目定義範圍：「公司的範圍涵蓋同一棟大樓」。\n2. 在單一建築物、辦公室或家庭校園範圍內建立的私有通訊網路，稱為「區域網路（Local Area Network, LAN）」。\n3. 廣域網路（WAN）用於跨縣市跨國；網際網路是全球公網；衛星網路是太空衛星傳輸。",
+    "option_analysis": {
+      "A": "【正確】同一棟大樓內部之網路連線屬於典型的區域網路（LAN）。",
+      "B": "【錯誤】廣域網路跨越城市與國界。",
+      "C": "【錯誤】網際網路是連接全世界無數 LAN 與 WAN 的全球互聯網。",
+      "D": "【錯誤】衛星網路用於偏遠無光纖通訊（如星鏈 Starlink）。"
+    },
+    "exam_tip": "關鍵字速解：同一間房間、同一棟大樓、同一個校園 -> 必選【LAN（區域網路）】！",
+    "tags": [
+      "區域網路",
+      "LAN",
+      "網路架構"
+    ]
+  },
+  {
+    "id": "quiz_r4_q17",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 17,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "「WAN」是下列哪一種網路的英文簡稱？",
+    "options": {
+      "A": "廣域網路",
+      "B": "整體服務數位網路",
+      "C": "區域網路",
+      "D": "加值型網路。"
+    },
+    "official_explanation": "",
+    "page": 4,
+    "page_img": "assets/pages/quiz/page_4.png",
+    "key_concept": "廣域網路英文簡稱 WAN 解析",
+    "step_by_step": "1. 檢視 WAN 英文全稱：Wide Area Network。\n2. Wide（廣泛的、寬廣的）、Area（區域）、Network（網路）。\n3. 中文即為「廣域網路」。",
+    "option_analysis": {
+      "A": "【正確】WAN 即廣域網路（Wide Area Network）。",
+      "B": "【錯誤】整體服務數位網路簡稱為 ISDN。",
+      "C": "【錯誤】區域網路簡稱為 LAN（Local Area Network）。",
+      "D": "【錯誤】加值型網路簡稱為 VAN（Value-Added Network）。"
+    },
+    "exam_tip": "三大常考網路簡稱：LAN = 區域網路；MAN = 都會網路；WAN = 廣域網路。",
+    "tags": [
+      "WAN",
+      "廣域網路",
+      "英文縮寫"
+    ]
+  },
+  {
+    "id": "quiz_r4_q18",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 18,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "LAN是哪一種網路的簡稱？",
+    "options": {
+      "A": "廣域網路",
+      "B": "網際網路",
+      "C": "區域網路",
+      "D": "全球資訊網。"
+    },
+    "official_explanation": "",
+    "page": 4,
+    "page_img": "assets/pages/quiz/page_4.png",
+    "key_concept": "區域網路英文簡稱 LAN 解析",
+    "step_by_step": "1. 檢視 LAN 英文全稱：Local Area Network。\n2. Local（當地的、局部的）、Area（地區）、Network（網路）。\n3. 中文正式翻譯為「區域網路」。",
+    "option_analysis": {
+      "A": "【錯誤】廣域網路簡稱為 WAN。",
+      "B": "【錯誤】網際網路為 Internet。",
+      "C": "【正確】LAN 就是區域網路（Local Area Network）。",
+      "D": "【錯誤】全球資訊網為 WWW（World Wide Web）。"
+    },
+    "exam_tip": "Local = 本地/區域，所以 LAN = 區域網路。",
+    "tags": [
+      "LAN",
+      "區域網路",
+      "英文縮寫"
+    ]
+  },
+  {
+    "id": "quiz_r4_q19",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 19,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "下列哪一種網路所涵蓋的範圍最小？",
+    "options": {
+      "A": "LAN",
+      "B": "MAN",
+      "C": "WAN",
+      "D": "Internet。"
+    },
+    "official_explanation": "",
+    "page": 4,
+    "page_img": "assets/pages/quiz/page_4.png",
+    "key_concept": "常見網路架構範圍最小者辨析",
+    "step_by_step": "1. 比較四個選項所涵蓋的地理範圍：\n   - (A) LAN（區域網路）：涵蓋幾公尺至幾公里（房間、大樓、校園）。\n   - (B) MAN（都會網路）：涵蓋整個城市或市鎮（幾十公里，例如台北市無線熱點）。\n   - (C) WAN（廣域網路）：跨縣市、跨國家洲際通訊（幾百至幾千公里）。\n   - (D) Internet（網際網路）：涵蓋全地球與太空通訊。\n2. 四者中涵蓋範圍最小的顯然是 LAN。",
+    "option_analysis": {
+      "A": "【範圍最小，選此項】LAN 局限在小範圍建築內，面積最小。",
+      "B": "【錯誤】MAN 涵蓋一整座都市，比 LAN 大。",
+      "C": "【錯誤】WAN 涵蓋跨國大範圍，遠大於 LAN。",
+      "D": "【錯誤】Internet 是全球最大網路。"
+    },
+    "exam_tip": "大小關係牢記：LAN < MAN < WAN < Internet。",
+    "tags": [
+      "LAN",
+      "MAN",
+      "WAN",
+      "涵蓋範圍"
+    ]
+  },
+  {
+    "id": "quiz_r4_q20",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 20,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "下列何者不屬於應用軟體？",
+    "options": {
+      "A": "磁碟清理工具",
+      "B": "電腦遊戲",
+      "C": "薪資系統",
+      "D": "資料庫管理系統。"
+    },
+    "official_explanation": "",
+    "page": 4,
+    "page_img": "assets/pages/quiz/page_4.png",
+    "key_concept": "公用程式 vs 應用軟體的邊界判定",
+    "step_by_step": "1. 題目問「下列何者不屬於應用軟體？」。\n2. 檢視選項：\n   - 電腦遊戲：娛樂應用，屬應用軟體。\n   - 薪資系統：處理人事薪酬業務，屬應用軟體。\n   - 資料庫管理系統（DBMS）：在實務教材分類上，常用作管理特定資料庫業務的應用或中介軟體。\n   - 磁碟清理工具：附屬於作業系統，維護儲存裝置健康的輔助工具，屬於「系統軟體中的公用程式（Utility）」，絕非應用軟體。\n3. 因此不屬於應用軟體的是磁碟清理工具。",
+    "option_analysis": {
+      "A": "【不屬於應用軟體，選此項】磁碟清理工具屬於系統軟體（公用程式）。",
+      "B": "【屬於應用軟體】遊戲是典型休閒娛樂應用軟體。",
+      "C": "【屬於應用軟體】企業薪資結算是特定商業應用軟體。",
+      "D": "【屬於應用/支撐軟體】管理結構化資料庫之套裝軟體。"
+    },
+    "exam_tip": "公用程式特徵：專門替電腦硬體/系統「打掃、維護、檢查、防毒」的，都是系統軟體！",
+    "tags": [
+      "公用程式",
+      "磁碟清理",
+      "應用軟體"
+    ]
+  },
+  {
+    "id": "quiz_r4_q21",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 21,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "請問適合用來進行文書處理的軟體「Word」是屬於下列哪一類軟體？",
+    "options": {
+      "A": "系統軟體",
+      "B": "應用軟體",
+      "C": "工具程式",
+      "D": "作業系統。"
+    },
+    "official_explanation": "",
+    "page": 4,
+    "page_img": "assets/pages/quiz/page_4.png",
+    "key_concept": "經典文書處理工具 Word 之軟體分類",
+    "step_by_step": "1. Microsoft Word 是一套由微軟發行的專業文字編輯、排版與報告製作工具。\n2. 使用者使用 Word 是為了處理日常生活、學校報告或公司商業文書，解決特定應用情境的問題。\n3. 因此 Word 歸屬於「應用軟體（Application Software）」。",
+    "option_analysis": {
+      "A": "【錯誤】系統軟體是作業系統與維護公用程式，Word 不是系統軟體。",
+      "B": "【正確】Word 是最普及的辦公室文書處理應用軟體。",
+      "C": "【錯誤】工具程式通常指系統層級的小工具（如壓縮、清理）。",
+      "D": "【錯誤】作業系統是 Windows、macOS 等，Word 必須安裝在作業系統之上運行。"
+    },
+    "exam_tip": "Word、Excel、PowerPoint 合稱為辦公室套裝軟體，都屬於【應用軟體】！",
+    "tags": [
+      "Word",
+      "文書處理",
+      "應用軟體"
+    ]
+  },
+  {
+    "id": "quiz_r4_q22",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 22,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "下列有關作業系統的敘述，何者不正確？",
+    "options": {
+      "A": "MS-DOS為單人單工作業系統",
+      "B": "Windows為單人多工作業系統",
+      "C": "Android為多人單工作業系統",
+      "D": "Linux為多人多工作業系統。"
+    },
+    "official_explanation": "",
+    "page": 4,
+    "page_img": "assets/pages/quiz/page_4.png",
+    "key_concept": "各主流作業系統之使用模式分類判定",
+    "step_by_step": "1. 檢視題目選項敘述：\n   - (A) MS-DOS：早期命令列系統，只能一人登入且一次只能跑一個指令，是「單人單工」，敘述正確。\n   - (B) Windows：現代個人電腦系統，為「單人多工」，敘述正確。\n   - (C) Android：Google 為智慧型手機平板設計的系統，由單一使用者操作，但背景能一邊播音樂、一邊下載、前景一邊滑IG，是典型的「單人多工（Single-user Multi-tasking）」，絕非「多人單工」！因此 (C) 敘述不正確。\n   - (D) Linux：伺服器與大型主機常用的核心，具備強大權限管理，是「多人多工」，敘述正確。",
+    "option_analysis": {
+      "A": "【正確敘述】MS-DOS 是典型的單人單工作業系統。",
+      "B": "【正確敘述】Windows 個人桌面版為單人多工。",
+      "C": "【錯誤敘述，選此項】Android 屬於「單人多工」，不是多人單工。",
+      "D": "【正確敘述】Linux 具備健全的多帳號遠端連線與多任務排程，為多人多工。"
+    },
+    "exam_tip": "智慧型手機（Android、iOS）是單人專用設備，但支援多工，所以是【單人多工】！",
+    "tags": [
+      "作業系統分類",
+      "Android",
+      "單人多工",
+      "常考陷阱"
+    ]
+  },
+  {
+    "id": "quiz_r4_q23",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 23,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "遊戲橘子（Gamania）公司所代理的天堂、新楓之谷等線上遊戲，是屬於下列哪一種類型的 電腦軟體？",
+    "options": {
+      "A": "系統軟體",
+      "B": "應用軟體",
+      "C": "工具軟體",
+      "D": "辦公室應用軟體。"
+    },
+    "official_explanation": "",
+    "page": 4,
+    "page_img": "assets/pages/quiz/page_4.png",
+    "key_concept": "線上遊戲在軟體體系中的定位",
+    "step_by_step": "1. 線上遊戲（如天堂、新楓之谷）是為了讓玩家在休閒娛樂時體驗聲光效果與多人連線互動而開發的程式。\n2. 它直接服務於使用者的娛樂應用需求，執行於作業系統平台之上。\n3. 因此屬於電腦軟體中的「應用軟體（休閒娛樂應用軟體）」。",
+    "option_analysis": {
+      "A": "【錯誤】系統軟體是用來管理電腦硬體底層運作的，遊戲不是系統軟體。",
+      "B": "【正確】遊戲軟體是標準的休閒娛樂應用軟體。",
+      "C": "【錯誤】工具軟體通常指修復、解壓縮、格式轉換等工具。",
+      "D": "【錯誤】辦公室應用軟體指文書排版、試算表、投影片等公務軟體。"
+    },
+    "exam_tip": "軟體二分法：非系統軟體（非OS/公用/翻譯），其餘通通歸為【應用軟體】。",
+    "tags": [
+      "線上遊戲",
+      "應用軟體",
+      "休閒娛樂"
+    ]
+  },
+  {
+    "id": "quiz_r4_q24",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 24,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "日本知名的迴轉壽司連鎖店－「藏壽司」，引進了一套全自動管理監視系統，餐廳的運作從 座位掌控、顧客點餐、送餐、結帳等程序，都是利用該套系統進行控管。請問該套專為「藏 壽司」所開發的軟體歸屬為下列哪一類軟體最恰當？",
+    "options": {
+      "A": "公用軟體",
+      "B": "專案開發軟體",
+      "C": "套裝軟體",
+      "D": "系統軟體。"
+    },
+    "official_explanation": "",
+    "page": 4,
+    "page_img": "assets/pages/quiz/page_4.png",
+    "key_concept": "企業專屬自動化系統之軟體分類（專案開發軟體）",
+    "step_by_step": "1. 題目描述：日本迴轉壽司店「藏壽司」引進全自動管理監視系統，「專為藏壽司所開發」，掌控帶位、點餐、軌道送餐、空盤回收計價及結帳等獨特自動化流程。\n2. 由於這套軟體是針對該連鎖店獨特營運需求「客製化委託設計」，市面上無法買到通用盒裝，其他一般餐廳也無法直接套用。\n3. 因此歸屬於「專案開發軟體（Bespoke Software）」。",
+    "option_analysis": {
+      "A": "【錯誤】公用軟體為維護系統用的小工具。",
+      "B": "【正確】專為特定企業個別流程量身打造，即為「專案開發軟體」。",
+      "C": "【錯誤】套裝軟體是市售通用的現成軟體。",
+      "D": "【錯誤】系統軟體是作業系統與編譯工具等。"
+    },
+    "exam_tip": "生活實例配對：藏壽司送餐系統、麥當勞點餐Kiosk、台鐵高鐵訂票、醫院掛號批價系統 -> 皆為【專案開發軟體】。",
+    "tags": [
+      "專案開發軟體",
+      "生活情境題",
+      "客製化系統"
+    ]
+  },
+  {
+    "id": "quiz_r4_q25",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 4,
+    "round_name": "第4回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 25,
+    "is_advanced": true,
+    "answer": "B",
+    "question": "下列敘述何者正確？",
+    "options": {
+      "A": "編譯器（Compiler）可編譯應用程式，故屬於應用軟體",
+      "B": "會計系統輔助會計作業，屬於應用軟體",
+      "C": "作業系統不能編譯程式，所以不是系統軟體",
+      "D": "作業系統（Operation System）可以編譯程式，所以屬於系統軟體。"
+    },
+    "official_explanation": "編譯器（Compiler）屬於系統軟體；作業系統是系統軟體； 作業系統（Operation System）不可以編譯程式。",
+    "page": 4,
+    "page_img": "assets/pages/quiz/page_4.png",
+    "key_concept": "程式語言翻譯工具（Compiler）與作業系統核心角色之辨析",
+    "step_by_step": "1. 逐一審視各選項敘述的真偽：\n   - (A) 編譯器（Compiler）將高階語言翻譯為機械碼，在軟體分類學中歸屬於「系統軟體（語言翻譯程式）」，並非應用軟體，故 (A) 錯誤。\n   - (B) 會計系統是用來輔助會計人員進行記帳、過帳與製作報表的，是為了解決商業特定應用需求，屬於「應用軟體」，敘述正確，故為本題答案。\n   - (C) 作業系統不能編譯程式（編譯需靠編譯器），但作業系統本身就是最核心的系統軟體，選項倒果為因推論錯誤。\n   - (D) 作業系統本身「不能」編譯程式，編譯程式是編譯器的職責，故 (D) 錯誤。\n2. 綜合判斷只有 (B) 完全正確。",
+    "option_analysis": {
+      "A": "【錯誤】編譯器（Compiler）是語言翻譯程式，屬於「系統軟體」。",
+      "B": "【正確】會計系統處理專業業務，屬於「應用軟體」。",
+      "C": "【錯誤】作業系統雖然不負責編譯程式，但它管理全部硬體，是標準的「系統軟體」。",
+      "D": "【錯誤】作業系統沒有內建編譯功能，無法編譯原始碼。"
+    },
+    "exam_tip": "統測超級陷阱題：編譯器是【系統軟體】；作業系統自己【不會編譯程式】，需要另外安裝編譯器。",
+    "tags": [
+      "編譯器",
+      "系統軟體",
+      "應用軟體",
+      "觀念統整"
+    ]
+  },
+  {
+    "id": "quiz_r5_q1",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 5,
+    "round_name": "第5回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 1,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "根據一般作業系統的概念，一個程序（process）可能的狀態包含了建立（new）、執行 （running）、就緒（ready）、結束（terminated），以及下列哪一項狀態？",
+    "options": {
+      "A": "忙碌（busy）",
+      "B": "恢復（resumed）",
+      "C": "排程（scheduling）",
+      "D": "等待（waiting）。"
+    },
+    "official_explanation": "",
+    "page": 5,
+    "page_img": "assets/pages/quiz/page_5.png",
+    "key_concept": "作業系統行程/程序（Process）五狀態模型",
+    "step_by_step": "1. 在現代多工作業系統中，一個程式被載入執行時會成為「程序（Process）」。\n2. 經典的程序五大生命週期狀態包括：\n   - 建立（New）：程序正在被建立並準備載入。\n   - 就緒（Ready）：程序已在記憶體中，萬事俱備，只等待 CPU 調度分配執行時間。\n   - 執行（Running）：程序正佔有 CPU 晶片核心進行運算。\n   - 等待／阻塞（Waiting / Blocked）：程序因等待 I/O 輸入輸出（如等硬碟讀取、等使用者按按鍵）而暫停，無法繼續執行。\n   - 結束（Terminated）：程序完成任務或被終止釋放資源。\n3. 檢視題目已列出：建立、執行、就緒、結束，尚缺少「等待（Waiting）」。故選 (D)。",
+    "option_analysis": {
+      "A": "【錯誤】忙碌（busy）是系統負載描述，非行程標準狀態名詞。",
+      "B": "【錯誤】恢復（resumed）是動作行為，非基本狀態。",
+      "C": "【錯誤】排程（scheduling）是作業系統的調度機制，非行程本身狀態。",
+      "D": "【正確】等待（waiting）是標準五狀態之一（等待 I/O 或外部事件）。"
+    },
+    "exam_tip": "行程五狀態口訣：生（New）-> 備（Ready）-> 跑（Running）-> 等（Waiting）-> 死（Terminated）。",
+    "tags": [
+      "程序狀態",
+      "五狀態模型",
+      "作業系統運作",
+      "統測核心"
+    ]
+  },
+  {
+    "id": "quiz_r5_q2",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 5,
+    "round_name": "第5回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 2,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "人工智慧（Artificial Intelligence, AI）主要研究如何讓電腦模仿人類的思考模式，使電腦具 有學習、記憶、推理與處理問題的能力。關於涵蓋面的描述，下列哪一項正確？",
+    "options": {
+      "A": "人工智慧 > 機器學習 > 深度學習",
+      "B": "機器學習 > 人工智慧 > 深度學習",
+      "C": "深度學習 > 機器學習 > 人工智慧",
+      "D": "人工智慧 > 深度學習 > 機器學習。"
+    },
+    "official_explanation": "",
+    "page": 5,
+    "page_img": "assets/pages/quiz/page_5.png",
+    "key_concept": "人工智慧、機器學習與深度學習的範疇包含關係",
+    "step_by_step": "1. 人工智慧（Artificial Intelligence, AI）是最廣大的外層概念，泛指一切讓機器模擬人類智慧思考、推理與問題解決的技術。\n2. 機器學習（Machine Learning, ML）是 AI 的重要子領域，透過演算法讓電腦從巨量資料中自主學習規則，而非完全仰賴人類撰寫規則。\n3. 深度學習（Deep Learning, DL）則是機器學習中的一個特化分支，專門利用多層類神經網路（Deep Neural Networks）來模擬大腦神經元處理複雜的圖像、語音與自然語言。\n4. 包含關係由大到小為：人工智慧 > 機器學習 > 深度學習。故選 (A)。",
+    "option_analysis": {
+      "A": "【正確】AI 包含 ML，ML 包含 DL（大同心圓關係）。",
+      "B": "【錯誤】機器學習不可能大於人工智慧。",
+      "C": "【錯誤】順序完全顛倒（深度學習最小）。",
+      "D": "【錯誤】深度學習包含在機器學習之內，而非大於機器學習。"
+    },
+    "exam_tip": "俄羅斯娃娃記憶法：最外層大娃娃是「AI 人工智慧」，中間娃娃是「ML 機器學習」，最裡層核心小娃娃是「DL 深度學習」。",
+    "tags": [
+      "AI",
+      "機器學習",
+      "深度學習",
+      "涵蓋關係",
+      "現代科技"
+    ]
+  },
+  {
+    "id": "quiz_r5_q3",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 5,
+    "round_name": "第5回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 3,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "請問下列哪一項電腦狀況，無法透過工作管理員視窗來檢視？",
+    "options": {
+      "A": "處理程序",
+      "B": "效能",
+      "C": "應用程式歷程紀錄",
+      "D": "瀏覽器瀏覽紀錄。"
+    },
+    "official_explanation": "",
+    "page": 5,
+    "page_img": "assets/pages/quiz/page_5.png",
+    "key_concept": "Windows「工作管理員（Task Manager）」之功能範疇與邊界",
+    "step_by_step": "1. 工作管理員是 Windows 內建用來監控作業系統即時資源使用與處理程序的強大工具。\n2. 工作管理員的常設頁籤包含：\n   - 「處理程序」：檢視前景應用程式與背景執行緒的 CPU、記憶體、硬碟使用量。\n   - 「效能」：以動態圖表呈現 CPU、RAM、磁碟、GPU 與網路的即時使用百分比。\n   - 「應用程式歷程記錄」：統計磁磚應用程式一段時間內消耗的網路流量與 CPU 時間。\n   - 「開機」：管理開機自動啟動項目。\n3. 「瀏覽器瀏覽紀錄（Web History）」是記錄使用者上網造訪了哪些網頁（例如逛了 YouTube、維基百科），這屬於瀏覽器本身的隱私與個人資料庫，工作管理員絕不可能也不會顯示各網站的造訪網址列表。\n4. 因此無法透過工作管理員檢視的是 (D)。",
+    "option_analysis": {
+      "A": "【可檢視】能查看每個執行中程式佔用的 CPU/記憶體。",
+      "B": "【可檢視】能即時監看 CPU、RAM、磁碟、GPU 負載百分比曲線。",
+      "C": "【可檢視】工作管理員有專屬「應用程式歷程記錄」分頁。",
+      "D": "【無法檢視，選此項】網頁瀏覽歷史需在瀏覽器（Chrome/Edge）中按 Ctrl+H 查看，工作管理員不管這個。"
+    },
+    "exam_tip": "工作管理員管的是「電腦硬體資源跟處理程序」，不管你的「個人上網看什麼網頁隱私」！",
+    "tags": [
+      "工作管理員",
+      "Windows系統",
+      "效能監控"
+    ]
+  },
+  {
+    "id": "quiz_r5_q4",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 5,
+    "round_name": "第5回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 4,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "在作業系統中，管理每項工作的處理順序，稱之為？",
+    "options": {
+      "A": "程序管理",
+      "B": "通訊管理",
+      "C": "檔案管理",
+      "D": "輸出∕輸入管理。"
+    },
+    "official_explanation": "",
+    "page": 5,
+    "page_img": "assets/pages/quiz/page_5.png",
+    "key_concept": "作業系統核心模組：程序管理（Process Management）之職責",
+    "step_by_step": "1. 作業系統包含五大管理功能：程序管理、記憶體管理、檔案管理、輸出/輸入（I/O）管理、保護與安全管理。\n2. 當多個工作同時請求運算時，作業系統必須決定先處理哪一項、每個工作分配多少 CPU 時間片（Time Slice），並負責行程的建立、排程、同步與終止。\n3. 「管理每項工作的處理順序」，在計算機概論中正是「程序管理（Process Management）或 CPU 排程」的專屬職能。",
+    "option_analysis": {
+      "A": "【正確】程序管理專責安排工作的排程順序、分派 CPU 與處理程序狀態切換。",
+      "B": "【錯誤】通訊管理負責處理網路封包與通訊協定傳輸。",
+      "C": "【錯誤】檔案管理負責檔案的建立、儲存、目錄結構與權限。",
+      "D": "【錯誤】輸出/輸入管理負責鍵盤、螢幕、印表機等週邊的緩衝佇列。"
+    },
+    "exam_tip": "工作順序、先來後到、CPU時間輪轉 -> 看到「工作處理順序」秒選【程序管理】。",
+    "tags": [
+      "作業系統功能",
+      "程序管理",
+      "工作排程"
+    ]
+  },
+  {
+    "id": "quiz_r5_q5",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 5,
+    "round_name": "第5回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 5,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "下列為常見的系統平台： a.個人電腦   b.Instagram   c.校務行政平台 請問其規模大小應如何排列？",
+    "options": {
+      "A": "a > b > c",
+      "B": "b > c > a",
+      "C": "b > a > c",
+      "D": "c > b > a。"
+    },
+    "official_explanation": "",
+    "page": 5,
+    "page_img": "assets/pages/quiz/page_5.png",
+    "key_concept": "系統平台服務規模與使用者覆蓋量級評估",
+    "step_by_step": "1. 題目列舉三種系統平台：\n   a. 個人電腦（PC）：單一使用者或少數家庭成員使用的獨立系統，規模最小。\n   b. Instagram（IG）：全球跨國大型社交雲端平台，使用者高達數十億人，部署在全球各洲龐大資料中心集群，規模最大。\n   c. 校務行政平台：單一學校（數千至上萬名師生及家長）使用的區域性雲端/伺服器系統，規模居中。\n2. 規模大小排序：Instagram（b） > 校務行政平台（c） > 個人電腦（a）。\n3. 故順序為 b > c > a，對應選項 (B)。",
+    "option_analysis": {
+      "A": "【錯誤】個人電腦最小，排在最前面不合理。",
+      "B": "【正確】全球數十億用戶(b) > 全校數千人(c) > 個人單機(a)。",
+      "C": "【錯誤】校務平台規模大於個人電腦。",
+      "D": "【錯誤】Instagram 規模遠大於單一學校校務平台。"
+    },
+    "exam_tip": "平台規模判斷法：看「服務的總人數與跨越地理範圍」！全球億級 > 學校千人級 > 個人單機。",
+    "tags": [
+      "系統平台",
+      "規模比較",
+      "生活實例"
+    ]
+  },
+  {
+    "id": "quiz_r5_q6",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 5,
+    "round_name": "第5回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 6,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "丹鳳使用印表機列印文件時，發現文件會依據她送出列印的先後依序列印，請問這是為作業 系統具有下列哪一項管理功能？",
+    "options": {
+      "A": "檔案管理",
+      "B": "記憶體管理",
+      "C": "輸出∕輸入管理",
+      "D": "通訊管理。"
+    },
+    "official_explanation": "",
+    "page": 5,
+    "page_img": "assets/pages/quiz/page_5.png",
+    "key_concept": "輸出/輸入管理（I/O Management）與列印佇列緩衝（Spooling）",
+    "step_by_step": "1. 題目情境：丹鳳送出多個列印任務，印表機依據送出的「先後順序依序列印」。\n2. 印表機是慢速週邊設備，電腦 CPU 速度極快；為了避免 CPU 空等印表機列印，作業系統會透過「多行程同時週邊輸出技術（Spooling）」建立列印佇列，依序排隊送交印表機列印。\n3. 印表機屬於輸出設備，這項協調整合列印順序的功能歸屬於作業系統的「輸出／輸入管理（I/O Management）」。",
+    "option_analysis": {
+      "A": "【錯誤】檔案管理是管理硬碟上的資料夾與檔案名稱、副檔名。",
+      "B": "【錯誤】記憶體管理是配置 RAM 空間與虛擬記憶體分頁。",
+      "C": "【正確】協調整合印表機等外接設備輸出順序，屬於輸出／輸入管理。",
+      "D": "【錯誤】通訊管理處理電腦間的網路連線封包。"
+    },
+    "exam_tip": "印表機排隊列印背後功臣：I/O 管理中的「列印佇列（Print Queue / Spooling）」技術。",
+    "tags": [
+      "輸出入管理",
+      "I/O",
+      "印表機",
+      "Spooling"
+    ]
+  },
+  {
+    "id": "quiz_r5_q7",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 5,
+    "round_name": "第5回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 7,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "不同的輔助儲存設備（如硬碟），其機械電子特性及存取方法等皆有所不同，請問作業系統 是包含了下列何種功能，讓使用者不須因為儲存設備的不同，而採用不同的方式來存取資料 呢？",
+    "options": {
+      "A": "記憶體管理系統",
+      "B": "輸出入系統",
+      "C": "自動偵測系統",
+      "D": "檔案管理系統。"
+    },
+    "official_explanation": "",
+    "page": 5,
+    "page_img": "assets/pages/quiz/page_5.png",
+    "key_concept": "檔案管理系統（File Management System）之硬體抽象化功能",
+    "step_by_step": "1. 不同的輔助儲存硬體（機械硬碟、固態硬碟、隨身碟、外接硬碟、記憶卡）有各自不同的旋轉扇區、晶片顆粒、電氣訊號與存取演算法。\n2. 如果沒有統一架構，使用者每換一顆硬碟就必須學習不同的操作指令。\n3. 作業系統透過「檔案管理系統（如 NTFS, FAT32, exFAT, APFS）」，將底層複雜的硬體特性包裝抽象化為一致的「目錄樹狀結構、資料夾與檔案」，讓使用者只要用滑鼠拖曳、點擊就能通用存取。\n4. 因此該項功能為「檔案管理系統」。",
+    "option_analysis": {
+      "A": "【錯誤】記憶體管理系統專門管主記憶體（RAM），不是管外接硬碟儲存。",
+      "B": "【錯誤】輸出入系統負責資料傳輸通道，不直接管理檔案命名與目錄組織。",
+      "C": "【錯誤】自動偵測只負責隨插即用（PnP）識別。",
+      "D": "【正確】檔案管理系統屏蔽底層硬體物理差異，提供標準檔案讀寫介面。"
+    },
+    "exam_tip": "關鍵字速記：不管是隨身碟還是SSD，在檔案總管看都是資料夾和檔案 -> 這是【檔案管理系統】的功勞！",
+    "tags": [
+      "檔案管理系統",
+      "硬體抽象化",
+      "作業系統功能"
+    ]
+  },
+  {
+    "id": "quiz_r5_q8",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 5,
+    "round_name": "第5回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 8,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "下列何者是系統平台中十分重要的一個項目，它除了作為使用者介面之外，也負責協調軟 體、硬體的運作？",
+    "options": {
+      "A": "雲端資源",
+      "B": "作業系統",
+      "C": "顯示卡",
+      "D": "防毒軟體。"
+    },
+    "official_explanation": "",
+    "page": 5,
+    "page_img": "assets/pages/quiz/page_5.png",
+    "key_concept": "作業系統（Operating System）在系統平台中的核心地位",
+    "step_by_step": "1. 檢視題幹描述：「除了作為使用者介面（GUI/CLI）之外，也負責協調軟體、硬體的運作」。\n2. 這正是計算機概論中對「作業系統（Operating System, OS）」最經典標準的定義！\n3. 作業系統介於使用者、應用軟體與電腦硬體之間，向上提供 API 與人機介面，向下直接驅動與掌控硬體資源。",
+    "option_analysis": {
+      "A": "【錯誤】雲端資源只是遠端伺服器提供的計算與儲存服務。",
+      "B": "【正確】作業系統扮演軟硬體協調中樞與使用者操作介面。",
+      "C": "【錯誤】顯示卡只負責影像訊號渲染輸出。",
+      "D": "【錯誤】防毒軟體只是防禦惡意攻擊的公用應用軟體。"
+    },
+    "exam_tip": "計算機結構靈魂：【作業系統】是使用者、應用程式與硬體三者之間的總管家與中介大橋樑。",
+    "tags": [
+      "作業系統",
+      "使用者介面",
+      "軟硬體協調"
+    ]
+  },
+  {
+    "id": "quiz_r5_q9",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 5,
+    "round_name": "第5回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 9,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "管理「使用者帳號」、「密碼」與「使用權限」等功能，是多工作業系統的哪一項功能？",
+    "options": {
+      "A": "輸入管理",
+      "B": "效能監督",
+      "C": "系統保護",
+      "D": "記憶體管理。"
+    },
+    "official_explanation": "",
+    "page": 5,
+    "page_img": "assets/pages/quiz/page_5.png",
+    "key_concept": "作業系統安全管理機制：系統保護（System Protection / Security）",
+    "step_by_step": "1. 題幹指出管理「使用者帳號」、「密碼驗證」與「檔案/資源存取使用權限（Permission/ACL）」。\n2. 在多工作業系統中，為了防止未授權的使用者隨意讀取、修改他人檔案，或破壞核心系統設定，必須設立安全驗證與隔離機制。\n3. 這項功能歸屬於作業系統的「系統保護（System Protection）與安全管理」。",
+    "option_analysis": {
+      "A": "【錯誤】輸入管理是管鍵盤滑鼠訊號。",
+      "B": "【錯誤】效能監督是看 CPU 和 RAM 使用率曲線。",
+      "C": "【正確】帳號、密碼、權限控管是「系統保護」的核心範疇。",
+      "D": "【錯誤】記憶體管理是分配位址空間與垃圾回收。"
+    },
+    "exam_tip": "看到關鍵字：帳號、密碼、權限、防範越權 -> 直接選【系統保護】！",
+    "tags": [
+      "系統保護",
+      "多工作業系統",
+      "資安權限"
+    ]
+  },
+  {
+    "id": "quiz_r5_q10",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 5,
+    "round_name": "第5回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 10,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "圖片辨識系統通常是先蒐集大量的圖片資料，並利用下列哪一項技術，訓練系統學會辨識圖 片中的特定物體或人臉身分？",
+    "options": {
+      "A": "人工智慧",
+      "B": "擴增實境",
+      "C": "虛擬實境",
+      "D": "平行處理。"
+    },
+    "official_explanation": "",
+    "page": 5,
+    "page_img": "assets/pages/quiz/page_5.png",
+    "key_concept": "圖片辨識（Computer Vision）與人臉辨識之底層技術",
+    "step_by_step": "1. 題目描述：「先蒐集大量的圖片資料，訓練系統學會辨識圖片中的特定物體或人臉身分」。\n2. 透過大量資料餵入神經網路模型進行訓練，讓機器自動萃取特徵並學會分類與辨識，這是「人工智慧（AI）與機器學習/電腦視覺」的核心工作方式。\n3. 擴增實境（AR）與虛擬實境（VR）是影像呈現與人機互動技術，平行處理是多處理器運算技術，皆非圖片訓練辨識的技術根基。",
+    "option_analysis": {
+      "A": "【正確】影像特徵提取、人臉辨識模型訓練皆屬於人工智慧（AI）範疇。",
+      "B": "【錯誤】擴增實境（AR）是將虛擬物件疊加到真實世界畫面（如寶可夢手遊）。",
+      "C": "【錯誤】虛擬實境（VR）是利用頭盔打造純虛擬沉浸空間。",
+      "D": "【錯誤】平行處理是計算加速方法，不是辨識學習技術本身。"
+    },
+    "exam_tip": "關鍵字配對：大數據訓練、特徵萃取、自主學習辨識 -> 必選【人工智慧】！",
+    "tags": [
+      "人工智慧",
+      "圖片辨識",
+      "人臉辨識",
+      "機器學習"
+    ]
+  },
+  {
+    "id": "quiz_r5_q11",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 5,
+    "round_name": "第5回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 11,
+    "is_advanced": true,
+    "answer": "D",
+    "question": "下列何者是常見的聊天機器人？",
+    "options": {
+      "A": "Midjourney",
+      "B": "EMIEW3",
+      "C": "DALL．E 2",
+      "D": "ChatGPT。"
+    },
+    "official_explanation": "",
+    "page": 5,
+    "page_img": "assets/pages/quiz/page_5.png",
+    "key_concept": "常見生成式 AI 與聊天機器人（Chatbot）辨識",
+    "step_by_step": "1. 題幹詢問「下列何者是常見的聊天機器人（Chatbot）？」。\n2. 逐一檢視選項：\n   - (A) Midjourney：著名的文字生成「圖片」AI 工具。\n   - (B) EMIEW3：日立公司開發的實體導覽機器人硬體。\n   - (C) DALL·E 2：OpenAI 開發的文字生成「圖像」AI 模型。\n   - (D) ChatGPT：由 OpenAI 開發、基於大型語言模型（LLM）的全球最知名生成式對話「聊天機器人」。\n3. 因此常見的聊天機器人為 ChatGPT。",
+    "option_analysis": {
+      "A": "【錯誤】Midjourney 是用文字畫圖的影像生成 AI。",
+      "B": "【錯誤】EMIEW3 是日立開發的實體人形輪型接待機器人。",
+      "C": "【錯誤】DALL·E 2 是以文字提示詞生成繪圖的工具。",
+      "D": "【正確】ChatGPT 具備自然語言多輪對話能力，是經典聊天機器人。"
+    },
+    "exam_tip": "生成式 AI 分類：文字對話聊天（ChatGPT、Claude、Gemini）；文字生成繪圖（Midjourney、DALL-E、Stable Diffusion）。",
+    "tags": [
+      "ChatGPT",
+      "聊天機器人",
+      "生成式AI",
+      "時事新科技"
+    ]
+  },
+  {
+    "id": "quiz_r5_q12",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 5,
+    "round_name": "第5回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 12,
+    "is_advanced": true,
+    "answer": "D",
+    "question": "下列有關系統平台運作流程3步驟的敘述，何者錯誤？",
+    "options": {
+      "A": "輸入是透過傳輸媒介，將資料輸入至系統中",
+      "B": "處理是系統利用平台處理器來處理資料",
+      "C": "輸出是透過傳輸媒介，將資料輸出至顯示器、儲存設備、雲端空間或系統平台的其他成員",
+      "D": "輸入、處理、輸出的步驟都是在單一平台內完成。"
+    },
+    "official_explanation": "",
+    "page": 5,
+    "page_img": "assets/pages/quiz/page_5.png",
+    "key_concept": "現代系統平台運作流程（輸入、處理、輸出）之分散式與雲端架構",
+    "step_by_step": "1. 系統平台的標準運作三部曲為：\n   - 輸入（Input）：透過網路傳輸或感測器媒介將資料送入系統中（A 正確）。\n   - 處理（Process）：系統透過本機處理器或雲端運算節點處理運算資料（B 正確）。\n   - 輸出（Output）：將運算後的結果送交顯示設備、儲存設備或回傳給其他成員（C 正確）。\n2. 檢視選項 (D)：「輸入、處理、輸出的步驟都是在單一平台內完成」：\n   在現代雲端運算與物聯網（IoT）架構中，資料可以在你的「智慧手錶/手機（平台甲）」輸入，透過 5G 傳送到「雲端資料中心伺服器集群（平台乙）」進行大數據與 AI 運算處理，最後將健康分析報表輸出到「醫院的醫療電腦螢幕（平台丙）」！\n   整個流程完全跨越不同平台協同運作，絕對不是只能在「單一平台」內完成！因此 (D) 敘述嚴重錯誤，為本題答案。",
+    "option_analysis": {
+      "A": "【正確敘述】輸入確實是資料透過媒介進系統。",
+      "B": "【正確敘述】處理確實是利用平台 CPU/GPU 運算資料。",
+      "C": "【正確敘述】輸出確實是把結果傳給顯示器或雲端平台成員。",
+      "D": "【錯誤敘述，選此項】現代系統平台具備高度分散性與雲端協同性，步驟絕非侷限於單一設備內。"
+    },
+    "exam_tip": "看到「都在單一平台」、「絕不跨平台」等絕對字眼，在分散式與雲端時代百分之百是錯誤選項！",
+    "tags": [
+      "系統平台流程",
+      "輸入處理輸出",
+      "雲端分散式",
+      "觀念除錯"
+    ]
+  },
+  {
+    "id": "quiz_r5_q13",
+    "category": "quiz",
+    "category_name": "隨堂測驗卷",
+    "round_num": 5,
+    "round_name": "第5回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 13,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "在Windows作業系統中，可以同時按Ctrl鍵加Alt鍵加下列哪一個鍵開啟工作管理員？",
+    "options": {
+      "A": "Enter",
+      "B": "Delete",
+      "C": "Backspace",
+      "D": "Tab。 得   分"
+    },
+    "official_explanation": "",
+    "page": 5,
+    "page_img": "assets/pages/quiz/page_5.png",
+    "key_concept": "Windows 作業系統開啟工作管理員之常用鍵盤快捷鍵",
+    "step_by_step": "1. 在 Windows 系統中，想要緊急開啟工作管理員結束當掉的程式，最經典的組合鍵是：\n   `Ctrl + Alt + Delete`（此時會進入 Windows 安全性選項畫面，可點選「工作管理員」）。\n2. 題目文字：「同時按 Ctrl 鍵加 Alt 鍵加下列哪一個鍵開啟工作管理員？」，因此應填入 Delete 鍵。\n3. （補充：Windows 中直接一步開啟工作管理員的快捷鍵為 `Ctrl + Shift + Esc`）。",
+    "option_analysis": {
+      "A": "【錯誤】Ctrl + Alt + Enter 無此系統熱鍵功能。",
+      "B": "【正確】Ctrl + Alt + Delete 是 Windows 歷史悠久的中斷與工作管理熱鍵。",
+      "C": "【錯誤】Ctrl + Alt + Backspace 是早期 Linux X-Window 重新啟動熱鍵。",
+      "D": "【錯誤】Alt + Tab 是切換視窗，Ctrl + Alt + Tab 是保持切換視窗面板停留。"
+    },
+    "exam_tip": "電腦當機救命兩大鍵：Ctrl + Alt + Delete（進入安全畫面）；Ctrl + Shift + Esc（秒開工作管理員）。",
+    "tags": [
+      "工作管理員",
+      "快捷鍵",
+      "Windows操作",
+      "生活必備"
+    ]
+  },
+  {
+    "id": "ex_r3_q1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 1,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "請問電腦的五大單元，除了IU、OU之外，還包含哪些？",
+    "options": {
+      "A": "CU、ALU、MU",
+      "B": "CPU、ALU、MU",
+      "C": "CPU、MU、CU",
+      "D": "ALU、CU、CPU。"
+    },
+    "official_explanation": "",
+    "page": 1,
+    "page_img": "assets/pages/exercise/page_1.png",
+    "key_concept": "馮紐曼電腦五大單元組成（IU, CU, ALU, MU, OU）",
+    "step_by_step": "1. 馮紐曼架構定義電腦硬體由五大基本單元構成：\n   - 輸入單元（Input Unit, IU）\n   - 輸出單元（Output Unit, OU）\n   - 控制單元（Control Unit, CU）\n   - 算術／邏輯單元（Arithmetic Logic Unit, ALU）\n   - 記憶單元（Memory Unit, MU）\n2. 題幹詢問「除了 IU、OU 之外，還包含哪些？」，剩下的三者正是 CU、ALU、MU。\n3. 注意：CPU 是 CU 與 ALU 的合稱，不是五大單元中的單一名稱。故選 (A)。",
+    "option_analysis": {
+      "A": "【正確】CU、ALU、MU 加上 IU 與 OU 剛好湊齊五大單元。",
+      "B": "【錯誤】CPU 與 ALU 重複（CPU 本身已包含 ALU）。",
+      "C": "【錯誤】CPU 與 CU 重複。",
+      "D": "【錯誤】包含 CPU 者皆非五大單元標準名稱。"
+    },
+    "exam_tip": "五大單元口訣：「控（CU）算（ALU）記（MU）輸（IU）出（OU）」，CPU 是前兩者合體。",
+    "tags": [
+      "五大單元",
+      "硬體架構",
+      "IU",
+      "OU",
+      "CU",
+      "ALU",
+      "MU"
+    ]
+  },
+  {
+    "id": "ex_r3_q2",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 2,
+    "is_advanced": true,
+    "answer": "A",
+    "question": "USB是電腦、手機、相機等3C產品普遍使用的連接埠，有關USB的敘 述，下列何者錯誤？",
+    "options": {
+      "A": "USB 3.0、USB4的插頭皆為Type-C規格",
+      "B": "隨身碟上標示有 圖示，表示該隨身碟是使用USB與電腦連接",
+      "C": "可作為週邊設備充電使用的連接埠",
+      "D": "支援熱插拔。"
+    },
+    "official_explanation": "USB",
+    "page": 1,
+    "page_img": "assets/pages/exercise/page_1.png",
+    "key_concept": "通用序列匯流排（USB）規格與接頭形式演進",
+    "step_by_step": "1. 逐一檢視 USB 相關敘述：\n   - USB 3.0：發布於 2008 年，其標準插頭採用的是藍色的扁平長方形「Type-A」接頭（或方形 Type-B），並非 Type-C 接頭！\n   - USB4：規範於 2019 年制定，才全面強制統一採用支援正反雙面插的「Type-C」接頭。\n   - 因此選項 (A)「USB 3.0、USB4的插頭皆為Type-C規格」敘述錯誤，即為本題答案。\n2. 選項 (B) 隨身碟上有三叉戟 USB 圖示表示 USB 連接；選項 (C) USB 具有 5V 供電腳位可充當充電埠；選項 (D) USB 完整支援熱插拔與隨插即用（PnP）。",
+    "option_analysis": {
+      "A": "【錯誤敘述，選此項】USB 3.0 標準插頭是 Type-A（藍色舌片），USB4 才是 Type-C。",
+      "B": "【正確敘述】三叉戟形狀的標誌是 USB 官方通用識別圖示。",
+      "C": "【正確敘述】USB 具備供電針腳（如 USB PD 快充可達 100W~240W）。",
+      "D": "【正確敘述】USB 支援通電開機狀態下隨時插拔（熱插拔）。"
+    },
+    "exam_tip": "接頭對照速記：USB 1.1/2.0（白/黑 Type-A）；USB 3.0（藍色 Type-A）；USB4（橢圓形 Type-C，支援雙面插）。",
+    "tags": [
+      "USB",
+      "Type-C",
+      "Type-A",
+      "熱插拔",
+      "連接埠"
+    ]
+  },
+  {
+    "id": "ex_r3_q3",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 3,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "CPU的組成不包含下列何者？",
+    "options": {
+      "A": "快取記憶體",
+      "B": "輔助記憶體",
+      "C": "控制單元",
+      "D": "暫存器。"
+    },
+    "official_explanation": "0的插頭為Type-A規格、USB4的插頭為Type-C規格。",
+    "page": 1,
+    "page_img": "assets/pages/exercise/page_1.png",
+    "key_concept": "中央處理單元（CPU）之內部組成元件",
+    "step_by_step": "1. CPU 內部包含三大核心元件：\n   - 控制單元（CU）：指揮協調指令運作。\n   - 算術邏輯單元（ALU）：執行運算與邏輯比對。\n   - 暫存器（Registers）：CPU 內部超高速的微量儲存單元。\n   - （此外現代 CPU 內部還整合了 L1/L2/L3 快取記憶體 Cache）。\n2. 輔助記憶體（Secondary Storage，如傳統硬碟 HDD、固態硬碟 SSD、隨身碟）是安裝在主機板上或外部的永久儲存設備，根本不在 CPU 晶片內部！\n3. 故 CPU 的組成不包含輔助記憶體，選 (B)。",
+    "option_analysis": {
+      "A": "【包含】現代 CPU 晶片內部皆封裝有極高速的 L1/L2/L3 快取記憶體。",
+      "B": "【不包含，選此項】輔助記憶體指硬碟/SSD，是外部儲存設備，絕非 CPU 組成元件。",
+      "C": "【包含】控制單元是 CPU 的重要神經中樞。",
+      "D": "【包含】暫存器是 CPU 內部存放運算元與位址的臨時暫存區。"
+    },
+    "exam_tip": "CPU 內部四寶：控制單元、算術邏輯單元、暫存器、快取記憶體。硬碟和主記憶體都在外面！",
+    "tags": [
+      "CPU組成",
+      "暫存器",
+      "快取",
+      "輔助記憶體"
+    ]
+  },
+  {
+    "id": "ex_r3_q4",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 4,
+    "is_advanced": true,
+    "answer": "C",
+    "question": "下列有關暫存器的敘述，何者不正確？",
+    "options": {
+      "A": "累加器用來存放運算的結果",
+      "B": "位址暫存器用來存放指令或資料的位址",
+      "C": "指令暫存器用來存放下一個要執行的指令位址",
+      "D": "旗標暫存器用來存放CPU運算後的各種狀態。"
+    },
+    "official_explanation": "指令暫存器用來暫存正在執行中的指令。",
+    "page": 1,
+    "page_img": "assets/pages/exercise/page_1.png",
+    "key_concept": "CPU 內部各種暫存器（Registers）之功能精確對應",
+    "step_by_step": "1. 審視 CPU 內部常見暫存器定義：\n   - 累加器（Accumulator, ACC）：用來暫時存放 ALU 算術邏輯運算的中間或最後結果，(A) 正確。\n   - 位址暫存器（Address Register, MAR）：用來存放 CPU 即將存取的記憶體位址或資料位址，(B) 正確。\n   - 旗標暫存器（Flag Register / Status Register）：存放運算後的狀態資訊（如是否為零、正負號、進位溢位），(D) 正確。\n   - 程式計數器（Program Counter, PC）：專門用來存放「下一個要執行的指令位址」。\n   - 指令暫存器（Instruction Register, IR）：用來存放「目前正在被解碼或執行中的指令」，而不是存放下一個指令位址！\n2. 因此 (C) 把 IR 誤寫為 PC 的功能，敘述不正確，為本題答案。",
+    "option_analysis": {
+      "A": "【正確】累加器（ACC）存放運算結果。",
+      "B": "【正確】位址暫存器（MAR）存放記憶體實體位址。",
+      "C": "【錯誤敘述，選此項】存放『下一個要執行的指令位址』是【程式計數器（PC）】的職責；指令暫存器（IR）放的是【目前執行中】的指令。",
+      "D": "【正確】旗標暫存器記錄運算後的溢位、進位、正負等各種狀態。"
+    },
+    "exam_tip": "統測暫存器二混淆大解密：【PC】放下一個指令位址（Next PC）；【IR】放現在執行的指令（Current Instruction）。",
+    "tags": [
+      "暫存器",
+      "PC",
+      "IR",
+      "累加器",
+      "旗標暫存器",
+      "統測大熱門"
+    ]
+  },
+  {
+    "id": "ex_r3_q5",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 5,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "個人電腦購買傳單上所標示的記憶體規格，通常是指下列哪一種記憶 體？",
+    "options": {
+      "A": "ROM",
+      "B": "DRAM",
+      "C": "SRAM",
+      "D": "EEPROM。"
+    },
+    "official_explanation": "",
+    "page": 1,
+    "page_img": "assets/pages/exercise/page_1.png",
+    "key_concept": "市售個人電腦記憶體規格之對應材料（DRAM）",
+    "step_by_step": "1. 在電腦購買傳單或估價單（如原價屋）上，常看到「DDR4 3200 16GB」或「DDR5 5600 32GB」等記憶體規格。\n2. 這些俗稱的電腦主記憶體（RAM），其底層半導體材料全部都是「動態隨機存取記憶體（DRAM，以 SDRAM、DDR 技術實現）」。\n3. ROM 是唯讀韌體，SRAM 昂貴只做快取，EEPROM 用於快閃隨身碟與 BIOS 晶片。\n4. 故傳單上的記憶體規格指的就是 DRAM，選 (B)。",
+    "option_analysis": {
+      "A": "【錯誤】ROM 唯讀記憶體出廠即寫入，容量極小，非主記憶體擴充規格。",
+      "B": "【正確】市售 RAM 記憶體條（DDR4/DDR5）皆屬於動態隨機存取記憶體（DRAM）。",
+      "C": "【錯誤】SRAM 太貴且積體度低，只有幾MB到幾十MB封裝在 CPU 作快取。",
+      "D": "【錯誤】EEPROM 用在儲存 BIOS 參數或快閃記憶體。"
+    },
+    "exam_tip": "電腦規格單看懂：CPU看GHz；主記憶體（RAM）看GB（實質為DRAM）；硬碟看TB（SSD/HDD）。",
+    "tags": [
+      "DRAM",
+      "主記憶體",
+      "DDR4",
+      "選購規格"
+    ]
+  },
+  {
+    "id": "ex_r3_q6",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 6,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "我們比較RAM、cache、磁碟機（Hard Disk）等記憶體或儲存設備的存 取速度，由快至慢依序排列，正確的選項是：",
+    "options": {
+      "A": "RAM＞cache＞磁碟機",
+      "B": "磁碟機＞RAM＞cache",
+      "C": "cache＞RAM＞磁碟機",
+      "D": "cache＞磁碟機＞RAM。"
+    },
+    "official_explanation": "",
+    "page": 1,
+    "page_img": "assets/pages/exercise/page_1.png",
+    "key_concept": "儲存裝置存取速度由快至慢大比拼",
+    "step_by_step": "1. 根據計算機體系結構之存取速度階層：\n   - 快取記憶體（cache）：由 SRAM 組成，最靠近 CPU，存取時間僅需幾奈秒（ns），速度最快。\n   - 主記憶體（RAM）：由 DRAM 組成，存取時間約數十奈秒（ns），速度居中。\n   - 磁碟機（Hard Disk）：機械磁頭尋道與旋轉延遲，存取時間高達數毫秒（ms，約為主記憶體的數萬倍慢），速度最慢。\n2. 由快至慢排列為：cache ＞ RAM ＞ 磁碟機。\n3. 對應選項 (C)。",
+    "option_analysis": {
+      "A": "【錯誤】誤將 RAM 排在快取之前。",
+      "B": "【錯誤】磁碟機是最慢的輔助記憶體，不可能排最前。",
+      "C": "【正確】快取（SRAM） ＞ 主記憶體（DRAM） ＞ 磁碟機（HDD）。",
+      "D": "【錯誤】磁碟機不可能快於 RAM。"
+    },
+    "exam_tip": "速記口訣：愈靠近 CPU 的愈貴愈快（快取 > 主記憶體 > 外部硬碟）。",
+    "tags": [
+      "存取速度",
+      "快取",
+      "RAM",
+      "硬碟",
+      "排序題"
+    ]
+  },
+  {
+    "id": "ex_r3_q7",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 7,
+    "is_advanced": true,
+    "answer": "B",
+    "question": "下列各項記憶體中，讀寫速度比ROM快的有幾項？ a. DRAM b. L2 cache c. HDD d. L3 cache e. Blu-ray Disc",
+    "options": {
+      "A": "4項",
+      "B": "3項",
+      "C": "2項",
+      "D": "1項。 2 === 9 數位科技概論（上）習作本"
+    },
+    "official_explanation": "讀寫速度由快至慢：L2 cache＞L3 cache＞DRAM＞ROM＞HDD＞Blu-ray Disc。",
+    "page": 1,
+    "page_img": "assets/pages/exercise/page_1.png",
+    "key_concept": "記憶體讀寫速度全家族比較（比 ROM 快之項目計算）",
+    "step_by_step": "1. 記憶體讀寫速度由快至慢完整順序為：\n   暫存器 ＞ L1 Cache ＞ L2 Cache ＞ L3 Cache ＞ 主記憶體（DRAM） ＞ 唯讀記憶體（ROM） ＞ 固態硬碟（SSD） ＞ 機械硬碟（HDD） ＞ 光碟片（Blu-ray / DVD / CD）。\n2. 檢驗題目給定的 5 個項目與 ROM 的速度關係：\n   a. DRAM：主記憶體，讀寫速度約幾十 ns，【比 ROM 快】。\n   b. L2 cache：第二層快取（SRAM），【比 ROM 快】。\n   c. HDD：機械硬碟，存取速度為毫秒級，【比 ROM 慢】。\n   d. L3 cache：第三層快取（SRAM），【比 ROM 快】。\n   e. Blu-ray Disc：藍光光碟，光學讀取速度最慢，【比 ROM 慢】。\n3. 比 ROM 快的項目有 a、b、d，總共有 3 項。\n4. 故選 (B) 3項。",
+    "option_analysis": {
+      "A": "【錯誤】非 4 項，HDD 與藍光光碟都比 ROM 慢得多。",
+      "B": "【正確】DRAM、L2 cache、L3 cache 共 3 項比 ROM 快。",
+      "C": "【錯誤】少算了項目。",
+      "D": "【錯誤】多數半導體隨機記憶體都快於 ROM。"
+    },
+    "exam_tip": "記憶體界線指標：ROM 是半導體，雖然慢但仍快於機械硬碟與光碟片！比 ROM 快的有：暫存器、各級快取、DRAM。",
+    "tags": [
+      "記憶體速度",
+      "ROM",
+      "L2快取",
+      "DRAM",
+      "計算題"
+    ]
+  },
+  {
+    "id": "ex_r3_q8",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 8,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "請問固態硬碟與傳統硬碟差異為何？",
+    "options": {
+      "A": "固態硬碟的體積較大",
+      "B": "傳統硬碟的耐震度較佳",
+      "C": "固態硬碟是使用快閃記憶體來作為儲存元件",
+      "D": "傳統硬碟的儲存容量通常較小。 情境素養題"
+    },
+    "official_explanation": "",
+    "page": 2,
+    "page_img": "assets/pages/exercise/page_2.png",
+    "key_concept": "固態硬碟（SSD）與傳統機械硬碟（HDD）之根本差異",
+    "step_by_step": "1. 傳統硬碟（HDD）依靠馬達旋轉磁碟片、以磁頭感應磁性記錄資料，具有機械轉動結構。\n2. 固態硬碟（SSD）則是純電子晶片構造，完全使用非揮發性的「快閃記憶體（Flash Memory）」來儲存位元資料。\n3. 因此 SSD 具備無機械噪音、抗震度極佳、體積小巧且讀寫速度超越 HDD 數倍的特點。\n4. 檢視選項 (C)「固態硬碟是使用快閃記憶體來作為儲存元件」描述完全正確。",
+    "option_analysis": {
+      "A": "【錯誤】固態硬碟體積更小更輕薄。",
+      "B": "【錯誤】傳統硬碟有脆弱的磁頭與玻璃/鋁碟片，極怕震動摔落，耐震度遠遜於 SSD。",
+      "C": "【正確】快閃記憶體（NAND Flash）是 SSD 的核心儲存元件。",
+      "D": "【錯誤】傳統硬碟每 GB 成本便宜，市售容量通常可達 2TB~16TB，容量通常大於同價位 SSD。"
+    },
+    "exam_tip": "SSD 核心考點四字箴言：【快閃記憶體】！無馬達、無磁頭、抗震、耐摔、高速。",
+    "tags": [
+      "固態硬碟",
+      "SSD",
+      "傳統硬碟",
+      "快閃記憶體"
+    ]
+  },
+  {
+    "id": "ex_r3_q9",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 9,
+    "is_advanced": true,
+    "answer": "D",
+    "question": "惠萍負責校刊社團的採購，由於校刊社團經常需要列印大量的文稿， 社團指導老師要求她購買一部列印速度較快的印表機來列印。惠萍連 上購物網站後，她應該依據下列哪一個單位來判斷印表機列印的速 度，以找到符合需求的印表機？",
+    "options": {
+      "A": "dpi",
+      "B": "bps",
+      "C": "pixel",
+      "D": "ppm。"
+    },
+    "official_explanation": "dpi：每英吋可列印的點數；bps：每秒可傳輸的位元數；pixel：像素； ppm：每分鐘可列印的頁數。",
+    "page": 2,
+    "page_img": "assets/pages/exercise/page_2.png",
+    "key_concept": "印表機採購規格：列印速度指標（ppm）",
+    "step_by_step": "1. 題目情境：社團經常需要列印大量文稿，老師要求購買一部「列印速度較快」的印表機。\n2. 檢視各選項單位代表的意義：\n   - (A) dpi（dots per inch）：每英吋點數，是衡量「列印或掃描【解析度（品質精細度）】」的單位。\n   - (B) bps（bits per second）：每秒傳輸位元數，是衡量「網路傳輸速度」的單位。\n   - (C) pixel：像素，是數位圖像與螢幕畫面的基本成像點單位。\n   - (D) ppm（Pages Per Minute）：每分鐘可列印的頁數，正是衡量「印表機【列印速度】」的標準單位！\n3. 惠萍想知道列印速度快慢，應該比對 ppm 數值，數值愈高代表一分鐘印出的頁數愈多、速度愈快。故選 (D)。",
+    "option_analysis": {
+      "A": "【錯誤】dpi 看的是畫面精緻度與畫質，不是速度。",
+      "B": "【錯誤】bps 用於數據機、寬頻網路連線速度。",
+      "C": "【錯誤】pixel 是螢幕顯示像素點。",
+      "D": "【正確】ppm 代表 Pages Per Minute（每分鐘列印頁數），數值愈大速度愈快。"
+    },
+    "exam_tip": "印表機雙雄單位絕對不能搞混：速度看【ppm】（頁/分）；畫質看【dpi】（點/吋）。",
+    "tags": [
+      "ppm",
+      "dpi",
+      "印表機規格",
+      "列印速度",
+      "情境素養題"
+    ]
+  },
+  {
+    "id": "ex_r3_q10",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 10,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "宜琳課業表現與操行表現良好，父親同意資助她買新手機，以茲獎 勵。宜琳喜歡最新款的iPhone手機，她連上Apple官方網站得知這是一 款極窄邊框的全屏手機，尺寸為6.7吋，請問這代表手機的何處為6.7 吋？",
+    "options": {
+      "A": "甲",
+      "B": "乙",
+      "C": "丙",
+      "D": "丁。"
+    },
+    "official_explanation": "",
+    "page": 2,
+    "page_img": "assets/pages/exercise/page_2.png",
+    "key_concept": "顯示螢幕尺寸標示標準：對角線長度（Diagonal）",
+    "step_by_step": "1. 在消費性電子產品（智慧型手機、筆電、電視、平板、電腦螢幕）中，市面上所標示的螢幕尺寸（例如 6.7 吋、15.6 吋、65 吋）。\n2. 國際標準量測定義統一為「螢幕可視區域的【對角線】實體英吋長度」（1英吋 = 2.54 公分）。\n3. 檢視題目手機圖示：\n   - 甲：手機長邊（垂直高度）\n   - 乙：螢幕【對角線】\n   - 丙：手機邊框厚度\n   - 丁：手機短邊（水平寬度）\n4. 代表 6.7 吋的正是對角線「乙」，故選 (B)。",
+    "option_analysis": {
+      "A": "【錯誤】甲是螢幕高度（長邊）。",
+      "B": "【正確】乙為螢幕右上角到左下角之對角線，即為 6.7 吋所指之處。",
+      "C": "【錯誤】丙為側邊厚度。",
+      "D": "【錯誤】丁是螢幕寬度（短邊）。"
+    },
+    "exam_tip": "生活常識統測化：無論手機幾吋、電視幾吋，量法一律都是量「對角線」！",
+    "tags": [
+      "螢幕尺寸",
+      "對角線",
+      "生活情境題",
+      "iPhone規格"
+    ]
+  },
+  {
+    "id": "ex_r4_q1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 1,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "Garena傳說對決、英雄聯盟：激鬥峽谷等熱門的手機遊戲，是屬於下列 哪一種類型的軟體？",
+    "options": {
+      "A": "系統軟體",
+      "B": "應用軟體",
+      "C": "工具軟體",
+      "D": "辦公室應用軟體。"
+    },
+    "official_explanation": "",
+    "page": 6,
+    "page_img": "assets/pages/exercise/page_6.png",
+    "key_concept": "手機遊戲之軟體分類屬性（應用軟體）",
+    "step_by_step": "1. 題目列舉熱門手遊：《傳說對決》、《英雄聯盟：激鬥峽谷》。\n2. 手遊是專為滿足使用者閒暇時光之娛樂消遣、競技互動而開發的娛樂程式。\n3. 在電腦軟體大分類中，直接為使用者提供特定功能服務（娛樂、文書、繪圖）的軟體通稱為「應用軟體（Application Software）」。故選 (B)。",
+    "option_analysis": {
+      "A": "【錯誤】系統軟體是作業系統與維護公用程式，遊戲不能管硬體。",
+      "B": "【正確】遊戲軟體是標準的休閒娛樂應用軟體。",
+      "C": "【錯誤】工具軟體通常指解壓縮、磁碟工具等。",
+      "D": "【錯誤】辦公室應用軟體指辦公文書、試算表工具。"
+    },
+    "exam_tip": "軟體分類直覺法：幫系統管硬體的叫【系統軟體】；給人玩、給人用的叫【應用軟體】。",
+    "tags": [
+      "手機遊戲",
+      "應用軟體",
+      "軟體分類"
+    ]
+  },
+  {
+    "id": "ex_r4_q2",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 2,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "「Double Driver」是一套免費軟體，可用來備份硬體的驅動程式，以幫 助我們在重灌電腦後快速回復硬體的運作。請問Double Driver歸屬為下 列哪一類軟體最恰當？",
+    "options": {
+      "A": "公用程式",
+      "B": "語言翻譯程式",
+      "C": "應用軟體",
+      "D": "自由軟體。"
+    },
+    "official_explanation": "",
+    "page": 6,
+    "page_img": "assets/pages/exercise/page_6.png",
+    "key_concept": "驅動程式備份工具之分類：公用程式（Utilities）",
+    "step_by_step": "1. 題目介紹「Double Driver」是一套用來備份硬體驅動程式的工具，以協助重灌後快速回復硬體運作。\n2. 驅動程式備份、登錄檔清理、防毒掃描、磁碟維護等軟體，都是為了「輔助、支援與維護作業系統與硬體正常運作」而設計的輔助工具。\n3. 這類軟體在系統軟體體系中統稱為「公用程式（System Utilities）」。故選 (A)。",
+    "option_analysis": {
+      "A": "【正確】維護與備份驅動程式的輔助程式屬於公用程式（Utility）。",
+      "B": "【錯誤】語言翻譯程式指 Compiler、Interpreter，用來翻譯程式碼。",
+      "C": "【錯誤】應用軟體為解決日常工作與生活問題，驅動備份屬於系統底層維護。",
+      "D": "【錯誤】自由軟體（Free Software）指具有開放原始碼授權，題目問的是功能性分類而非授權模式。"
+    },
+    "exam_tip": "常見公用程式：防毒軟體、壓縮軟體（WinRAR/7-Zip）、磁碟重組/清理、驅動程式備份工具。",
+    "tags": [
+      "公用程式",
+      "DoubleDriver",
+      "系統維護",
+      "驅動程式"
+    ]
+  },
+  {
+    "id": "ex_r4_q3",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 3,
+    "is_advanced": true,
+    "answer": "A",
+    "question": "下列有關軟體的敘述，何者錯誤？",
+    "options": {
+      "A": "重組並最佳化磁碟機可提升磁碟的讀寫效率，屬於專案開發軟體",
+      "B": "Google文件可用來編輯文件、試算處理等，屬於應用軟體",
+      "C": "Windows可作為使用者與電腦硬體間的溝通橋樑，屬於系統軟體",
+      "D": "語言翻譯程式屬於系統軟體。"
+    },
+    "official_explanation": "重組並最佳化磁碟機屬於公用程式。",
+    "page": 6,
+    "page_img": "assets/pages/exercise/page_6.png",
+    "key_concept": "磁碟重組工具的軟體屬性歸納（公用程式非專案開發）",
+    "step_by_step": "1. 題目問何者錯誤。\n2. 檢視選項 (A)：「重組並最佳化磁碟機可提升磁碟的讀寫效率，屬於『專案開發軟體』」。\n   - 重組磁碟機確實能讓破碎的檔案連續存放，提升機械硬碟讀寫效率。\n   - 但重組工具是 Windows 內建通用於全球數億台電腦的「公用程式（系統軟體）」，絕對不是針對特定公司委託訂製的「專案開發軟體」！因此 (A) 敘述錯誤，即為答案。\n3. 其餘選項：Google文件為應用軟體；Windows 為系統軟體；語言翻譯程式為系統軟體，皆完全正確。",
+    "option_analysis": {
+      "A": "【錯誤敘述，選此項】重組磁碟是「公用程式」，不是專案開發軟體。",
+      "B": "【正確敘述】Google文件提供線上文書功能，屬於應用軟體。",
+      "C": "【正確敘述】Windows 作業系統作為使用者與硬體之間的溝通介面。",
+      "D": "【正確敘述】語言翻譯程式（編譯器/直譯器）屬於系統軟體。"
+    },
+    "exam_tip": "統測最愛考陷阱：磁碟重組/清理是【公用程式】；編譯器是【系統軟體】！",
+    "tags": [
+      "磁碟重組",
+      "公用程式",
+      "專案開發軟體",
+      "常考陷阱"
+    ]
+  },
+  {
+    "id": "ex_r4_q4",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 4,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "下列作業系統中，何者不屬於多人多工作業系統？",
+    "options": {
+      "A": "iOS",
+      "B": "UNIX",
+      "C": "Linux",
+      "D": "Windows Server。"
+    },
+    "official_explanation": "",
+    "page": 6,
+    "page_img": "assets/pages/exercise/page_6.png",
+    "key_concept": "作業系統使用者模式分類：不屬於「多人多工」之系統（iOS）",
+    "step_by_step": "1. 「多人多工（Multi-user Multi-tasking）」是指允許多個使用者同時登入系統，且每個使用者可同時執行多個處理程序的作業系統架構。\n2. 檢視選項：\n   - UNIX：經典伺服器與大型主機系統，為多人多工。\n   - Linux：開源伺服器主流系統，具健全的多帳號與多任務管理，為多人多工。\n   - Windows Server：微軟專門為企業網路與伺服器設計的系統，為多人多工。\n   - iOS：蘋果專為 iPhone 等個人行動設備設計的行動作業系統，屬於「單人多工（Single-user Multi-tasking）」，並不支援多個遠端使用者同時登入獨立作業。\n3. 因此不屬於多人多工的作業系統為 iOS，選 (A)。",
+    "option_analysis": {
+      "A": "【不屬於多人多工，選此項】iOS 是單人多工作業系統。",
+      "B": "【屬於多人多工】UNIX 專門設計用於多用戶大型環境。",
+      "C": "【屬於多人多工】Linux 天生具備多人多工架構。",
+      "D": "【屬於多人多工】Windows Server 提供多用戶伺服器服務。"
+    },
+    "exam_tip": "多人多工四天王：UNIX、Linux、Windows Server、大型主機 OS；手機（iOS/Android）是【單人多工】。",
+    "tags": [
+      "多人多工",
+      "iOS",
+      "UNIX",
+      "Linux",
+      "作業系統分類"
+    ]
+  },
+  {
+    "id": "ex_r4_q5",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 5,
+    "is_advanced": true,
+    "answer": "D",
+    "question": "Samsung公司推出具有2億超高畫素的新款智慧型手機，請問該款手機 最可能是使用下列哪一套作業系統？",
+    "options": {
+      "A": "Windows",
+      "B": "Linux",
+      "C": "iOS",
+      "D": "Android。"
+    },
+    "official_explanation": "Apple公司以外的手機大多採用Android作業系統。",
+    "page": 6,
+    "page_img": "assets/pages/exercise/page_6.png",
+    "key_concept": "行動裝置作業系統生態：Android vs iOS",
+    "step_by_step": "1. 題目描述：三星（Samsung）公司推出新款高階智慧型手機。\n2. 全球智慧型手機作業系統主要由兩大陣營瓜分：\n   - iOS：蘋果（Apple）公司私有專屬，僅搭載在 iPhone 系列手機上，不授權給任何第三方品牌。\n   - Android（安卓）：由 Google 開發主導的開放原始碼行動作業系統，全球絕大多數非蘋果品牌（Samsung、小米、OPPO、vivo、ASUS）皆採用 Android 系統。\n3. 因此三星手機最可能使用的作業系統就是 Android，選 (D)。",
+    "option_analysis": {
+      "A": "【錯誤】Windows Phone 早就終止開發退出手機市場。",
+      "B": "【錯誤】原生 Linux 主要用於伺服器與桌機，一般商業手機不直接使用原生 Linux 作為人機介面。",
+      "C": "【錯誤】iOS 只有蘋果的 iPhone 才能使用，三星不可能使用 iOS。",
+      "D": "【正確】三星 Galaxy 系列手機全線搭載 Android 作業系統。"
+    },
+    "exam_tip": "手機作業系統秒殺口訣：Apple 用 iOS；其他品牌（三星/小米/華碩）通通用 Android！",
+    "tags": [
+      "Android",
+      "iOS",
+      "Samsung",
+      "智慧型手機"
+    ]
+  },
+  {
+    "id": "ex_r4_q6",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 6,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "iOS作業系統僅允許使用者透過其內建的「App Store」下載軟體使用， 不允許安裝其他來源的軟體，這類系統可稱為？",
+    "options": {
+      "A": "封閉系統",
+      "B": "開放系統",
+      "C": "開放原始碼",
+      "D": "自由軟體。"
+    },
+    "official_explanation": "",
+    "page": 6,
+    "page_img": "assets/pages/exercise/page_6.png",
+    "key_concept": "作業系統生態模式：封閉系統（Closed System）之特徵",
+    "step_by_step": "1. 題目情境描述：iOS 僅允許使用者透過官方內建的「App Store」下載經審核的軟體，不允許自由從網頁下載安裝 APK 或未經授權的外部來源軟體。\n2. 這種由單一平台擁有者嚴格控管軟體來源、硬體規格與生態圈，形成圍牆花園（Walled Garden）的系統，在資訊科學中稱為「封閉系統（Closed System）」。\n3. 開放系統（如 Android）則允許使用者透過側載（Sideloading）安裝第三方應用程式與第三方市集。故選 (A)。",
+    "option_analysis": {
+      "A": "【正確】iOS 限制外部安裝、軟硬體皆由蘋果封閉掌控，稱為封閉系統。",
+      "B": "【錯誤】開放系統允許相容不同硬體與第三方自由擴充。",
+      "C": "【錯誤】開放原始碼指程式碼公諸於世，iOS 是閉源商用系統。",
+      "D": "【錯誤】自由軟體強調四種自由授權，iOS 是商業專有軟體。"
+    },
+    "exam_tip": "封閉系統代表：Apple iOS；開放系統代表：Google Android、Linux。",
+    "tags": [
+      "封閉系統",
+      "iOS",
+      "AppStore",
+      "開放系統"
+    ]
+  },
+  {
+    "id": "ex_r4_q7",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 7,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "下列哪一套作業系統，是由美國貝爾實驗室發展，採用C語言開發，常 應用在大型電腦上？",
+    "options": {
+      "A": "Linux",
+      "B": "UNIX",
+      "C": "Windows",
+      "D": "macOS。"
+    },
+    "official_explanation": "",
+    "page": 6,
+    "page_img": "assets/pages/exercise/page_6.png",
+    "key_concept": "計算機歷史重要里程碑：UNIX 與 C 語言的誕生地（貝爾實驗室）",
+    "step_by_step": "1. 歷史考點回顧：\n   - 1969 年，美國 AT&T 旗下的「貝爾實驗室（Bell Labs）」，由肯·湯普遜（Ken Thompson）與丹尼斯·里奇（Dennis Ritchie）等人共同研發出強大的「UNIX」作業系統。\n   - 為了讓 UNIX 能夠在不同架構的電腦間輕鬆移植，丹尼斯·里奇發明了「C 語言」，並成功用 C 語言重寫了 UNIX 核心！\n   - UNIX 具備極高的穩定性與多工能力，廣泛應用於大型電腦、超級工作站與伺服器。\n2. 因此由美國貝爾實驗室發展、採 C 語言開發的作業系統正是 UNIX，選 (B)。",
+    "option_analysis": {
+      "A": "【錯誤】Linux 是 1991 年由芬蘭大學生林納斯·托瓦茲以個人力量開發的核心，非貝爾實驗室。",
+      "B": "【正確】UNIX 出自 AT&T 貝爾實驗室，採用 C 語言重寫，歷史地位無可動搖。",
+      "C": "【錯誤】Windows 出自微軟公司（Microsoft）。",
+      "D": "【錯誤】macOS 是蘋果公司基於 BSD（UNIX分支）發展而來的桌面系統。"
+    },
+    "exam_tip": "資處科必考歷史連連看：貝爾實驗室 + C語言 + 肯湯普遜與丹尼斯里奇 = 【UNIX】！",
+    "tags": [
+      "UNIX",
+      "C語言",
+      "貝爾實驗室",
+      "作業系統歷史"
+    ]
+  },
+  {
+    "id": "ex_r4_q8",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 8,
+    "is_advanced": true,
+    "answer": "D",
+    "question": "我們經常使用LINE通訊軟體與親友傳訊，在組成雲端資源的架構中， LINE是屬於",
+    "options": {
+      "A": "IaaS",
+      "B": "PaaS",
+      "C": "BaaS",
+      "D": "SaaS。 7 === 14 數位科技概論（上）習作本 情境素養題"
+    },
+    "official_explanation": "LINE是軟體，屬於軟體即服務（Software as a Service, SaaS）。",
+    "page": 7,
+    "page_img": "assets/pages/exercise/page_7.png",
+    "key_concept": "雲端服務三層次應用辨識：通訊軟體 LINE 屬於 SaaS",
+    "step_by_step": "1. 雲端運算三大服務模式：\n   - IaaS（基礎建設即服務）：租借儲存硬碟、伺服器硬體（如 GCP GCS、AWS S3）。\n   - PaaS（平台即服務）：租借軟體開發與執行平台（如 Heroku、Google App Engine）。\n   - SaaS（軟體即服務）：將應用軟體架設在雲端，使用者無須管理硬體與平台，直接透過 App 或網頁使用軟體服務。\n2. LINE 是一套即時通訊「應用軟體」，伺服器由 LINE 公司維護，用戶直接享受傳送文字、語音通話與貼圖的功能，屬於最標準的「軟體即服務（Software as a Service, SaaS）」。故選 (D)。",
+    "option_analysis": {
+      "A": "【錯誤】IaaS 提供的是底層運算主機與儲存空間。",
+      "B": "【錯誤】PaaS 提供的是程式語言運行環境與資料庫平台。",
+      "C": "【錯誤】BaaS 是後端即服務（Backend as a Service）。",
+      "D": "【正確】LINE 是終端應用軟體服務，屬於 SaaS。"
+    },
+    "exam_tip": "日常雲端軟體（LINE、Gmail、YouTube、Netflix、臉書、Google Docs）全都是【SaaS】！",
+    "tags": [
+      "SaaS",
+      "LINE",
+      "雲端運算",
+      "生活科技"
+    ]
+  },
+  {
+    "id": "ex_r4_q9",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 9,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "語欣在課堂中學到Linux作業系統可以免費下載安裝，但她要下載Linux 時，發現Linux作業系統有許多版本，例如Ubuntu、RedHat、Fedora 等。請問Linux有這麼多版本，主要原因為何？",
+    "options": {
+      "A": "Linux是免費軟體",
+      "B": "Linux支援多種語言",
+      "C": "Linux開放原始碼",
+      "D": "Linux支援多點觸控技術。"
+    },
+    "official_explanation": "",
+    "page": 7,
+    "page_img": "assets/pages/exercise/page_7.png",
+    "key_concept": "Linux 擁有眾多發行版（Distribution）的根本主因：開放原始碼",
+    "step_by_step": "1. 題目描述：語欣發現 Linux 作業系統有極多版本，如 Ubuntu、RedHat、Fedora、Debian、CentOS 等。\n2. 原因分析：Linux 核心採取「開放原始碼（Open Source，基於 GPL 條款）」授權釋出，全球任何個人、開源社群或商業公司，都有權自由取得其原始程式碼，並能依據不同的用途（如個人桌機、企業伺服器、網路防火牆）進行修改、編譯、美化並打包發布新版本！\n3. 正是因為「開放原始碼」賦予的大眾自由度，才造就了今天百家爭鳴的 Linux 各大發行版。故選 (C)。",
+    "option_analysis": {
+      "A": "【錯誤】有些 Linux 是商業收費服務版本（如 RedHat Enterprise Linux 需購買訂閱支援服務），免費非其多版本主因。",
+      "B": "【錯誤】多語言支援只是在地化功能，很多閉源系統也支援多語言。",
+      "C": "【正確】開源讓全世界工程師皆可自由客製改寫發行新分支版本。",
+      "D": "【錯誤】多點觸控與發行版本數量完全無關。"
+    },
+    "exam_tip": "開源（Open Source）精神：人人都能看程式碼、人人都能改程式碼、人人都能打包發行！",
+    "tags": [
+      "Linux",
+      "開放原始碼",
+      "發行版",
+      "Ubuntu",
+      "RedHat"
+    ]
+  },
+  {
+    "id": "ex_r4_q10",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 10,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "阿雄喜歡用手機拍照，他將拍攝的照片都備份一份到Google的雲端硬碟 中，長期累積下來已使用了20GB的容量。阿雄想知道他的照片實際是 儲存在何處，請問下列哪一個位置是正確的儲存位置？",
+    "options": {
+      "A": "存在阿雄的手機中",
+      "B": "存在網際網路的路由器中",
+      "C": "分散存放在使用Google服務的其他人手機中",
+      "D": "存放在Google公司分散在各處的伺服器中。"
+    },
+    "official_explanation": "",
+    "page": 7,
+    "page_img": "assets/pages/exercise/page_7.png",
+    "key_concept": "雲端儲存（Cloud Storage）的實體架構運作原理",
+    "step_by_step": "1. 題目情境：阿雄將拍照照片備份到 Google 雲端硬碟（Google Drive），累積了 20GB，想知道照片實際存放在何處。\n2. 雲端儲存本質：「雲端」並不是真的在天上的雲朵或漂浮在網路上，而是由雲端服務商（如 Google）在全球各地建立龐大的「雲端資料中心（Data Center）」，裡面排列著成千上萬台伺服器與大型磁碟陣列。\n3. 當使用者上傳檔案時，資料是透過網路傳送到 Google 分散在世界各處的機房伺服器硬碟中儲存並多重備份。\n4. 選項 (D) 清楚指出「存放在Google公司分散在各處的伺服器中」，敘述完全正確。",
+    "option_analysis": {
+      "A": "【錯誤】手機若刪除本機檔案，雲端硬碟仍保留，證明資料在遠端而非單純在手機內。",
+      "B": "【錯誤】路由器（Router）只負責封包路徑指引與轉發，內部記憶體很小，不儲存用戶的大容量檔案。",
+      "C": "【錯誤】雲端有嚴格資安隱私與身分驗證，絕不會未經授權亂分散存在別人的手機裡。",
+      "D": "【正確】雲端資料中心伺服器機房是儲存所有雲端資料的真實實體據點。"
+    },
+    "exam_tip": "名言領悟：「所謂的雲端，只不過是別人的電腦（伺服器機房）而已！」",
+    "tags": [
+      "雲端硬碟",
+      "GoogleDrive",
+      "資料中心",
+      "伺服器",
+      "常識觀念"
+    ]
+  },
+  {
+    "id": "ex_r5_q1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 1,
+    "is_advanced": true,
+    "answer": "C",
+    "question": "在一個大型的系統平台中，何者較不可能做為輸入的設備？",
+    "options": {
+      "A": "智慧型手機",
+      "B": "電腦",
+      "C": "CPU",
+      "D": "GPS晶片。"
+    },
+    "official_explanation": "CPU屬於處理資料的設備。",
+    "page": 11,
+    "page_img": "assets/pages/exercise/page_11.png",
+    "key_concept": "系統平台五大單元角色辨析：不可能做為輸入設備者（CPU）",
+    "step_by_step": "1. 系統平台的硬體設備依功能分為：輸入設備、處理設備、儲存設備、輸出設備、通訊設備。\n2. 檢視選項：\n   - 智慧型手機：可透過觸控螢幕、麥克風、相機輸入資料，是常見前端輸入設備。\n   - 電腦：可透過鍵盤、滑鼠輸入資料。\n   - GPS晶片：接收人造衛星訊號並將定位座標資料「輸入」給導航系統，屬於感測輸入設備。\n   - CPU（中央處理單元）：專門負責運算與指令處理的核心「處理設備」，本身不是接收外界原始資料的輸入裝置。\n3. 因此最不可能作為輸入設備的是 CPU，選 (C)。",
+    "option_analysis": {
+      "A": "【可能】手機是行動系統平台最重要的感測與互動輸入設備。",
+      "B": "【可能】終端電腦是經典輸入資料設備。",
+      "C": "【不可能，選此項】CPU 是資料運算處理中樞，負責「處理」而非「輸入」。",
+      "D": "【可能】GPS 晶片感測衛星電波輸入經緯度數值。"
+    },
+    "exam_tip": "設備分類秒殺法：感測器/鍵盤/滑鼠/攝影鏡頭 = 輸入；CPU/GPU = 處理；螢幕/印表機 = 輸出。",
+    "tags": [
+      "輸入設備",
+      "CPU",
+      "五大單元",
+      "系統平台"
+    ]
+  },
+  {
+    "id": "ex_r5_q2",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 2,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "系統平台運作的流程中，通常不包含下列何者？",
+    "options": {
+      "A": "偵錯",
+      "B": "輸入",
+      "C": "處理",
+      "D": "輸出。"
+    },
+    "official_explanation": "",
+    "page": 11,
+    "page_img": "assets/pages/exercise/page_11.png",
+    "key_concept": "系統平台標準運作三部曲流程：輸入、處理、輸出",
+    "step_by_step": "1. 資訊系統運作的經典資料處理週期（Information Processing Cycle）由三大基礎步驟構成：\n   - 輸入（Input）：接收外界原始資料與指示。\n   - 處理（Process）：處理器執行計算、比對、排序或邏輯轉換。\n   - 輸出（Output）：將處理完成的有效資訊呈現在螢幕、列印或傳送給下個系統。\n2. 檢視題目選項：「偵錯（Debug）」是程式設計師修復程式碼 Bug 或軟體除錯的過程，並非系統平台運作流程的固定三大標準步驟。\n3. 因此通常不包含「偵錯」，選 (A)。",
+    "option_analysis": {
+      "A": "【不包含，選此項】偵錯（Debugging）是開發維護手段，非運作三步驟之一。",
+      "B": "【包含】輸入（Input）是第一步。",
+      "C": "【包含】處理（Processing）是第二步。",
+      "D": "【包含】輸出（Output）是第三步。"
+    },
+    "exam_tip": "資訊系統三大黃金步驟：輸入（Input） -> 處理（Processing） -> 輸出（Output）。",
+    "tags": [
+      "運作流程",
+      "輸入",
+      "處理",
+      "輸出",
+      "除錯"
+    ]
+  },
+  {
+    "id": "ex_r5_q3",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 3,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "系統平台運作過程中，由誰負責安排每項工作的處理順序，並管理程 序的啟動與結束？",
+    "options": {
+      "A": "應用軟體",
+      "B": "作業系統",
+      "C": "雲端伺服器",
+      "D": "網路硬碟。"
+    },
+    "official_explanation": "",
+    "page": 11,
+    "page_img": "assets/pages/exercise/page_11.png",
+    "key_concept": "作業系統對行程啟動、排程與終止的統籌管控",
+    "step_by_step": "1. 題目描述：「負責安排每項工作的處理順序，並管理程序的啟動與結束」。\n2. 應用軟體在執行時由作業系統分配 PID（程序識別碼）載入記憶體，排程器決定哪一個程序可以使用 CPU，執行完畢後由作業系統收回記憶體與各項把柄資源。\n3. 統籌掌管整部電腦所有工作處理順序與生命週期的唯一管理者就是「作業系統（Operating System）」。故選 (B)。",
+    "option_analysis": {
+      "A": "【錯誤】應用軟體是被管理者，無法管理其他程式的啟閉與排程。",
+      "B": "【正確】作業系統的程序管理員負責排程演算法與程序的生命週期管理。",
+      "C": "【錯誤】雲端伺服器是提供遠端服務的主機，非本機排程核心。",
+      "D": "【錯誤】網路硬碟只提供儲存功能。"
+    },
+    "exam_tip": "作業系統就是大管家：誰先跑、誰後跑、何時啟動、何時強制關閉，全由【作業系統】說了算！",
+    "tags": [
+      "作業系統",
+      "程序管理",
+      "排程器"
+    ]
+  },
+  {
+    "id": "ex_r5_q4",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 4,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "在Windows作業系統中，透過按下列哪一組組合鍵，可開啟「工作管理 員」？",
+    "options": {
+      "A": "Shift + Enter",
+      "B": "Ctrl + Alt + Delete",
+      "C": "Ctrl + Shift + Delete",
+      "D": "Enter + Delete。"
+    },
+    "official_explanation": "",
+    "page": 11,
+    "page_img": "assets/pages/exercise/page_11.png",
+    "key_concept": "Windows 開啟「工作管理員」經典安全熱鍵",
+    "step_by_step": "1. 在 Windows 作業系統中，若想叫出工作管理員檢視或強制關閉卡住的程式：\n2. 系統預設的安全插斷組合鍵為：`Ctrl + Alt + Delete`（此時會觸發硬體插斷進入安全性選項畫面，點擊即可開啟工作管理員）。\n3. （另一組直接啟動熱鍵為 `Ctrl + Shift + Esc`）。\n4. 檢視題目選項，符合標準熱鍵的是 (B) Ctrl + Alt + Delete。",
+    "option_analysis": {
+      "A": "【錯誤】Shift + Enter 無開啟工作管理員功能。",
+      "B": "【正確】Ctrl + Alt + Delete 是 Windows 歷史悠久的工作管理員叫出熱鍵。",
+      "C": "【錯誤】Ctrl + Shift + Delete 通常在瀏覽器中觸發「清除瀏覽資料」。",
+      "D": "【錯誤】Enter + Delete 無此功能。"
+    },
+    "exam_tip": "熱鍵常考總整理：Ctrl + Alt + Del（叫出安全性面板選工作管理員）；Ctrl + Shift + Esc（直開工作管理員）；Alt + F4（關閉目前視窗）。",
+    "tags": [
+      "工作管理員",
+      "快捷鍵",
+      "Windows操作"
+    ]
+  },
+  {
+    "id": "ex_r5_q5",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 5,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "在系統平台中，透過印表機來列印文件，是屬於下列哪一種系統平台 的內部運作？",
+    "options": {
+      "A": "記憶體管理",
+      "B": "工作排程",
+      "C": "檔案管理",
+      "D": "輸入∕輸出管理。"
+    },
+    "official_explanation": "",
+    "page": 11,
+    "page_img": "assets/pages/exercise/page_11.png",
+    "key_concept": "印表機列印文件所屬系統內部管理模組（I/O 管理）",
+    "step_by_step": "1. 題目描述：透過印表機來列印文件。\n2. 印表機在電腦架構中屬於「輸出設備（Output Device）」，是典型的外部週邊硬體。\n3. 作業系統管理印表機的驅動、連接埠傳輸協定、列印工作佇列（Print Spooling）等作業，全部歸屬於作業系統的「輸入／輸出管理（I/O Management）」模組。\n4. 故選 (D)。",
+    "option_analysis": {
+      "A": "【錯誤】記憶體管理負責虛擬記憶體與 RAM 位址空間分派。",
+      "B": "【錯誤】工作排程專門分配 CPU 運算時間給各執行緒。",
+      "C": "【錯誤】檔案管理負責檔案儲存格式、目錄結構。",
+      "D": "【正確】印表機是輸出裝置，其控制與排隊輸出屬於輸入／輸出管理。"
+    },
+    "exam_tip": "週邊管理口訣：螢幕、鍵盤、滑鼠、印表機統稱 I/O 設備，都歸【輸入／輸出管理】管轄。",
+    "tags": [
+      "輸出入管理",
+      "I/O",
+      "印表機",
+      "作業系統功能"
+    ]
+  },
+  {
+    "id": "ex_r5_q6",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 6,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "作業系統會依照不同的資料處理需求，使用不同的排程演算法，請問 下列哪一種排程演算法最可能發生「飢餓」情況，造成低優先順序的 程序被長時間擱置？",
+    "options": {
+      "A": "後來先服務",
+      "B": "最短工作優先",
+      "C": "優先排程",
+      "D": "先來先服務。"
+    },
+    "official_explanation": "",
+    "page": 11,
+    "page_img": "assets/pages/exercise/page_11.png",
+    "key_concept": "CPU 工作排程演算法之盲點：優先排程引發的「飢餓（Starvation）」問題",
+    "step_by_step": "1. 題目問題：哪一種排程演算法最可能發生「飢餓（Starvation）」情況，造成低優先順序程序被長時間擱置？\n2. 演算法特性剖析：\n   - 先來先服務（FCFS）：按到達時間排隊，前面的跑完就換下一個，只要前面結束一定輪得到，不會飢餓。\n   - 最短工作優先（SJF）：短工作先跑，長工作可能稍微延遲，但一般不至於完全死鎖。\n   - 優先排程（Priority Scheduling, PS）：系統給每個工作設定權限等級（Priority）。只要系統中持續有高優先權的新程序到達，CPU 就會一直插隊讓高優先權先執行；低優先權的程序將永遠拿不到 CPU 資源，處於長期飢餓（Starvation）狀態，甚至無限期被擱置！\n3. （作業系統通常透過「老化（Aging）」技術，隨著等待時間增加逐漸提高低優先權程序的等級來解決此問題）。\n4. 因此最易發生飢餓現象的是「優先排程」，選 (C)。",
+    "option_analysis": {
+      "A": "【錯誤】後來先服務在堆疊中運作，非標準 CPU 排程名稱。",
+      "B": "【錯誤】SJF 雖可能讓長工作等待，但比優先排程更可預測且平均等待時間最短。",
+      "C": "【最可能發生飢餓，選此項】高優先級程序若不斷加入，低優先級程序將永遠無法執行（餓死）。",
+      "D": "【錯誤】FCFS 講求公平排隊，保證每個人都輪得到，絕對不會飢餓。"
+    },
+    "exam_tip": "統測排程演算法考點：【優先排程】最怕「飢餓（Starvation）」；解決方法是【老化技術（Aging）】！",
+    "tags": [
+      "工作排程",
+      "優先排程",
+      "飢餓問題",
+      "Starvation",
+      "統測高難度考點"
+    ]
+  },
+  {
+    "id": "ex_r5_q7",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 7,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "一般來說，使用多核心CPU，每個核心同時工作，適合用來實現下列何 項技術？",
+    "options": {
+      "A": "分散處理",
+      "B": "平行處理",
+      "C": "單工處理",
+      "D": "交談式處理。"
+    },
+    "official_explanation": "",
+    "page": 11,
+    "page_img": "assets/pages/exercise/page_11.png",
+    "key_concept": "多核心處理器（Multi-core CPU）與平行處理（Parallel Processing）",
+    "step_by_step": "1. 題目描述：「使用多核心 CPU，每個核心同時工作」。\n2. 平行處理（Parallel Processing）技術：將一個龐大複雜的運算任務拆解成多個互不干擾的子任務，分派給 CPU 的多個核心（Core 1, Core 2...）在同一個瞬間「同時進行運算」，最後再合併成果，從而大幅縮減總運算時間。\n3. 分散處理通常指跨不同實體電腦網路；單工處理一次只做一件事；交談式處理指人機問答即時互動。\n4. 故多核心同時運作最適合實現「平行處理」，選 (B)。",
+    "option_analysis": {
+      "A": "【錯誤】分散處理通常指跨多台實體連網電腦協同運算（Distributed Processing）。",
+      "B": "【正確】單機多核心同時執行不同子任務，正是「平行處理（Parallel Processing）」的典型實現。",
+      "C": "【錯誤】單工處理完全浪費多核心能力。",
+      "D": "【錯誤】交談式處理是指即時人機交互回饋系統。"
+    },
+    "exam_tip": "關鍵字對應：多核心、多處理器、拆分運算同時進行 -> 秒選【平行處理】！",
+    "tags": [
+      "多核心",
+      "平行處理",
+      "ParallelProcessing",
+      "CPU運算"
+    ]
+  },
+  {
+    "id": "ex_r5_q8",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 8,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "資訊科技不停發展，下列何者較不可能是未來系統平台發展的趨勢？",
+    "options": {
+      "A": "消耗更多資源",
+      "B": "使用更多人工智慧技術",
+      "C": "硬體設備的體積愈來愈小",
+      "D": "系統從實體移至雲端。 12 === 19 數位科技概論（上）習作本 情境素養題"
+    },
+    "official_explanation": "",
+    "page": 12,
+    "page_img": "assets/pages/exercise/page_12.png",
+    "key_concept": "未來系統平台發展趨勢：綠色運算、輕量化、雲端化、AI化",
+    "step_by_step": "1. 題目詢問：下列何者「較不可能是」未來系統平台發展的趨勢？\n2. 檢視未來科技發展方向：\n   - (A) 消耗更多資源：現代與未來科技極力追求「綠色運算（Green Computing）」、節能省電、降低晶片製程奈米功耗，各家大廠都在降低伺服器能耗與碳排放，絕不可能反其道而行「消耗更多資源」！故 (A) 不可能是未來趨勢，即為答案。\n   - (B) 使用更多 AI：ChatGPT、Copilot、自動駕駛等 AI 融入系統，是絕對必然趨勢。\n   - (C) 體積愈來愈小：奈米微縮技術讓元件與晶片體積持續縮小、更便於攜帶穿戴。\n   - (D) 系統從實體移至雲端：雲端運算（Cloud-first / Serverless）已成全球企業主流架構。",
+    "option_analysis": {
+      "A": "【非未來趨勢，選此項】未來追求節能減碳與高能效比，不會以消耗更多資源為目標。",
+      "B": "【是趨勢】AI 技術普及化融入作業系統是目前最火紅方向。",
+      "C": "【是趨勢】半導體奈米製程演進使硬體愈來愈輕薄短小。",
+      "D": "【是趨勢】本地地端轉向公有雲/混合雲是全球趨勢。"
+    },
+    "exam_tip": "科技發展大方向：更快、更小、更省電、更聰明（AI）、更雲端。說要「耗更多電、吃更多資源」的一律打叉！",
+    "tags": [
+      "未來趨勢",
+      "綠色運算",
+      "節能",
+      "反向思維"
+    ]
+  },
+  {
+    "id": "ex_r5_q9",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 9,
+    "is_advanced": true,
+    "answer": "D",
+    "question": "薇薇使用電腦時，發現電腦運作速度愈來愈慢，她懷疑可能有惡意軟 體在偷偷佔用資源，請問薇薇可以透過Windows作業系統的哪一項功 能，來查看電腦中有哪些程序正在執行？",
+    "options": {
+      "A": "重組並最佳化磁碟機",
+      "B": "磁碟檢查工具",
+      "C": "檔案總管",
+      "D": "工作管理員。"
+    },
+    "official_explanation": "透過「工作管理員」可檢視執行中的程序。",
+    "page": 12,
+    "page_img": "assets/pages/exercise/page_12.png",
+    "key_concept": "Windows 即時程序與惡意佔用監控工具（工作管理員）",
+    "step_by_step": "1. 題目情境：薇薇發現電腦運作速度愈來愈慢，懷疑有惡意軟體偷偷佔用 CPU 或記憶體資源，想要查看「電腦中有哪些程序正在執行」。\n2. 檢視 Windows 內建工具：\n   - 重組最佳化磁碟機：整理硬碟碎片，看不到執行中的軟體進程。\n   - 磁碟檢查工具：掃描修復磁區錯誤。\n   - 檔案總管：瀏覽檔案與資料夾目錄。\n   - 工作管理員（Task Manager）：其「處理程序」分頁能即時列出正在運行的所有前景 App 與背景處理程序，並清楚標示各程序佔用的 CPU%、記憶體 MB 數、硬碟讀寫與網路流量，最適合揪出偷佔資源的惡意軟體！\n3. 故選 (D) 工作管理員。",
+    "option_analysis": {
+      "A": "【錯誤】磁碟重組工具無法監看正在運行的軟體進程。",
+      "B": "【錯誤】磁碟檢查工具只管磁區壞軌。",
+      "C": "【錯誤】檔案總管只看硬碟裡存的靜態檔案，不能即時看動態記憶體運算進程。",
+      "D": "【正確】工作管理員是監控與管理執行中程序（Process）的專用工具。"
+    },
+    "exam_tip": "電腦變慢抓兇手：按 Ctrl+Shift+Esc 打開【工作管理員】，看 CPU 或記憶體誰衝到 100%！",
+    "tags": [
+      "工作管理員",
+      "程序監控",
+      "惡意軟體",
+      "效能診斷"
+    ]
+  },
+  {
+    "id": "ex_r5_q10",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 10,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "大雄在Windows作業系統中，嘗試將檔案屬性設定成「隱藏」，結果就 找不到被隱藏的檔案了！請問要如何操作，才能讓大雄能看到被隱藏的 檔案呢？",
+    "options": {
+      "A": "在被隱藏的檔案上按右鍵，選『內容』並取消隱藏",
+      "B": "按功能表列的『檢視』，即可設定顯示被隱藏的檔案",
+      "C": "按功能表列的『檔案』，可開啟「資料夾選項」來顯示被隱藏的檔案",
+      "D": "在任一檔案上按右鍵，選『內容』並取消隱藏。"
+    },
+    "official_explanation": "",
+    "page": 12,
+    "page_img": "assets/pages/exercise/page_12.png",
+    "key_concept": "Windows 檔案總管中顯示隱藏屬性檔案之操作步驟",
+    "step_by_step": "1. 題目情境：大雄將檔案屬性設定成「隱藏（Hidden）」，之後檔案便在視窗中消失找不到，想知道如何重新看到被隱藏的檔案。\n2. 操作原理：在 Windows 10/11 的「檔案總管」中：\n   - 點擊上方功能表列的「【檢視】（View）」。\n   - 在下拉或展開選項中，勾選「【隱藏的項目】（Hidden items）」。\n   - 勾選後，原本被設為隱藏的檔案就會以半透明淡色圖示重新顯示出來供使用者開啟或修改內容取消隱藏。\n3. 檢視選項 (B)「按功能表列的『檢視』，即可設定顯示被隱藏的檔案」最符合 Windows 官方操作流程。故選 (B)。",
+    "option_analysis": {
+      "A": "【錯誤】檔案已經看不到了，根本無法在被隱藏的檔案上按右鍵。",
+      "B": "【正確操作】在檔案總管上方「檢視」標籤頁，勾選「顯示隱藏的項目」即可立即看到。",
+      "C": "【錯誤】功能表列的「檔案」無此快速直覺切換選項。",
+      "D": "【錯誤】在任一無關檔案上按右鍵取消隱藏，只會改動該檔案，無法解開目標檔案的隱藏狀態。"
+    },
+    "exam_tip": "Windows 檔案總管密技：檢視 -> 顯示 -> 隱藏的項目（勾選即可看見小幽靈般的半透明隱藏檔）。",
+    "tags": [
+      "Windows檔案總管",
+      "隱藏屬性",
+      "檢視設定",
+      "實務操作題"
+    ]
+  },
+  {
+    "id": "ex_r6_q1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 1,
+    "is_advanced": true,
+    "answer": "D",
+    "question": "下列軟體中，何者的主要功能與Word不同？",
+    "options": {
+      "A": "Writer",
+      "B": "Pages",
+      "C": "Google文件",
+      "D": "Keynote。"
+    },
+    "official_explanation": "Word是文書處理軟體；Keynote是簡報軟體。",
+    "page": 15,
+    "page_img": "assets/pages/exercise/page_15.png",
+    "key_concept": "常見文書處理軟體（Word Processor）跨廠牌辨識",
+    "step_by_step": "1. 題目問題：何者的主要功能與「Word（文書處理排版）」不同？\n2. 檢驗各軟體家族分類：\n   - (A) Writer：LibreOffice 與 OpenOffice 套件中的「文書處理」軟體，功能對標 Word。\n   - (B) Pages：Apple iWork 套件中的「文書處理」軟體，專為 Mac 與 iPad 排版設計，對標 Word。\n   - (C) Google文件（Google Docs）：Google 雲端辦公套件中的「文書處理」軟體，對標 Word。\n   - (D) Keynote：Apple iWork 套件中的「簡報製作（Presentation）」軟體，功能對標微軟的 PowerPoint，並不是文書處理軟體！\n3. 故 Keynote 主要功能與 Word 不同，選 (D)。",
+    "option_analysis": {
+      "A": "【功能相同】Writer 是開源界的 Word（文書處理）。",
+      "B": "【功能相同】Pages 是蘋果電腦上的 Word（文書處理）。",
+      "C": "【功能相同】Google文件是雲端版的 Word（文書處理）。",
+      "D": "【功能不同，選此項】Keynote 是製作投影片簡報的工具，對標 PowerPoint。"
+    },
+    "exam_tip": "蘋果 iWork 三劍客牢記：Pages = 文書處理；Numbers = 試算表；Keynote = 投影片簡報！",
+    "tags": [
+      "辦公室軟體",
+      "Word",
+      "Keynote",
+      "Pages",
+      "Writer"
+    ]
+  },
+  {
+    "id": "ex_r6_q2",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 2,
+    "is_advanced": false,
+    "answer": "D",
+    "question": "在行政院主計總處工作的志宏，要統計消費者物價基本分類指數，並 將統計結果製成圖表。請依照以上敘述，判斷志宏最可能使用下列哪 一套軟體來完成工作？",
+    "options": {
+      "A": "3dsMax",
+      "B": "SketchUp",
+      "C": "Word",
+      "D": "Excel。"
+    },
+    "official_explanation": "",
+    "page": 15,
+    "page_img": "assets/pages/exercise/page_15.png",
+    "key_concept": "辦公室資料統計與圖表製作利器：電子試算表（Excel）",
+    "step_by_step": "1. 題目情境：行政院主計總處志宏要「統計消費者物價指數，並將統計結果繪製成圖表」。\n2. 檢視軟體功能：\n   - 3ds Max：Autodesk 專業 3D 動畫與遊戲角色建模軟體。\n   - SketchUp：3D 建築與空間立體建模工具。\n   - Word：文字報告排版軟體，計算與動態統計圖表功能非常有限。\n   - Excel：微軟試算表軟體，專門處理大量數值計算、內建數學統計公式（SUM, AVERAGE, INDEX等）並能一鍵將數據轉換為圓餅圖、長條圖、折線圖等多種統計圖表，完美勝任該項工作。\n3. 故選 (D) Excel。",
+    "option_analysis": {
+      "A": "【錯誤】3ds Max 是做 3D 動畫特效的。",
+      "B": "【錯誤】SketchUp 是做 3D 空間設計的。",
+      "C": "【錯誤】Word 不適合進行巨量數據運算與動態統計圖表繪製。",
+      "D": "【正確】Excel 是處理數值計算、統計分析與圖表繪製的首選試算表軟體。"
+    },
+    "exam_tip": "關鍵字速配：算錢、算成績、統計數據、繪製統計圖表 -> 唯一指定【Excel（電子試算表）】！",
+    "tags": [
+      "Excel",
+      "電子試算表",
+      "統計圖表",
+      "主計處"
+    ]
+  },
+  {
+    "id": "ex_r6_q3",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 3,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "下列何者適合利用PowerPoint軟體來製作？",
+    "options": {
+      "A": "成果展簡報",
+      "B": "室內設計圖",
+      "C": "圖書管理系統",
+      "D": "多媒體動畫。"
+    },
+    "official_explanation": "",
+    "page": 15,
+    "page_img": "assets/pages/exercise/page_15.png",
+    "key_concept": "微軟簡報製作軟體 PowerPoint 之核心用途",
+    "step_by_step": "1. PowerPoint 是全球最普及的簡報設計工具，專門用來製作投影片（Slide）。\n2. 檢視選項：\n   - (A) 成果展簡報：透過投影片結合文字重點、圖片、圖表與轉場動畫向觀眾解說報告，正是 PowerPoint 最核心的用途。\n   - (B) 室內設計圖：需要 AutoCAD、SketchUp 等專業 CAD/3D 繪圖軟體。\n   - (C) 圖書管理系統：需要 Access、MySQL 等資料庫管理系統配合專案程式開發。\n   - (D) 多媒體動畫：製作如皮克斯的動畫影片需要 Animate、Maya、Blender 等動畫軟體。\n3. 因此最適合利用 PowerPoint 製作的是成果展簡報，選 (A)。",
+    "option_analysis": {
+      "A": "【最適合，選此項】PowerPoint 專門用於各類成果發表、教學、商務簡報。",
+      "B": "【錯誤】室內設計需向量與建築 CAD 軟體。",
+      "C": "【錯誤】圖書管理是資料庫系統。",
+      "D": "【錯誤】專業多媒體動畫需要骨架綁定與幀動畫工具。"
+    },
+    "exam_tip": "PPT 代表 PowerPoint，上台報告發表演講非它莫屬。",
+    "tags": [
+      "PowerPoint",
+      "簡報軟體",
+      "投影片"
+    ]
+  },
+  {
+    "id": "ex_r6_q4",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 4,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "請問下列哪一項工作，最可能使用影像處理軟體（如PhotoImpact）來 達成？",
+    "options": {
+      "A": "為照片中的網紅加入對話",
+      "B": "內政部統計各縣市全年總生 育率",
+      "C": "剪輯行車紀錄器所拍攝的影片",
+      "D": "撰寫一篇有關「攝影創作 與影像編修」的文章。"
+    },
+    "official_explanation": "",
+    "page": 15,
+    "page_img": "assets/pages/exercise/page_15.png",
+    "key_concept": "影像處理軟體（PhotoImpact / Photoshop）之適用情境",
+    "step_by_step": "1. PhotoImpact 與 Photoshop 是經典的二維點陣圖「影像處理與相片編修軟體」。\n2. 檢視選項：\n   - (A) 為照片中的網紅加入對話：在現有的數位相片上加入圖層、對話氣泡貼圖、調整色彩文字，是標準的影像編輯美工範疇，非常適合！\n   - (B) 統計生育率：需用 Excel 等試算表軟體。\n   - (C) 剪輯行車紀錄器影片：影片是動態影音，需用剪映、威力導演、Premiere 等「視訊剪輯軟體」。\n   - (D) 撰寫文章：需要 Word 等「文書處理軟體」。\n3. 故最可能使用影像處理軟體達成的是 (A)。",
+    "option_analysis": {
+      "A": "【正確】照片修圖、合成氣泡貼圖、美化照片屬於影像處理（Photo Editing）。",
+      "B": "【錯誤】統計數字應使用 Excel。",
+      "C": "【錯誤】行車記錄器影片需要視訊剪輯軟體。",
+      "D": "【錯誤】寫文章撰搞需要 Word 等文書軟體。"
+    },
+    "exam_tip": "軟體功能各司其職：改照片（Photoshop/PhotoImpact）；剪影片（威力導演）；寫文件（Word）；算數字（Excel）。",
+    "tags": [
+      "PhotoImpact",
+      "影像處理",
+      "修圖",
+      "照片編修"
+    ]
+  },
+  {
+    "id": "ex_r6_q5",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 5,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "網路上流傳許多合成的照片，例如：搞笑合成照片、假靈異照片等， 請問下列哪一套軟體較適合用來進行上述影像合成的處理？",
+    "options": {
+      "A": "Audacity",
+      "B": "Photoshop",
+      "C": "PowerPoint",
+      "D": "Excel。"
+    },
+    "official_explanation": "",
+    "page": 15,
+    "page_img": "assets/pages/exercise/page_15.png",
+    "key_concept": "點陣圖影像合成與編修專業工具：Photoshop",
+    "step_by_step": "1. 題目描述：網路上流傳的搞笑合成照片、假靈異照片（例如將兩張照片換頭、去背融合、合成鬼影、修除穿幫雜物）。\n2. 這類以像素（Pixel）為基礎的高精度去背、遮色片、圖層混合與濾鏡特效合成處理，全球最權威代表性的專業軟體就是 Adobe Photoshop（俗稱 PS 改圖）。\n3. 檢視其餘選項：Audacity 是剪聲音的；PowerPoint 是做簡報的；Excel 是算數字的。\n4. 故最適合進行影像合成的是 (B) Photoshop。",
+    "option_analysis": {
+      "A": "【錯誤】Audacity 是專業音樂錄音與聲音剪輯軟體。",
+      "B": "【正確】Photoshop 具備強大的圖層、遮色片與合成工具，是修圖改圖代名詞。",
+      "C": "【錯誤】PowerPoint 簡報排版，合成細緻度不足。",
+      "D": "【錯誤】Excel 處理表格數據，完全不能用來合成複雜相片。"
+    },
+    "exam_tip": "「這張照片一定是 P 圖合成的！」-> P 圖的 P 就是【Photoshop】！",
+    "tags": [
+      "Photoshop",
+      "影像合成",
+      "修圖軟體",
+      "Adobe"
+    ]
+  },
+  {
+    "id": "ex_r6_q6",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 6,
+    "is_advanced": true,
+    "answer": "C",
+    "question": "下列各應用軟體之主要功用描述，何者正確？",
+    "options": {
+      "A": "威力導演為影像處理",
+      "B": "Photoshop為預防電腦病毒",
+      "C": "Excel為製作電子試算表",
+      "D": "Windows Media Player為製作動畫。"
+    },
+    "official_explanation": "威力導演為影片編輯軟體；Photoshop為影像處理軟體； Windows Media Player為影音播放軟體。",
+    "page": 15,
+    "page_img": "assets/pages/exercise/page_15.png",
+    "key_concept": "常見應用軟體之核心功用正誤辨析",
+    "step_by_step": "1. 逐一審視各應用軟體的功用敘述：\n   - (A) 威力導演（PowerDirector）：是一套專業的「視訊/影片剪輯軟體」，不是單純靜態影像處理軟體，故 (A) 描述不精確/錯誤。\n   - (B) Photoshop：是影像處理與相片編修軟體，不是「預防電腦病毒」（防毒應為諾頓、卡巴斯基、微軟 Defender），故 (B) 錯誤。\n   - (C) Excel：微軟推出的專業軟體，主要功用就是「製作電子試算表」，進行資料運算與圖表產出，敘述完全正確！\n   - (D) Windows Media Player：是微軟內建的「影音多媒體播放器」，只能播放影片和音樂，根本不能用來「製作動畫」，故 (D) 錯誤。\n2. 綜合判斷，敘述正確的只有 (C)。",
+    "option_analysis": {
+      "A": "【錯誤】威力導演是用來剪接影片的。",
+      "B": "【錯誤】Photoshop 是修圖軟體，不能抓病毒。",
+      "C": "【正確】Excel 就是電子試算表（Spreadsheet）軟體。",
+      "D": "【錯誤】Media Player 只是單純播放器，無法繪製製作動畫。"
+    },
+    "exam_tip": "軟體用途配對秒懂：威力導演=剪影片；Photoshop=修照片；Excel=算試算表；Media Player=播影音。",
+    "tags": [
+      "Excel",
+      "威力導演",
+      "Photoshop",
+      "MediaPlayer",
+      "功用辨析"
+    ]
+  },
+  {
+    "id": "ex_r6_q7",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 7,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "玩具總動員、冰雪奇緣等立體的動畫電影，適合使用下列哪一種軟體 來製作？",
+    "options": {
+      "A": "威力導演",
+      "B": "GIMP",
+      "C": "3ds Max",
+      "D": "PotPlayer。"
+    },
+    "official_explanation": "",
+    "page": 15,
+    "page_img": "assets/pages/exercise/page_15.png",
+    "key_concept": "3D 立體動畫電影（皮克斯/迪士尼風格）製作軟體：3ds Max / Maya",
+    "step_by_step": "1. 題目列舉：《玩具總動員》（Toy Story）、《冰雪奇緣》（Frozen）等「3D 立體電腦動畫電影」。\n2. 製作 3D 動畫電影需要經歷：3D 幾何建模（Modeling）、材質貼圖（Texturing）、骨架綁定（Rigging）、燈光運鏡、動作調校與物理光影渲染（Rendering）。\n3. 檢視選項：\n   - 威力導演：後製剪輯軟體，無法創造 3D 模型與骨架動畫。\n   - GIMP：開源的 2D 平面修圖軟體。\n   - 3ds Max（或同廠牌 Maya / Blender）：Autodesk 旗艦級 3D 建模、材質與動畫製作套件，廣泛應用於好萊塢 3D 電影與大型 3D 遊戲開發。\n   - PotPlayer：南韓開發的影音播放器，僅供觀看。\n4. 故最適合用來製作 3D 動畫的是 (C) 3ds Max。",
+    "option_analysis": {
+      "A": "【錯誤】威力導演只能剪輯現成的影片片段。",
+      "B": "【錯誤】GIMP 是 2D 平面繪圖軟體。",
+      "C": "【正確】3ds Max 具備完整的 3D 建模、材質燈光與立體動畫算圖功能。",
+      "D": "【錯誤】PotPlayer 只是看影片的播放器。"
+    },
+    "exam_tip": "3D 動畫雙雄：【3ds Max】與【Maya】（還有開源界的 Blender）；2D 平面繪圖才是 Photoshop/Illustrator。",
+    "tags": [
+      "3dsMax",
+      "3D動畫",
+      "玩具總動員",
+      "建模軟體"
+    ]
+  },
+  {
+    "id": "ex_r6_q8",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 8,
+    "is_advanced": false,
+    "answer": "B",
+    "question": "珮珮想要設計一個3D立體模型，並用3D印表機列印出來，請問她適合 使用下列哪一套軟體來設計3D模型？",
+    "options": {
+      "A": "PhotoImpact",
+      "B": "SketchUp",
+      "C": "Animate",
+      "D": "Keynote。 情境素養題"
+    },
+    "official_explanation": "",
+    "page": 16,
+    "page_img": "assets/pages/exercise/page_16.png",
+    "key_concept": "3D 列印模型設計與建模工具：SketchUp",
+    "step_by_step": "1. 題目情境：珮珮想要設計一個「3D 立體模型」，並透過「3D 印表機」將實體模型列印出來。\n2. 3D 印表機需要立體 3D 幾何檔案（如 .STL 或 .OBJ 格式），因此必須使用 3D 空間建模軟體。\n3. 檢視選項：\n   - PhotoImpact：2D 平面點陣圖軟體，無法產出 3D 立體網格。\n   - SketchUp：由 Trimble 開發（早期由 Google 推廣）的知名 3D 空間與幾何建模軟體，直覺易學，能繪製精確尺寸的三維物體並匯出給 3D 印表機切片列印，非常合適！\n   - Animate（前身 Flash）：2D 向量動畫軟體。\n   - Keynote：投影片簡報軟體。\n4. 故選 (B) SketchUp。",
+    "option_analysis": {
+      "A": "【錯誤】PhotoImpact 是 2D 平面修圖工具。",
+      "B": "【正確】SketchUp 專門用於 3D 建模，能完美支援 3D 列印設計輸出。",
+      "C": "【錯誤】Animate 專門製作 2D 向量動畫與互動廣告。",
+      "D": "【錯誤】Keynote 是簡報工具。"
+    },
+    "exam_tip": "3D 列印好夥伴：SketchUp、Tinkercad、Blender、SolidWorks -> 只要看到 3D 建模列印找它們就對了！",
+    "tags": [
+      "SketchUp",
+      "3D建模",
+      "3D列印",
+      "實作設計"
+    ]
+  },
+  {
+    "id": "ex_r6_q9",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 9,
+    "is_advanced": false,
+    "answer": "A",
+    "question": "網紅阿D經常在YouTube分享自己唱歌的影片，這次他錄下自己的歌聲 後，想為自己的歌聲加入一些特效，請問他適合使用下列哪一種軟體 來「後製」聲音檔案呢？",
+    "options": {
+      "A": "Audacity",
+      "B": "Animate",
+      "C": "GOM Player",
+      "D": "Impress。 16 === 23 數位科技概論（上）習作本"
+    },
+    "official_explanation": "",
+    "page": 16,
+    "page_img": "assets/pages/exercise/page_16.png",
+    "key_concept": "專業音訊錄製、特效混音與後製軟體：Audacity",
+    "step_by_step": "1. 題目情境：網紅阿D在 YouTube 分享唱歌影片，錄下自己的歌聲後，想為歌聲「後製」聲音檔案（例如：消除雜音降噪、加迴音殘響 Echo/Reverb、變更音調、剪輯段落）。\n2. 檢視選項：\n   - Audacity：全球最廣泛使用的免費開源多軌「音訊編輯與後製軟體」，支援錄音、剪下貼上聲波、加入各類音效濾鏡，完全符合需求！\n   - Animate：2D 動畫繪製軟體。\n   - GOM Player：影片播放器。\n   - Impress：LibreOffice 的簡報軟體。\n3. 故最適合用來後製聲音檔案的是 (A) Audacity。",
+    "option_analysis": {
+      "A": "【正確】Audacity 專責多軌錄音、音訊剪輯與聲音特效濾鏡處理。",
+      "B": "【錯誤】Animate 是動畫軟體。",
+      "C": "【錯誤】GOM Player 只是看影片聽歌的播放器，不能編輯特效。",
+      "D": "【錯誤】Impress 是投影片簡報軟體。"
+    },
+    "exam_tip": "聲音魔法師：剪音樂、做手機鈴聲、人聲後製調音 -> 唯一天王【Audacity】！",
+    "tags": [
+      "Audacity",
+      "音樂剪輯",
+      "聲音後製",
+      "音訊軟體"
+    ]
+  },
+  {
+    "id": "ex_r6_q10",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "choice",
+    "type_name": "單選題",
+    "q_num": 10,
+    "is_advanced": false,
+    "answer": "C",
+    "question": "三天兩夜的畢業旅行，曉菁拍了許多照片，她想利用「甲」軟體來 編修美化照片，再透過「乙」軟體將合適的照片組合成一段短影音。 請問甲與乙應分別為下列何種軟體？",
+    "options": {
+      "A": "Audacity、Photoshop",
+      "B": "PowerPoint、小畫家3D",
+      "C": "Photoshop、會聲會影",
+      "D": "Windows Media Player、威力導演。"
+    },
+    "official_explanation": "",
+    "page": 16,
+    "page_img": "assets/pages/exercise/page_16.png",
+    "key_concept": "多媒體製作流程：相片美化修圖（甲）+ 影音剪輯組合（乙）",
+    "step_by_step": "1. 題目任務分解：\n   - 第一步：「甲軟體」用來【編修美化照片】 -> 必須是平面影像處理軟體（如 Photoshop、PhotoImpact）。\n   - 第二步：「乙軟體」將合適的照片配上背景音樂【組合成一段短影音】 -> 必須是視訊影音剪輯軟體（如 會聲會影 VideoStudio、威力導演 PowerDirector、Premiere）。\n2. 檢視組合選項：\n   - (A) Audacity（剪聲音）+ Photoshop（修圖）-> 順序與功能不符。\n   - (B) PowerPoint + 小畫家3D -> 非專業影音短片製作。\n   - (C) Photoshop（影像修圖） + 會聲會影（視訊剪輯） -> 完美契合任務一與任務二！\n   - (D) Media Player（播放器） + 威力導演 -> 第一步誤用播放器。\n3. 故選 (C)。",
+    "option_analysis": {
+      "A": "【錯誤】Audacity 是剪聲音的，不能修照片。",
+      "B": "【錯誤】PowerPoint 不是專業相片美化軟體。",
+      "C": "【完全正確】甲用 Photoshop 濾鏡去背美化，乙用會聲會影配樂轉場輸出短影音。",
+      "D": "【錯誤】Windows Media Player 只是播放器，沒有照片美化編修功能。"
+    },
+    "exam_tip": "影音製作黃金搭檔：修照片找【Photoshop】；剪片加特效找【會聲會影 / 威力導演】！",
+    "tags": [
+      "Photoshop",
+      "會聲會影",
+      "短影音製作",
+      "多媒體整合"
+    ]
+  },
+  {
+    "id": "ex_r3_fill_1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "fill",
+    "type_name": "填充填空題",
+    "title": "二、填充題 1. 電腦的 5 大單元架構與職責表",
+    "page": 2,
+    "page_img": "assets/pages/exercise/page_2.png",
+    "table_data": [
+      {
+        "unit": "控制單元（CU）",
+        "role": "填空",
+        "answer": "控制",
+        "desc": "控制及協調電腦各單元間的運作"
+      },
+      {
+        "unit": "算術／邏輯單元（ALU）",
+        "role": "給定",
+        "answer": "算術／邏輯單元",
+        "desc": "負責資料的運算與邏輯判斷"
+      },
+      {
+        "unit": "記憶單元（MU）",
+        "role": "給定",
+        "answer": "記憶單元",
+        "desc": "電腦存放程式與資料的地方"
+      },
+      {
+        "unit": "輸入單元（IU）",
+        "role": "填空",
+        "answer": "輸入",
+        "desc": "電腦接受指令及輸入資料的管道"
+      },
+      {
+        "unit": "輸出單元（OU）",
+        "role": "填空",
+        "answer": "輸出",
+        "desc": "電腦輸出運算結果的管道"
+      }
+    ],
+    "extra_note": "輸入單元與輸出單元合稱為「週邊設備（Peripherals）」。",
+    "key_concept": "馮紐曼五大架構：CU（總司令）、ALU（運算兵）、MU（大倉庫）、IU（進貨門）、OU（出貨門）。",
+    "step_by_step": "1. 題目給出功能描述，要求填入對應的單元名稱。\n2. 『控制及協調電腦各單元間的運作』-> 填【控制】單元。\n3. 『電腦接受指令及輸入資料的管道』-> 填【輸入】單元。\n4. 『電腦輸出運算結果的管道』-> 填【輸出】單元。\n5. 括號大括弧將輸入單元與輸出單元框在一起，標示為『合稱週邊設備』。",
+    "exam_tip": "統測常考合稱：CU + ALU = CPU；IU + OU = 週邊設備（I/O 裝置）。"
+  },
+  {
+    "id": "ex_r3_fill_2",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "fill",
+    "type_name": "填充填空題",
+    "title": "二、填充題 2. CPU 指令執行週期（機器週期）",
+    "page": 3,
+    "page_img": "assets/pages/exercise/page_3.png",
+    "content": "CPU執行一個指令的過程稱為【 機器週期 】，包含【 擷取 】、解碼、執行、儲存等步驟。",
+    "answers": [
+      "機器週期",
+      "擷取"
+    ],
+    "key_concept": "機器週期（Machine Cycle）四大經典步驟：Fetch（擷取）、Decode（解碼）、Execute（執行）、Store（儲存/寫回）。",
+    "step_by_step": "1. CPU 處理一條指令的完整輪迴統稱為「機器週期（Machine Cycle）」。\n2. 四步驟依序為：\n   - 步驟一【擷取（Fetch）】：控制單元從記憶體中取出要執行的指令。\n   - 步驟二【解碼（Decode）】：解碼器解析指令的意義與運算元。\n   - 步驟三【執行（Execute）】：ALU 或控制單元執行該指令的計算或傳輸。\n   - 步驟四【儲存（Store / Write Back）】：將運算結果寫回暫存器或主記憶體中。",
+    "exam_tip": "四大步驟口訣：「擷、解、執、存」（取解跑存）。"
+  },
+  {
+    "id": "ex_r3_fill_3",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "fill",
+    "type_name": "表格對照題",
+    "title": "二、填充題 3. RAM 兩大分類：DRAM vs SRAM 綜合比較表",
+    "page": 3,
+    "page_img": "assets/pages/exercise/page_3.png",
+    "table_data": [
+      {
+        "item": "是否需保持週期性充電",
+        "dram": "【 是 】",
+        "sram": "【 否 】"
+      },
+      {
+        "item": "存取速度",
+        "dram": "較慢",
+        "sram": "較快"
+      },
+      {
+        "item": "主要應用領域",
+        "dram": "主記憶體（RAM）",
+        "sram": "【 快取記憶體（Cache） 】"
+      },
+      {
+        "item": "單位價格",
+        "dram": "便宜",
+        "sram": "較貴"
+      }
+    ],
+    "key_concept": "DRAM（電容儲存電荷，需不斷 Refresh） vs SRAM（正反器電晶體，免 Refresh，極速）。",
+    "step_by_step": "1. 填空一：DRAM 電荷會流失，故是否需週期充電填【 是 】。\n2. 填空二：SRAM 通電即維持狀態，故是否需週期充電填【 否 】。\n3. 填空三：SRAM 因為速度極快，主要應用在 CPU 的【 快取記憶體（Cache） 】。",
+    "exam_tip": "統測表格題必考：SRAM 免充電、速度快、當快取；DRAM 要充電、速度慢、當主記憶體。"
+  },
+  {
+    "id": "ex_r3_fill_4",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "fill",
+    "type_name": "填充填空題",
+    "title": "二、填充題 4. 噴墨印表機之色彩混色原理（CMYK）",
+    "page": 3,
+    "page_img": "assets/pages/exercise/page_3.png",
+    "content": "噴墨印表機是藉由【 CMYK 】四色墨水的混合，來調配出大部分的顏色。",
+    "answers": [
+      "CMYK"
+    ],
+    "key_concept": "印刷色彩減法混色模型：C（青 Cyan）、M（洋紅 Magenta）、Y（黃 Yellow）、K（黑 blacK）。",
+    "step_by_step": "1. 螢幕顯示採用色光加法模式 RGB（紅綠藍）。\n2. 實體彩色印刷與印表機採用色料減法模式 CMYK 四色墨水混合而成。",
+    "exam_tip": "螢幕顯示看 RGB（光越加越亮為白色）；實體列印看 CMYK（墨水越混越深為黑色）。"
+  },
+  {
+    "id": "ex_r3_fill_5",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "fill",
+    "type_name": "表格對照題",
+    "title": "二、填充題 5. 常見印表機三大類型比較表",
+    "page": 3,
+    "page_img": "assets/pages/exercise/page_3.png",
+    "table_data": [
+      {
+        "cat": "撞擊式",
+        "type": "點陣式",
+        "speed": "較慢",
+        "material": "色帶",
+        "use": "複印紙、多聯式發票與收據"
+      },
+      {
+        "cat": "非撞擊式",
+        "type": "【 噴墨 】",
+        "speed": "中等",
+        "material": "墨水匣、噴嘴頭",
+        "use": "相片、彩色海報印刷"
+      },
+      {
+        "cat": "非撞擊式",
+        "type": "雷射",
+        "speed": "較快",
+        "material": "碳粉匣",
+        "use": "大量文件、高速黑白/彩色列印"
+      }
+    ],
+    "key_concept": "撞擊式（點陣式+色帶，唯一能打多聯複寫紙） vs 非撞擊式（噴墨+墨水匣 / 雷射+碳粉匣）。",
+    "step_by_step": "1. 填空處位於非撞擊式、中等速度、使用墨水匣與噴嘴頭的欄位，對應正是【 噴墨 】印表機。\n2. 點陣式使用色帶，透過鋼針撞擊；雷射印表機使用碳粉匣，加熱加壓轉印。",
+    "exam_tip": "統測關鍵考點：為什麼銀行、超商印三聯單發票一定要用「點陣式」？因為只有鋼針撞擊才能穿透複寫紙！"
+  },
+  {
+    "id": "ex_r3_multi_1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "multi",
+    "type_name": "圖表標註題",
+    "title": "三、多元練習 1. 主機板組件實體辨識與插槽配對",
+    "page": 4,
+    "page_img": "assets/pages/exercise/page_4.png",
+    "motherboard_img": "assets/images/page_4_img_2.png",
+    "mappings": [
+      {
+        "slot": "A",
+        "target": "PCI-E 擴充插槽",
+        "code": "戊",
+        "name": "顯示卡"
+      },
+      {
+        "slot": "B",
+        "target": "SATA 連接埠插座",
+        "code": "丙",
+        "name": "硬碟"
+      },
+      {
+        "slot": "C",
+        "target": "CPU 插槽（Socket）",
+        "code": "甲",
+        "name": "CPU"
+      },
+      {
+        "slot": "D",
+        "target": "記憶體插槽（DIMM）",
+        "code": "乙",
+        "name": "記憶體"
+      },
+      {
+        "slot": "E",
+        "target": "24-pin ATX 電源插座",
+        "code": "丁",
+        "name": "電源供應器"
+      }
+    ],
+    "key_concept": "主機板各插槽外觀特徵：CPU插槽通常正方形金屬蓋；記憶體是細長插槽有防呆卡榫；PCIe長插槽插顯卡；SATA是小型L型插座接硬碟。",
+    "step_by_step": "1. 觀察主機板照片：\n   - A 位置在左側長條擴充插槽區（PCI-E 插槽）-> 安插【戊、顯示卡】。\n   - B 位置在主機板右下角 SATA 排線插座群 -> 連接【丙、硬碟】。\n   - C 位置在中央上方最大的正方形金屬底座 -> 安插【甲、CPU】。\n   - D 位置在 CPU 右側平行的長條型直立插槽（DIMM）-> 安插【乙、記憶體】。\n   - E 位置在主機板邊緣的 24-pin 雙排厚實電源插座 -> 連接【丁、電源供應器】。",
+    "exam_tip": "電腦組裝實戰：記憶體插槽通常有防呆缺口，防插反；顯卡插在最靠近 CPU 的 PCIe x16 插槽。"
+  },
+  {
+    "id": "ex_r3_multi_2",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "multi",
+    "type_name": "情境配對題",
+    "title": "三、多元練習 2. 生活情境與最佳資訊設備配對",
+    "page": 4,
+    "page_img": "assets/pages/exercise/page_4.png",
+    "items": [
+      {
+        "q": "(1) 小藍常需攜帶資料展示給客戶看，她可以購買哪一項設備來儲存資料？",
+        "code": "d",
+        "name": "隨身碟",
+        "reason": "體積輕巧便利攜帶大量文件檔案。"
+      },
+      {
+        "q": "(2) 網路報稅提供用健保卡登入身分的功能，阿香需要哪一項設備，才能使用此功能報稅？",
+        "code": "b",
+        "name": "晶片讀卡機",
+        "reason": "健保卡與自然人憑證具有 IC 晶片，需晶片讀卡機讀取晶片資訊。"
+      },
+      {
+        "q": "(3) 小盧要去戶外郊遊，為了避免手機沒電，他可以攜帶哪一項設備來提供手機電力？",
+        "code": "g",
+        "name": "行動電源",
+        "reason": "內建鋰電池供電，戶外及時充電救急。"
+      },
+      {
+        "q": "(4) 老王購買了有趣的虛擬實境遊戲，請問他需要哪一項設備，才能體驗身歷其境的感受？",
+        "code": "c",
+        "name": "頭戴式VR裝置",
+        "reason": "雙眼沉浸式顯示與陀螺儀空間追蹤打造 360 度立體虛擬實境。"
+      }
+    ],
+    "key_concept": "不同數位週邊之專屬應用場景匹配。",
+    "exam_tip": "生活素養題關鍵：健保卡/自然人憑證 = 晶片讀卡機；戶外充電 = 行動電源；VR沉浸 = 頭戴顯示器。"
+  },
+  {
+    "id": "ex_r3_sheet_1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 3,
+    "round_name": "第三回",
+    "chapter_num": 3,
+    "chapter_name": "第3章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "sheet",
+    "type_name": "素養學習單",
+    "title": "四、學習單：電腦配備更換升級規格選購指南",
+    "page": 5,
+    "page_img": "assets/pages/exercise/page_5.png",
+    "guide": "更新電腦元件前，必須先檢查主機板支援的腳位與相容性（Socket、PCIe版本、DDR世代、電源瓦數）。",
+    "sample_specs": [
+      {
+        "part": "CPU",
+        "sample": "Intel Core i5-13400 / AMD Ryzen 5 7600",
+        "specs": "時脈 4.6GHz、10核心16緒、L3快取 20MB、腳位 LGA1700 / AM5"
+      },
+      {
+        "part": "記憶體 (RAM)",
+        "sample": "Kingston FURY Beast DDR5 5600 32GB (16Gx2)",
+        "specs": "雙通道、頻率 5600MHz、CL36、工作電壓 1.25V"
+      },
+      {
+        "part": "固態硬碟 (SSD)",
+        "sample": "Samsung 990 PRO 1TB M.2 PCIe 4.0 NVMe",
+        "specs": "讀取速度 7450 MB/s、寫入速度 6900 MB/s、TLC 快閃記憶體"
+      },
+      {
+        "part": "顯示卡 (GPU)",
+        "sample": "NVIDIA GeForce RTX 4060 8GB GDDR6",
+        "specs": "光線追蹤技術、DLSS 3、輸出介面 HDMI 2.1 + DisplayPort 1.4a"
+      },
+      {
+        "part": "電源供應器 (PSU)",
+        "sample": "海韻 Focus 650W 80 PLUS 金牌認證",
+        "specs": "額定功率 650W、全模組化線材、轉換效率 90% 以上"
+      },
+      {
+        "part": "螢幕顯示器",
+        "sample": "ASUS TUF 27吋 2K 電競螢幕 (VG27AQ)",
+        "specs": "解析度 2560x1440、更新率 165Hz、IPS面板、反應時間 1ms"
+      }
+    ],
+    "key_concept": "相容性檢核三大黃金法則：1. CPU腳位必須與主機板Socket相符；2. 記憶體世代不可混插（DDR4插不進DDR5）；3. 電源瓦數需充足供應顯卡與處理器峰值耗電。"
+  },
+  {
+    "id": "ex_r4_fill_1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "fill",
+    "type_name": "樹狀架構題",
+    "title": "二、填充題 1. 軟體種類分類架構圖",
+    "page": 7,
+    "page_img": "assets/pages/exercise/page_7.png",
+    "tree_structure": [
+      {
+        "branch": "系統軟體",
+        "sub": [
+          {
+            "item": "【 作業系統 】",
+            "desc": "分派與管理電腦軟、硬體的資源"
+          },
+          {
+            "item": "公用程式",
+            "desc": "維護與支援電腦的運作"
+          },
+          {
+            "item": "語言翻譯程式",
+            "desc": "將使用者撰寫的程式轉換成機器語言"
+          }
+        ]
+      },
+      {
+        "branch": "【 應用軟體 】",
+        "sub": [
+          {
+            "item": "套裝軟體",
+            "desc": "為大多數使用者的需求而設計"
+          },
+          {
+            "item": "專案開發軟體",
+            "desc": "為特定對象的需求而設計"
+          }
+        ]
+      }
+    ],
+    "key_concept": "軟體體系兩大支柱：系統軟體（底層基石） + 應用軟體（上層建築）。",
+    "step_by_step": "1. 填空一：『分派與管理電腦軟、硬體資源』-> 填【 作業系統 】。\n2. 填空二：包含套裝軟體與專案開發軟體的大分類括號 -> 填【 應用軟體 】。",
+    "exam_tip": "這張樹狀圖是高職資處科段考與統測【必考題】，務必閉著眼睛都能畫出來！"
+  },
+  {
+    "id": "ex_r4_fill_2",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "fill",
+    "type_name": "表格對照題",
+    "title": "二、填充題 2. 常見六大作業系統綜合比較表",
+    "page": 8,
+    "page_img": "assets/pages/exercise/page_8.png",
+    "table_data": [
+      {
+        "os": "Windows",
+        "vendor": "微軟",
+        "open_source": "否",
+        "device": "電腦、行動裝置"
+      },
+      {
+        "os": "UNIX",
+        "vendor": "貝爾實驗室",
+        "open_source": "否",
+        "device": "電腦（大型主機/工作站）"
+      },
+      {
+        "os": "Linux",
+        "vendor": "Linux 基金會",
+        "open_source": "【 是 】",
+        "device": "電腦、行動裝置"
+      },
+      {
+        "os": "macOS",
+        "vendor": "【 蘋果 】",
+        "open_source": "否",
+        "device": "電腦（Mac）"
+      },
+      {
+        "os": "Android",
+        "vendor": "【 Google 】",
+        "open_source": "是",
+        "device": "行動裝置"
+      },
+      {
+        "os": "iOS",
+        "vendor": "蘋果",
+        "open_source": "否",
+        "device": "行動裝置（iPhone）"
+      }
+    ],
+    "key_concept": "開源代表：Linux、Android；閉源商業代表：Windows、macOS、iOS、UNIX。",
+    "step_by_step": "1. Linux 的開源性填【 是 】。\n2. macOS 的開發維護者填【 蘋果（Apple） 】。\n3. Android 的開發維護者填【 Google 】。",
+    "exam_tip": "記憶法則：只有 Linux 跟 Android 是開放原始碼（是），其他全都是「否」！"
+  },
+  {
+    "id": "ex_r4_fill_3",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "fill",
+    "type_name": "表格對照題",
+    "title": "二、填充題 3. 常見作業系統依作業模式之分類表",
+    "page": 8,
+    "page_img": "assets/pages/exercise/page_8.png",
+    "table_data": [
+      {
+        "category": "單人單工",
+        "os": "MS-DOS"
+      },
+      {
+        "category": "【 單人多工 】",
+        "os": "Windows、macOS、Android、iOS"
+      },
+      {
+        "category": "【 多人多工 】",
+        "os": "Unix、Linux"
+      }
+    ],
+    "key_concept": "單人單工（DOS） vs 單人多工（個人桌機與手機） vs 多人多工（伺服器與大型主機）。",
+    "exam_tip": "統測絕不會考錯：你手上的手機跟桌機都是單人多工；伺服器機房是多人多工。"
+  },
+  {
+    "id": "ex_r4_fill_4",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "fill",
+    "type_name": "填充填空題",
+    "title": "二、填充題 4. 應用軟體依對象之分類定義",
+    "page": 8,
+    "page_img": "assets/pages/exercise/page_8.png",
+    "content": "市售的應用軟體依照開發的目的或適用的對象，可概分為專案開發軟體與【 套裝軟體 】兩類。",
+    "answers": [
+      "套裝軟體"
+    ],
+    "key_concept": "應用軟體兩兄弟：客製化的專案開發軟體 + 通用市售的套裝軟體。"
+  },
+  {
+    "id": "ex_r4_fill_5",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "fill",
+    "type_name": "填充填空題",
+    "title": "二、填充題 5. 雲端資源三大核心服務架構",
+    "page": 8,
+    "page_img": "assets/pages/exercise/page_8.png",
+    "content": "組成雲端資源的架構有【 基礎建設即服務（IaaS） 】、【 平台即服務（PaaS） 】、軟體即服務（SaaS）。",
+    "answers": [
+      "基礎建設即服務",
+      "平台即服務"
+    ],
+    "key_concept": "雲端金字塔三層：IaaS（底層硬體與虛擬機） -> PaaS（中間開發環境與資料庫） -> SaaS（最上層直接使用的應用軟體）。"
+  },
+  {
+    "id": "ex_r4_multi_1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "multi",
+    "type_name": "分類配對題",
+    "title": "三、多元練習 1. 軟體類型分類代碼配對",
+    "page": 8,
+    "page_img": "assets/pages/exercise/page_8.png",
+    "options": "a. 作業系統  b. 公用程式  c. 語言翻譯程式  d. 套裝軟體  e. 專案開發軟體",
+    "items": [
+      {
+        "name": "(1) macOS",
+        "code": "a",
+        "type": "作業系統",
+        "reason": "蘋果電腦的管理系統。"
+      },
+      {
+        "name": "(2) Photoshop",
+        "code": "d",
+        "type": "套裝軟體",
+        "reason": "市售普遍通用的修圖軟體。"
+      },
+      {
+        "name": "(3) 麥當勞專用的 POS（銷售點）系統",
+        "code": "e",
+        "type": "專案開發軟體",
+        "reason": "專為麥當勞點餐流程量身訂做。"
+      },
+      {
+        "name": "(4) 磁碟清理工具",
+        "code": "b",
+        "type": "公用程式",
+        "reason": "維護與支援作業系統運作的小工具。"
+      },
+      {
+        "name": "(5) 編譯器",
+        "code": "c",
+        "type": "語言翻譯程式",
+        "reason": "將高階程式碼編譯成機器指令。"
+      }
+    ],
+    "key_concept": "軟體分類全面實戰配對。",
+    "exam_tip": "此題五個小題均為經典考題，尤其是編譯器（語言翻譯）和 POS 系統（專案開發）最常考！"
+  },
+  {
+    "id": "ex_r4_multi_2",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "multi",
+    "type_name": "代號配對題",
+    "title": "三、多元練習 2. 各大作業系統特徵代號配對",
+    "page": 9,
+    "page_img": "assets/pages/exercise/page_9.png",
+    "options": "a. Windows  b. Linux  c. iOS  d. Android  e. macOS",
+    "items": [
+      {
+        "desc": "(1) 採取開放原始碼的做法，常作為網路作業系統。",
+        "code": "b",
+        "os": "Linux"
+      },
+      {
+        "desc": "(2) 微軟公司開發的作業系統。",
+        "code": "a",
+        "os": "Windows"
+      },
+      {
+        "desc": "(3) 適用於 iPhone、iPad 的作業系統。",
+        "code": "c",
+        "os": "iOS"
+      }
+    ],
+    "key_concept": "作業系統代表性特徵辨識。"
+  },
+  {
+    "id": "ex_r4_sheet_1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 4,
+    "round_name": "第四回",
+    "chapter_num": 4,
+    "chapter_name": "第4章",
+    "chapter_title": "系統平台的組成架構－軟體與網路",
+    "type": "puzzle",
+    "type_name": "趣味填字遊戲",
+    "title": "四、學習單：資處科資訊科技名詞「填字遊戲」全解密",
+    "page": 9,
+    "page_img": "assets/pages/exercise/page_9.png",
+    "puzzle_img": "assets/images/page_9_img_1.png",
+    "horizontal_clues": [
+      {
+        "num": 1,
+        "clue": "區域網路的英文縮寫",
+        "answer": "LAN",
+        "explanation": "Local Area Network。"
+      },
+      {
+        "num": 2,
+        "clue": "微軟公司開發的多工作業系統",
+        "answer": "WINDOWS",
+        "explanation": "Microsoft Windows 視窗作業系統。"
+      },
+      {
+        "num": 3,
+        "clue": "由Google公司開發，許多智慧型手機所採用的作業系統",
+        "answer": "ANDROID",
+        "explanation": "安卓行動作業系統。"
+      },
+      {
+        "num": 4,
+        "clue": "基礎建設即服務的英文縮寫",
+        "answer": "IAAS",
+        "explanation": "Infrastructure as a Service。"
+      },
+      {
+        "num": 5,
+        "clue": "平台即服務的英文縮寫",
+        "answer": "PAAS",
+        "explanation": "Platform as a Service。"
+      },
+      {
+        "num": 6,
+        "clue": "免費的瀏覽器軟體",
+        "answer": "CHROME",
+        "explanation": "Google Chrome 網頁瀏覽器。"
+      }
+    ],
+    "vertical_clues": [
+      {
+        "num": "一",
+        "clue": "麥金塔的英文縮寫",
+        "answer": "MAC",
+        "explanation": "Macintosh。"
+      },
+      {
+        "num": "二",
+        "clue": "以UNIX為基礎所發展的作業系統",
+        "answer": "LINUX",
+        "explanation": "開源類 UNIX 核心。"
+      },
+      {
+        "num": "三",
+        "clue": "軟體即服務的英文縮寫",
+        "answer": "SAAS",
+        "explanation": "Software as a Service。"
+      },
+      {
+        "num": "四",
+        "clue": "圖形使用者介面的英文縮寫",
+        "answer": "GUI",
+        "explanation": "Graphical User Interface。"
+      },
+      {
+        "num": "五",
+        "clue": "開發蘋果電腦的公司",
+        "answer": "APPLE",
+        "explanation": "Apple Inc. 蘋果公司。"
+      },
+      {
+        "num": "六",
+        "clue": "網際網路的英文",
+        "answer": "INTERNET",
+        "explanation": "全球網際網路。"
+      },
+      {
+        "num": "七",
+        "clue": "作業系統的英文縮寫",
+        "answer": "OS",
+        "explanation": "Operating System。"
+      }
+    ],
+    "key_concept": "整合資訊科技核心英文單字與縮寫，寓教於樂！"
+  },
+  {
+    "id": "ex_r5_fill_1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "fill",
+    "type_name": "填充填空題",
+    "title": "二、填充題 1. 系統平台運作三大步驟",
+    "page": 12,
+    "page_img": "assets/pages/exercise/page_12.png",
+    "content": "系統平台運作的流程主要包含【 輸入 】、處理、【 輸出 】等 3 個步驟。",
+    "answers": [
+      "輸入",
+      "輸出"
+    ],
+    "key_concept": "經典運算週期：Input -> Process -> Output。"
+  },
+  {
+    "id": "ex_r5_fill_2",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "fill",
+    "type_name": "填充填空題",
+    "title": "二、填充題 2. Windows 檔案管理中樞",
+    "page": 12,
+    "page_img": "assets/pages/exercise/page_12.png",
+    "content": "在Windows作業系統中，可透過【 檔案總管 】視窗來檢視與管理電腦中的檔案資料。",
+    "answers": [
+      "檔案總管"
+    ],
+    "key_concept": "檔案總管（File Explorer）快捷鍵：`Win + E`。"
+  },
+  {
+    "id": "ex_r5_fill_3",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "fill",
+    "type_name": "名詞定義題",
+    "title": "二、填充題 3. Windows 檔案兩大基礎屬性",
+    "page": 12,
+    "page_img": "assets/pages/exercise/page_12.png",
+    "content": "甲、【 唯讀 】：只能讀取，不能修改或刪除。\n乙、【 隱藏 】：不會顯示出來。",
+    "answers": [
+      "唯讀",
+      "隱藏"
+    ],
+    "key_concept": "唯讀（Read-only，防止意外覆寫或誤刪） vs 隱藏（Hidden，預設不呈現）。"
+  },
+  {
+    "id": "ex_r5_fill_4",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "fill",
+    "type_name": "填充填空題",
+    "title": "二、填充題 4. 平行處理（Parallel Processing）定義",
+    "page": 12,
+    "page_img": "assets/pages/exercise/page_12.png",
+    "content": "【 平行處理 】是指將要進行運算的工作，分成數個部分，分別交給多個處理器來處理，以加快運算的速度。",
+    "answers": [
+      "平行處理"
+    ],
+    "key_concept": "分而治之，多核並進，加快總運算時間。"
+  },
+  {
+    "id": "ex_r5_fill_5",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的組成架構－硬體",
+    "type": "fill",
+    "type_name": "填充填空題",
+    "title": "二、填充題 5. 語音助理之底層技術支撐",
+    "page": 12,
+    "page_img": "assets/pages/exercise/page_12.png",
+    "content": "語音助理是利用【 人工智慧 】技術來分析人類口語的語意，並遵從語意的命令提供服務。",
+    "answers": [
+      "人工智慧"
+    ],
+    "key_concept": "自然語言處理（NLP）與語音辨識（Speech Recognition）屬於 AI 核心領域。"
+  },
+  {
+    "id": "ex_r5_fill_6",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "fill",
+    "type_name": "圖解狀態轉移題",
+    "title": "二、填充題 6. 作業系統行程五大狀態轉換示意圖",
+    "page": 12,
+    "page_img": "assets/pages/exercise/page_12.png",
+    "transitions": [
+      {
+        "from": "建立 (New)",
+        "action": "允許進入主記憶體",
+        "to": "就緒 (Ready)"
+      },
+      {
+        "from": "就緒 (Ready)",
+        "action": "排程器調度程序分配CPU",
+        "to": "執行 (Running)"
+      },
+      {
+        "from": "執行 (Running)",
+        "action": "時間配額期滿或被中斷 (Interrupt)",
+        "to": "就緒 (Ready)"
+      },
+      {
+        "from": "執行 (Running)",
+        "action": "等待輸出/入動作或某事件發生",
+        "to": "【 等待 (Waiting) 】"
+      },
+      {
+        "from": "等待 (Waiting)",
+        "action": "完成輸出/入動作或某事件",
+        "to": "就緒 (Ready)"
+      },
+      {
+        "from": "執行 (Running)",
+        "action": "執行完畢",
+        "to": "結束 (Terminated)"
+      }
+    ],
+    "answers": [
+      "等待"
+    ],
+    "key_concept": "狀態轉換鐵律：等待狀態不能直接回執行，必須先回就緒重新排隊！",
+    "step_by_step": "1. 檢視下方獨立的狀態方塊，其進入條件為『等待輸出/入動作或某事件』，離開條件為『完成輸出/入動作或某事件』。\n2. 該方塊正是五大狀態中的【 等待（Waiting） 】狀態（亦稱阻塞 Blocked）。",
+    "exam_tip": "統測經典考點：I/O 完成後，行程會回到哪裡？答案是【就緒（Ready）】，不是直接回到執行！"
+  },
+  {
+    "id": "ex_r5_fill_7",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "fill",
+    "type_name": "演算法填空題",
+    "title": "二、填充題 7. 三大經典 CPU 排程演算法",
+    "page": 13,
+    "page_img": "assets/pages/exercise/page_13.png",
+    "algorithms": [
+      {
+        "name": "【 先來先服務（FCFS） 】",
+        "rule": "先進入 CPU 工作排程的程序就先執行，一個程序執行完才執行下一個。"
+      },
+      {
+        "name": "最短工作優先（SJF）",
+        "rule": "先判斷 CPU 處理程序所需的時間，處理時間愈短，愈優先處理。"
+      },
+      {
+        "name": "【 優先排程（PS） 】",
+        "rule": "每個程序都事先安排了一個優先順序，優先順序愈高的程序愈先處理。"
+      }
+    ],
+    "answers": [
+      "先來先服務（FCFS）",
+      "優先排程（PS）"
+    ],
+    "key_concept": "FCFS（公平排隊）、SJF（短者優先，平均等待最短）、Priority（優先級決定，防飢餓靠 Aging）。"
+  },
+  {
+    "id": "ex_r5_multi_1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "multi",
+    "type_name": "截圖判讀題",
+    "title": "三、多元練習 1. 工作管理員「效能」畫面實測判讀題",
+    "page": 13,
+    "page_img": "assets/pages/exercise/page_13.png",
+    "taskmgr_img": "assets/images/page_13_img_2.png",
+    "questions": [
+      {
+        "q": "(1) CPU 使用率為多少 %？ 記憶體使用率為多少 %？",
+        "ans": "CPU使用率為 3 %，記憶體使用率為 25 %。",
+        "how": "看左側欄 CPU 區塊顯示『3% 1.78 GHz』；記憶體區塊顯示『4.0/15.9 GB (25%)』。"
+      },
+      {
+        "q": "(2) 記憶體共有多少 GB？",
+        "ans": "16 GB（或 15.9 GB，總量規格為 16.0 GB）。",
+        "how": "右上角直接標示『16.0 GB』，下方顯示已安裝插槽『2 (總共4) DIMM』。"
+      },
+      {
+        "q": "(3) 按哪一個標籤，可看到正在執行的應用程式？",
+        "ans": "按【 處理程序 】標籤。",
+        "how": "工作管理員上方第一個分頁就是『處理程序』，點擊即可列出所有前景執行中 App。"
+      }
+    ],
+    "key_concept": "電腦硬體資源即時儀表板解讀實戰技巧。",
+    "exam_tip": "看圖找線索：百分比看左欄括號或大數字；總容量看右上角大標題。"
+  },
+  {
+    "id": "ex_r5_sheet_1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 5,
+    "round_name": "第五回",
+    "chapter_num": 5,
+    "chapter_name": "第5章",
+    "chapter_title": "系統平台的運作與未來發展",
+    "type": "sheet",
+    "type_name": "素養學習單",
+    "title": "四、學習單：Google Teachable Machine 機器學習實作心得",
+    "page": 14,
+    "page_img": "assets/pages/exercise/page_14.png",
+    "teachable_img": "assets/images/page_14_img_2.png",
+    "questions": [
+      {
+        "q": "(1) 機器所搜集到的圖片樣本越多，圖片辨識效果越好還是越差？",
+        "ans": "愈好",
+        "reason": "樣本數量越多、涵蓋各種光線與角度，模型特徵提取越豐富全面，泛化辨識能力越強。"
+      },
+      {
+        "q": "(2) 訓練週期數（Epochs）越大還是越小，模型越能學會圖片辨識？",
+        "ans": "愈大",
+        "reason": "訓練週期數代表模型看完整個資料集的次數。週期數適度增加，神經網路權重更新越充分，越能收斂學會區分特徵。"
+      }
+    ],
+    "key_concept": "機器學習核心常理：數據為王（Data is King），訓練充分方能精準！"
+  },
+  {
+    "id": "ex_r6_fill_1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "fill",
+    "type_name": "定義填空題",
+    "title": "二、填充題 1. 文書處理軟體功能定義",
+    "page": 16,
+    "page_img": "assets/pages/exercise/page_16.png",
+    "content": "【 文書處理 】軟體具有文字編輯、表格製作、圖片使用、版面設定、加入頁首／頁尾資料等功能，適合用來輸入文稿、編排文章，製作圖文並茂的報告。",
+    "answers": [
+      "文書處理"
+    ],
+    "key_concept": "文書處理（Word Processing）：專為文字排版與書面報告打造。"
+  },
+  {
+    "id": "ex_r6_fill_2",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "fill",
+    "type_name": "定義填空題",
+    "title": "二、填充題 2. 動畫製作軟體核心範疇",
+    "page": 16,
+    "page_img": "assets/pages/exercise/page_16.png",
+    "content": "在日常生活中，我們經常可以看到各式各樣的動畫作品，例如電影特效、卡通影片、YouTube影片片頭等，這些有趣讓人回味無窮的動畫，都可利用【 動畫製作 】軟體來繪製。",
+    "answers": [
+      "動畫製作"
+    ],
+    "key_concept": "動畫軟體（如 Animate, Maya, 3ds Max, Blender）。"
+  },
+  {
+    "id": "ex_r6_fill_3",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "fill",
+    "type_name": "定義填空題",
+    "title": "二、填充題 3. 電子試算表軟體職能",
+    "page": 16,
+    "page_img": "assets/pages/exercise/page_16.png",
+    "content": "【 電子試算表 】軟體具有資料的計算、排序、篩選、統計、分析、及圖表的製作等功能，適合用來編製各種表單。",
+    "answers": [
+      "電子試算表"
+    ],
+    "key_concept": "試算表六大神通：計算、排序、篩選、統計、分析、圖表。"
+  },
+  {
+    "id": "ex_r6_fill_4",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "fill",
+    "type_name": "跨廠牌大對照表",
+    "title": "二、填充題 4. 五大辦公室軟體家族對照總彙整",
+    "page": 16,
+    "page_img": "assets/pages/exercise/page_16.png",
+    "table_data": [
+      {
+        "suite": "Microsoft Office",
+        "word": "Word",
+        "excel": "Excel",
+        "ppt": "【 PowerPoint 】",
+        "db": "Access"
+      },
+      {
+        "suite": "LibreOffice",
+        "word": "【 Writer 】",
+        "excel": "【 Calc 】",
+        "ppt": "Impress",
+        "db": "Base"
+      },
+      {
+        "suite": "OpenOffice",
+        "word": "Writer",
+        "excel": "Calc",
+        "ppt": "Impress",
+        "db": "Base"
+      },
+      {
+        "suite": "Google文件",
+        "word": "文件",
+        "excel": "試算表",
+        "ppt": "簡報",
+        "db": "－"
+      },
+      {
+        "suite": "iWork (Apple)",
+        "word": "【 Pages 】",
+        "excel": "【 Numbers 】",
+        "ppt": "Keynote",
+        "db": "－"
+      }
+    ],
+    "key_concept": "五大陣營橫向功能精準對應表，統測命中率 100%！",
+    "step_by_step": "1. 微軟的簡報設計填【 PowerPoint 】。\n2. LibreOffice 文書填【 Writer 】、試算表填【 Calc 】。\n3. Apple iWork 文書填【 Pages 】、試算表填【 Numbers 】。",
+    "exam_tip": "記熟公式：微軟(Word/Excel/PPT) = 開源(Writer/Calc/Impress) = 蘋果(Pages/Numbers/Keynote)。"
+  },
+  {
+    "id": "ex_r6_fill_5",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "fill",
+    "type_name": "定義填空題",
+    "title": "二、填充題 5. 影像處理（Image Processing）定義",
+    "page": 16,
+    "page_img": "assets/pages/exercise/page_16.png",
+    "content": "影像（image）是人類眼睛所視之物體在腦中所呈現出來的圖像，我們常會為了美觀、易於辨識、便於傳送或減少儲存空間等目的，而以特殊的方法來處理影像，這些工作便稱為【 影像處理 】。",
+    "answers": [
+      "影像處理"
+    ],
+    "key_concept": "影像處理四大目的：美觀、易辨識、便傳送、減空間（壓縮）。"
+  },
+  {
+    "id": "ex_r6_multi_1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "multi",
+    "type_name": "書單勾選題",
+    "title": "三、多元練習 1. 多媒體設計自修專業書籍挑選",
+    "page": 17,
+    "page_img": "assets/pages/exercise/page_17.png",
+    "criteria": "需具備『影像處理、音樂剪輯、影片編輯、動畫製作』等電腦專長。",
+    "book_list": [
+      {
+        "num": 1,
+        "title": "超圖解iPhone App開發入門",
+        "checked": false,
+        "category": "程式設計（非多媒體）"
+      },
+      {
+        "num": 2,
+        "title": "Excel效率UP！快速完成工作的技巧",
+        "checked": false,
+        "category": "辦公室試算表"
+      },
+      {
+        "num": 3,
+        "title": "抓住你的Photoshop",
+        "checked": true,
+        "category": "影像處理 ★應勾選"
+      },
+      {
+        "num": 4,
+        "title": "16堂課成為Maya高手",
+        "checked": true,
+        "category": "3D動畫製作 ★應勾選"
+      },
+      {
+        "num": 5,
+        "title": "必學！Python資料科學‧機器學習",
+        "checked": false,
+        "category": "程式與AI"
+      },
+      {
+        "num": 6,
+        "title": "Windows使用手冊",
+        "checked": false,
+        "category": "作業系統"
+      },
+      {
+        "num": 7,
+        "title": "會聲會影～剪輯你的影片",
+        "checked": true,
+        "category": "影片編輯 ★應勾選"
+      },
+      {
+        "num": 8,
+        "title": "電競電腦選購、組裝、應用",
+        "checked": false,
+        "category": "電腦硬體"
+      },
+      {
+        "num": 9,
+        "title": "聲音魔法師入門－Audacity",
+        "checked": true,
+        "category": "音樂剪輯 ★應勾選"
+      },
+      {
+        "num": 10,
+        "title": "讓我們LINE在一起！",
+        "checked": false,
+        "category": "社群通訊"
+      }
+    ],
+    "key_concept": "多媒體四大支柱：影像（Photoshop） + 動畫（Maya） + 視訊（會聲會影） + 音訊（Audacity）。",
+    "step_by_step": "勾選清單中屬於四大專長的書籍，共應勾選 (3)、(4)、(7)、(9) 四本。"
+  },
+  {
+    "id": "ex_r6_sheet_1",
+    "category": "exercise",
+    "category_name": "課堂習作本",
+    "round_num": 6,
+    "round_name": "第六回",
+    "chapter_num": 6,
+    "chapter_name": "第6章",
+    "chapter_title": "辦公室軟體與影像／影音軟體",
+    "type": "sheet",
+    "type_name": "素養學習單",
+    "title": "四、學習單：Audacity 音樂剪輯實作問答",
+    "page": 18,
+    "page_img": "assets/pages/exercise/page_18.png",
+    "qa_list": [
+      {
+        "q": "(1) 請問你所剪輯的音樂名稱為何？",
+        "a": "看見愛情",
+        "note": "習作本填答曲名範例。"
+      },
+      {
+        "q": "(2) 請問你利用音樂剪輯軟體，擷取音樂的哪一部分？",
+        "a": "「說愛你 沒人不想聽 / 說恨你 卻總找不到理由 / 兩個都是我 Hey / 說想你 你已無法聽 / 這句話 紀念愛情曾來過 / 回憶在這 等我」",
+        "note": "擷取副歌最精華旋律片段作為來電鈴聲。"
+      },
+      {
+        "q": "(3) 請問擷取後的音樂，播放總長度為多少秒？",
+        "a": "40秒",
+        "note": "來電鈴聲黃金時長（約 30~45 秒）。"
+      },
+      {
+        "q": "(4) 請問你是如何將音樂傳送到手機中？",
+        "a": "使用手機傳輸線將音樂從電腦傳送到手機中。（亦可透過 Google 雲端硬碟或 AirDrop 傳送）",
+        "note": "傳輸線連接電腦與行動裝置之實務操作。"
+      }
+    ],
+    "key_concept": "音訊剪輯與實用鈴聲製作流程：匯入 mp3 -> 選取波形 -> 剪裁（Trim） -> 淡入淡出（Fade in/out） -> 匯出音訊 -> 傳送至手機。"
+  }
+];

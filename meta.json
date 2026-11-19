@@ -1,0 +1,28 @@
+{
+  "student_name": "鍾百越",
+  "student_class": "資處科一仁",
+  "subject": "數位科技概論（上）",
+  "publisher": "旗立資訊",
+  "total_questions": 135,
+  "quiz_count": 63,
+  "exercise_choice_count": 40,
+  "exercise_nonchoice_count": 32,
+  "chapters": [
+    {
+      "num": 3,
+      "title": "系統平台的組成架構－硬體"
+    },
+    {
+      "num": 4,
+      "title": "系統平台的組成架構－軟體與網路"
+    },
+    {
+      "num": 5,
+      "title": "系統平台的運作與未來發展"
+    },
+    {
+      "num": 6,
+      "title": "辦公室軟體與影像／影音軟體"
+    }
+  ]
+}
