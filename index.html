@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>數位科技概論（上）高職題庫與解題學習平台 | 資處科一仁 鍾百越 專屬</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Load Embedded Database First (Guarantees zero-CORS offline local execution) -->
+  <script src="data/db.js"></script>
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="brand-section">
+        <div class="brand-logo">數</div>
+        <div class="brand-info">
+          <h1>數位科技概論（上）題庫與解題學習平台</h1>
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.2rem;">
+            <span class="brand-badge">👤 資處科一仁 鍾百越 專屬</span>
+            <span class="brand-badge" style="background: rgba(16, 185, 129, 0.1); color: var(--accent); border-color: rgba(16, 185, 129, 0.3);">📘 旗立發行 C221A3 審定版</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- Mode Switcher -->
+        <div class="mode-toggle">
+          <button class="mode-btn active" data-mode="study" title="顯示完整答案與逐題詳細觀念剖析">
+            📖 學習模式
+          </button>
+          <button class="mode-btn" data-mode="exam" title="隱藏答案，點擊選項立即作答評分">
+            ✍️ 刷題測驗
+          </button>
+        </div>
+
+        <button class="btn btn-sm" id="toggle-all-sol-btn" title="展開或摺疊全部題目的解題過程">
+          👁️ 展開全部解析
+        </button>
+
+        <button class="btn btn-sm" id="print-btn" title="整理版面並列印成紙本考前複習卷">
+          🖨️ 列印複習卷
+        </button>
+
+        <button class="btn btn-icon" id="theme-toggle-btn" title="切換深色/明亮主題">
+          🌙
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Welcome & Stats Banner -->
+  <section class="welcome-banner">
+    <div class="banner-card">
+      <div>
+        <div class="banner-title">
+          <span>👋 鍾百越同學您好！歡迎進入資處科專屬數位學習平台</span>
+        </div>
+        <div class="banner-desc">
+          本平台已完整統整隨堂測驗卷（第3回～第5回）與課堂習作本（第三回～第六回）所有題目、圖表判讀、填空表格與填字遊戲，並附帶<strong>逐題詳細解題思路、選項防雷剖析與統測考點小撇步</strong>，助您段考與統測拿高分！
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-num" id="stat-total">135</div>
+          <div class="stat-label">總收錄題數</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" id="stat-quiz" style="color: var(--secondary);">63</div>
+          <div class="stat-label">隨堂測驗</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" id="stat-ex" style="color: var(--accent);">72</div>
+          <div class="stat-label">課堂習作</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" id="stat-bm" style="color: var(--warning);">0</div>
+          <div class="stat-label">錯題收藏</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Control Hub -->
+  <section class="control-hub">
+    <div class="hub-card">
+      <!-- Tabs Navigation -->
+      <div class="tabs-container">
+        <button class="tab-btn active" data-tab="all">
+          🌟 全部題目 <span class="tab-badge">135</span>
+        </button>
+        <button class="tab-btn" data-tab="quiz">
+          📝 隨堂測驗卷 <span class="tab-badge">63</span>
+        </button>
+        <button class="tab-btn" data-tab="exercise">
+          📘 課堂習作本 <span class="tab-badge">72</span>
+        </button>
+        <button class="tab-btn" data-tab="concepts">
+          💡 核心考點速記卡
+        </button>
+        <button class="tab-btn" data-tab="bookmarks">
+          ⭐ 錯題本與重點收藏
+        </button>
+        <button class="tab-btn" data-tab="mock_exam" style="color: var(--secondary);">
+          🎯 全真模擬測驗（25題）
+        </button>
+      </div>
+
+      <!-- Search & Filters -->
+      <div class="filter-bar">
+        <!-- Search Input -->
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" class="search-input" placeholder="搜尋關鍵字（例如：SRAM、工作管理員、IaaS、行程、Type-C，按 / 鍵聚焦）...">
+        </div>
+
+        <!-- Chapter Filter Chips -->
+        <div class="chips-row">
+          <span class="chip-label">章節：</span>
+          <button class="chip-btn active" data-chap="0">全部章節</button>
+          <button class="chip-btn" data-chap="3">第 3 章 硬體架構</button>
+          <button class="chip-btn" data-chap="4">第 4 章 軟體與網路</button>
+          <button class="chip-btn" data-chap="5">第 5 章 平台運作與AI</button>
+          <button class="chip-btn" data-chap="6">第 6 章 辦公室與影音</button>
+        </div>
+
+        <!-- Type Filter Chips -->
+        <div class="chips-row">
+          <span class="chip-label">題型：</span>
+          <button class="chip-btn active" data-type="all">全部題型</button>
+          <button class="chip-btn" data-type="choice">單選題</button>
+          <button class="chip-btn" data-type="fill">填充表格題</button>
+          <button class="chip-btn" data-type="multi">圖表判讀題</button>
+          <button class="chip-btn" data-type="puzzle">填字遊戲</button>
+          <button class="chip-btn" data-type="sheet">實作學習單</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="main-content" id="main-container">
+    <!-- Questions dynamically injected here by app.js -->
+  </main>
+
+  <!-- Lightbox Modal for Original Sheet Scans -->
+  <div class="modal-overlay" id="lightbox-modal" onclick="closeLightbox()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div class="modal-title" id="lightbox-title">原始試卷對照</div>
+        <button class="btn btn-sm btn-icon" onclick="closeLightbox()" title="關閉">✕</button>
+      </div>
+      <div class="modal-body">
+        <img id="lightbox-img" src="" alt="原卷高解析截圖">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>資處科一仁 鍾百越 同學專屬學習統整網頁 | 數位科技概論（上）教科書與測驗卷題庫完全解析</p>
+    <p style="font-size: 0.78rem; margin-top: 0.4rem; color: var(--text-muted);">本學習平台收錄第 3、4、5、6 章全部隨堂測驗卷、習作本作業與圖表題，支援離線執行、手機平板自適應與即時線上刷題。</p>
+  </footer>
+
+  <!-- Main Application Logic -->
+  <script src="js/app.js"></script>
+</body>
+</html>
